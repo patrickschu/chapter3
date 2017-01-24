@@ -2,7 +2,7 @@
 """
 Computations with the first run on MechTurk
 """
-
+setwd='~/Downloads/chapter3/rplots'
 
 csvcleaner=function(spread_sheet) {
 	#takes out all the stuff from MechTurk and Qualtrics we don't want
@@ -12,14 +12,15 @@ csvcleaner=function(spread_sheet) {
 }
 
 
-barplot_by_column= function(vector_of_column_indexes){
+barplot_by_column= function(spread_sheet, vector_of_column_indexes){
 	#takes a list of column indexes, plots bars for each
 	for (ind in vector_of_column_indexes)
 		{
-		outputfile= paste(ind, "barplot.png", sep+"_")
+		outputfile= paste(ind, "barplot.png", sep="_")
+		
 		print (ind)
 		png(outputfile,  width=960, height=640, res=100)
-		barplot (xtabs(~spread[[ind]]))
+		barplot (xtabs(~spread_sheet[[ind]]), main=colnames(spread_sheet[ind]))
 		dev.off()
 		}	
 		
@@ -33,6 +34,6 @@ spread=csvcleaner(spread)
 
 print (colnames(spread))
 
-barplot_by_column(c(17:24))
+barplot_by_column(spread, c(17:24))
 
 
