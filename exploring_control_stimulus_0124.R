@@ -26,7 +26,7 @@ barplot_by_column= function(spread_sheet, vector_of_column_indexes){
 		
 }
 
-spread=read.csv("/Users/ps22344/Downloads/chapter3/csv/creating_stimulus_0123_January 24, 2017_11.25.csv", header=T)
+spread=read.csv("/Users/ps22344/Downloads/chapter3/csv/creating_stimulus_0123_2ndrun_January 24, 2017_17.05 2.csv", header=T)
 
 print (colnames(spread))
 
