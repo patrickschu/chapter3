@@ -14,14 +14,15 @@ def sample_size_calculator(z_score, stdev, margin_of_error, hit_price=False):
 	99% – Z Score = 2.326
 	"""
 	numerator= (float(z_score)*z_score)*(float(stdev)*(1-stdev))
-	print "numi", numerator
+	#print "numi", numerator
 	denominator= float(margin_of_error)*margin_of_error
-	print "demi", denominator
+	#print "demi", denominator
+	print "The necessary sample size is {}".format((numerator / denominator))
 	if hit_price:
 		print "With one HIT costing $ {}, this adds up to $ {}, comes to {} after adding MechTurk fees. Very expensive.".format(
 		hit_price, np.ceil(numerator / denominator)*float(hit_price), np.ceil(numerator / denominator)*float(hit_price)+((np.ceil(numerator / denominator)*float(hit_price)/100)*20))
 	return (numerator / denominator)
 
 
-x=sample_size_calculator(1.96, .5,.05, hit_price=.20)
+x=sample_size_calculator(1.96, .5,.1, hit_price=.15)
 print x
