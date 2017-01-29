@@ -6,8 +6,12 @@ setwd('/Users/ps22344/Downloads/chapter3/rplots')
 
 csvcleaner=function(spread_sheet) {
 	#takes out all the stuff from MechTurk and Qualtrics we don't want
+	spread_sheet=spread_sheet[2:nrow(spread_sheet),]
 	badcols= c("IPAddress", "ResponseId", "mTurkCode")
 	spread_sheet= spread_sheet[,!(names(spread_sheet) %in% badcols)]
+	#from 
+	spread_sheet= droplevels(spread_sheet)
+
 	return(spread_sheet)
 }
 
@@ -26,31 +30,15 @@ barplot_by_column= function(spread_sheet, vector_of_column_indexes){
 		
 }
 
-spread=read.csv("/Users/ps22344/Downloads/creating_stimulus_0123_3rddrun - Copy_January 26, 2017_10.16.csv", header=T)
-
-print (colnames(spread))
-
+#read in & clean
+spread=read.csv("~/Downloads/chapter3/creating_stimulus_0123_3rddrun - Copy_January 29, 2017_10.51.csv", skip=1, header=T)
 spread=csvcleaner(spread)
 
-print (colnames(spread[17]))
-spread['gender']=as.factor(spread[[17]])
-spread[spread[['gender']]=="", ]
-# [17] "The.author.is....gender"                              
-#[18] "The.author.is.....hetero/homo                     
-#[19] "The.author.is.....friendly                            
-#[20] "The.author.is.writing.for.a....addressee"                
-#[21] "The.author.seems....sensitive                           
-#[22] "I.d.guess.the.author.is....ethnicicty                    
-#[23] "The.author.seems.....assertive                      
-#[24] "The.author.seems.....educated
+#plot
+barplot_by_column(spread, c(17:24))
 
-#barplot_by_column(spread, c(17:24))
+#do the significance
 
-print (nrow(spread[spread[['gender']]=="male",]))
-meanie = nrow(spread[spread[['gender']]=="male",])/nrow(spread)
-print (meanie)
-vec=c(rep(1,59), rep(0,42))
-vec
 
 t.test(vec, mu=0.5)
 
