@@ -38,8 +38,9 @@ spread=csvcleaner(spread)
 barplot_by_column(spread, c(17:24))
 
 #do the significance
-
-
-t.test(vec, mu=0.5)
-
+#dummycode to 0 and 1
+spread['dummygender']=sapply(spread[[17]], FUN= function(x) if (x=='female') return (0) else return(1))
+head(spread[['dummygender']])
+t.test(spread[,'dummygender'], mu=0.5)
+mean(spread[,'dummygender'])
 
