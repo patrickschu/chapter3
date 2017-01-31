@@ -63,11 +63,19 @@ levelprinter= function(spread_sheet, vector_of_column_indexes){
 
 levelmatcher= function(spread_sheet, vector_of_levels){
 	#takes a vector of two levels and combines them in output
-	
-	
-	
-	
-	
+	# what are the comments by age?
+	level1index=vector_of_levels[1]
+	level2index=vector_of_levels[2]
+	#cat ("levels", levels(spread_sheet[[level1index]]))
+	by(
+	data= spread_sheet, 
+	INDICES= spread_sheet[[level1index]], 
+	FUN= function(x) print(x[colnames(x)[level2index]])
+	#spread_sheet[spread_sheet[colnames(spread_sheet)[level1index]]=='male'),]
+	)
 	
 }
 
+levelmatcher(spread, c(17,20))
+#means by participant gender
+#femmi=spread[spread[[27]]=='female',]['dummygender']
