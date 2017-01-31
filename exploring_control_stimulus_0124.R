@@ -38,7 +38,7 @@ spread[2,]
 spread=csvcleaner(spread)
 summary(spread)
 #plot
-barplot_by_column(spread, c(17:24))
+barplot_by_column(spread, c(17:25))
 
 #do the significance
 #dummycode to 0 and 1
@@ -46,4 +46,28 @@ spread['dummygender']=sapply(spread[[17]], FUN= function(x) if (x=='female') ret
 head(spread[['dummygender']])
 t.test(spread[,'dummygender'], mu=0.5)
 mean(spread[,'dummygender'])
+
+##explore participant data
+levelprinter= function(spread_sheet, vector_of_column_indexes){
+	#takes a list of column indexes, prints level for each
+	for (ind in vector_of_column_indexes)
+		{
+		cat ("\n****\n", ind, colnames(spread_sheet)[ind])
+		cat (levels(spread_sheet[[ind]]), sep='\n')
+		#print (xtabs(~spread_sheet[[ind]]))
+		}	
+}
+
+#levelprinter(spread, c(26:35))
+
+
+levelmatcher= function(spread_sheet, vector_of_levels){
+	#takes a vector of two levels and combines them in output
+	
+	
+	
+	
+	
+	
+}
 
