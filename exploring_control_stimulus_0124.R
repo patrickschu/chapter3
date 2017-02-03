@@ -3,6 +3,8 @@
 Computations with the first run on MechTurk
 """
 setwd('/Users/ps22344/Downloads/chapter3/rplots')
+setwd('~/Downloads/chapter3/rplots')
+
 
 csvcleaner=function(spread_sheet) {
 	#takes out all the stuff from MechTurk and Qualtrics we don't want
@@ -33,7 +35,11 @@ barplot_by_column= function(spread_sheet, vector_of_column_indexes){
 }
 
 #read in & clean
-spread=read.csv("~/Downloads/creating_stimulus_0123_3rddrun - Copy_January 31, 2017_12.24.csv",  skip=1, header=T)
+#spread=read.csv("~/Downloads/creating_stimulus_0123_3rddrun - Copy_January 31, 2017_12.24.csv",  skip=1, header=T)
+spread=read.csv("E:/cygwin/home/ps22344/Downloads/creating_stimulus_0123_3rddrun - Copy_February 2, 2017_11.37.csv", skip=1, header=T)
+
+
+
 spread[2,]
 spread=csvcleaner(spread)
 summary(spread)
