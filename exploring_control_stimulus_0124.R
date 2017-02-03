@@ -1,8 +1,10 @@
 
-"""
-Computations with the first run on MechTurk
-"""
-setwd('/Users/ps22344/Downloads/chapter3/rplots')
+###
+#Computations with the first run on MechTurk
+###
+
+
+#setwd('/Users/ps22344/Downloads/chapter3/rplots')
 setwd('~/Downloads/chapter3/rplots')
 
 
@@ -34,9 +36,20 @@ barplot_by_column= function(spread_sheet, vector_of_column_indexes){
 		
 }
 
+nafinder= function(spread_sheet, vector_of_column_indexes){
+	print ('Running nafinder')
+	for (ind in vector_of_column_indexes)
+		{
+		print (ind)
+		nas=sapply(spread_sheet[[ind]], anyNA)
+		print (nas)
+		print (sum(nas))
+		}
+}
+
 #read in & clean
-#spread=read.csv("~/Downloads/creating_stimulus_0123_3rddrun - Copy_January 31, 2017_12.24.csv",  skip=1, header=T)
-spread=read.csv("E:/cygwin/home/ps22344/Downloads/creating_stimulus_0123_3rddrun - Copy_February 2, 2017_11.37.csv", skip=1, header=T)
+spread=read.csv("/Users/ps22344/Downloads/creating_stimulus_0123_3rddrun - Copy_February3,2017_12.25.csv",  skip=1, header=T)
+#spread=read.csv("E:/cygwin/home/ps22344/Downloads/creating_stimulus_0123_3rddrun - Copy_February 2, 2017_11.37.csv", skip=1, header=T)
 
 
 
@@ -44,7 +57,11 @@ spread[2,]
 spread=csvcleaner(spread)
 summary(spread)
 #plot
-barplot_by_column(spread, c(17:25))
+#barplot_by_column(spread, c(17:25))
+
+#Nas
+nafinder(spread, c(1:27))
+
 
 #do the significance
 #dummycode to 0 and 1
@@ -82,6 +99,6 @@ levelmatcher= function(spread_sheet, vector_of_levels){
 	
 }
 
-levelmatcher(spread, c(17,20))
+#levelmatcher(spread, c(17,20))
 #means by participant gender
 #femmi=spread[spread[[27]]=='female',]['dummygender']
