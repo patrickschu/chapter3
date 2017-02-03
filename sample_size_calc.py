@@ -24,5 +24,5 @@ def sample_size_calculator(z_score, stdev, margin_of_error, hit_price=False):
 	return (numerator / denominator)
 
 
-x=sample_size_calculator(1.96, .5,.1, hit_price=.15)
+x=sample_size_calculator(1.96, .5,.075, hit_price=.15)
 print x
