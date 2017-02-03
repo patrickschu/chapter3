@@ -1,6 +1,8 @@
 *(Autosaved).R
 .DS_Store
 csv/
+*.history
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
