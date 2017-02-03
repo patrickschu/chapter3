@@ -15,7 +15,7 @@ csvcleaner=function(spread_sheet) {
 	spread_sheet= spread_sheet[,!(names(spread_sheet) %in% badcols)]
 	#previews is when we go in and mess wit it
 	spread_sheet= spread_sheet[!(spread_sheet[['Distribution.Channel']]=='preview'), ]
-	#from 
+	spread_sheet= spread_sheet[!is.na((spread_sheet[[17]])), ]
 	spread_sheet= droplevels(spread_sheet)
 
 	return(spread_sheet)
@@ -40,22 +40,21 @@ nafinder= function(spread_sheet, vector_of_column_indexes){
 	print ('Running nafinder')
 	for (ind in vector_of_column_indexes)
 		{
-		print (ind)
+		cat (ind, colnames(spread_sheet)[ind])
 		nas=sapply(spread_sheet[[ind]], anyNA)
-		print (nas)
 		print (sum(nas))
 		}
 }
 
 #read in & clean
-spread=read.csv("/Users/ps22344/Downloads/creating_stimulus_0123_3rddrun - Copy_February3,2017_12.25.csv",  skip=1, header=T)
+spread=read.csv("/Users/ps22344/Downloads/creating_stimulus_0123_3rddrun - Copy_February3,2017_12.25.csv",  skip=1, header=T, na.strings=c(""))
 #spread=read.csv("E:/cygwin/home/ps22344/Downloads/creating_stimulus_0123_3rddrun - Copy_February 2, 2017_11.37.csv", skip=1, header=T)
-
-
-
-spread[2,]
 spread=csvcleaner(spread)
-summary(spread)
+
+#output and inspect
+cat("rows", nrow(spread))
+spread[205,20]==" "
+
 #plot
 #barplot_by_column(spread, c(17:25))
 
@@ -102,3 +101,11 @@ levelmatcher= function(spread_sheet, vector_of_levels){
 #levelmatcher(spread, c(17,20))
 #means by participant gender
 #femmi=spread[spread[[27]]=='female',]['dummygender']
+
+
+#SIG WITH CHI SQUARE
+row1=c(100,100)
+row2=c(121,81)
+counts= rbind(row1, row2)
+chisq.test(counts)
+
