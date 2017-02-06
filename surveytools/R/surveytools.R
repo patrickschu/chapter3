@@ -2,6 +2,44 @@
 #TOOLS FOR QUALTRICS PERCEPTIONS SURVEYS
 ###
 
+#misc and helper functions
+cols=c("start_date"                                            
+ , "end_date"                                              
+ , "response_type"                                         
+ , "progress"                                              
+ , "duration_in_seconds"                                 
+ , "finished"                                              
+ , "recorded_date"                                         
+ , "recipient_Last_Name"                                   
+ , "recipient_first_Name"                                  
+, "recipient_email"                                       
+, "external_data_reference"                               
+, "location_Latitude"                                     
+, "location_Longitude"                                    
+, "distribution_Channel"                                  
+, "author_gender"                                     
+, "author_orient"                                   
+, "author_friendly"                                   
+, "author_audience"                       
+, "author_sensitive"                                  
+, "author_ethnicity"                           
+, "author_assertive"                                
+, "author_attractive"                                
+, "author_education"                                
+, "men_are"                                           
+, "women_are"                                         
+, "would_you_reply"                           
+, "further_comments"       
+, "participant_gender"                            
+, "participant_gender_other"               
+, "participant_ethnicity"               
+, "participant_ethnicity_other"  
+, "participant_age"                                               
+, "participant_orientation"             
+, "participant_orientation_other"
+, "participant_grew_up"                
+, "participant_residence")                  
+
 
 #' CSV cleaner
 #'
@@ -14,13 +52,13 @@
 csvcleaner=function(spread_sheet) {
 	#takes out all the stuff from MechTurk and Qualtrics we don't want
 	spread_sheet=spread_sheet[2:nrow(spread_sheet),]
-	badcols= c("IPAddress", "ResponseId", "mTurkCode")
+	badcols= c("IPAddress", "IP.Address", "ResponseId", "Response.ID", "mTurkCode")
 	spread_sheet= spread_sheet[,!(names(spread_sheet) %in% badcols)]
 	#previews is when we go in and mess wit it
 	spread_sheet= spread_sheet[!(spread_sheet[['Distribution.Channel']]=='preview'), ]
 	spread_sheet= spread_sheet[!is.na((spread_sheet[[17]])), ]
 	spread_sheet= droplevels(spread_sheet)
-
+	colnames(spread_sheet)= cols
 	return(spread_sheet)
 }
 
