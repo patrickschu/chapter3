@@ -4,18 +4,22 @@
 ###
 
 #moving parts
-#setwd('/Users/ps22344/Downloads/chapter3/rplots')
-
-
-
 setwd('~/Downloads/chapter3')
 install('surveytools')
+
+#setwd('/Users/ps22344/Downloads/chapter3/rplots')
+controlspread= read.csv("/Users/ps22344/Downloads/control_stimulus_adapted_0206.csv",  header=T, na.strings=c(""))
+controlspread=csvcleaner(controlspread)
+print (summary(controlspread))
+
+
+
 setwd('~/Downloads/chapter3/rplots')
 filename="/Users/ps22344/Desktop/emoticons_0203_February 6, 2017_12.14.csv"
 
 #Read in, clean
-spread=read.csv(filename,  skip=1, header=T, na.strings=c(""))
-#spread=read.csv(filename, skip=1, header=T)
+spread=read.csv(filename,   header=T, na.strings=c(""))
+#spread=read.csv(filename,  header=T)
 cat ("Input file has ", nrow(spread), "rows")
 
 spread=csvcleaner(spread)
@@ -73,12 +77,11 @@ chisquaretester= function(control_stimulus, stimulus, column)
 	print ("checking for NAs")
 	cat (length(control_stimulus[[column]])- length(control), " NAs found in 'control_stimulus\n")
 	cat (length(stimulus[[column]])-length(treatment), " NAs found in 'stimulus'")
-	
-	
-	#print (summary(control))
-	#print (summary(treatment))
+	print (table(control))
+	print (table(treatment))
+	chisq.test(rbind(table(control), table(treatment)))
 	
 }
 
-chisquaretester(spread, spread, 16)
+chisquaretester(controlspread, spread, 17)
 
