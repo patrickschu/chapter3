@@ -1,11 +1,13 @@
-
 ###
 #Computations with perception surveys on MechTurk
 ###
 
+library(devtools)
+
 #moving parts
 setwd('~/Downloads/chapter3')
 install('surveytools')
+library('surveytools')
 
 #setwd('/Users/ps22344/Downloads/chapter3/rplots')
 controlspread= read.csv("/Users/ps22344/Downloads/control_stimulus_adapted_0206.csv",  header=T, na.strings=c(""))
