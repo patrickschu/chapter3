@@ -76,7 +76,7 @@ csvcleaner=function(spread_sheet) {
 #' Takes a spread_sheet, orders the factors as indicated.
 #'@param
 #' Our Qualtrics spreadsheet
-#'@keywords ugly things
+#'@keywords file under: ugly things
 ordermachine= function(spread_sheet){
 	print ("Running the ordermachine")
 	spread_sheet[['author_gender']]=factor(spread_sheet[['author_gender']], levels=c("female", "male"))
@@ -88,6 +88,7 @@ ordermachine= function(spread_sheet){
 	spread_sheet[['author_assertive']]=factor(spread_sheet[['author_assertive']], levels=c("Very assertive", "Assertive", "Somewhat assertive", "Somewhat timid", "Timid" ))
 	spread_sheet[['author_education']]=factor(spread_sheet[['author_education']], levels=c("Very educated", "Somewhat educated","Of average education", "Somewhat uneducated", "Very uneducated"))
 	spread_sheet[['author_attractive']]=factor(spread_sheet[['author_attractive']], levels=c("Very Attractive", "Attractive" , "Somewhat attractive", "Unattractive" , "Very Unattractive" )) 
+ 	spread_sheet[['would_you_reply']]=factor(spread_sheet[['would_you_reply']], levels=c("Yes, very likely", "Likely",  "Somewhat likely",  "Unlikely", "No, very unlikely"))
  	return(spread_sheet)
 
 }
