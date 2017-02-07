@@ -23,10 +23,14 @@ filename="/Users/ps22344/Desktop/emoticons_0203_February 6, 2017_12.14.csv"
 spread=read.csv(filename,   header=T, na.strings=c(""))
 #spread=read.csv(filename,  header=T)
 cat ("Input file has ", nrow(spread), "rows")
-
 spread=csvcleaner(spread)
 cat ("Cleaned file has ", nrow(spread), "rows")
 print (summary(spread))
+
+
+
+
+
 
 
 #output and inspect
