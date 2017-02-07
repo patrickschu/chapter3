@@ -77,11 +77,16 @@ chisquaretester= function(control_stimulus, stimulus, column)
 	print ("checking for NAs")
 	cat (length(control_stimulus[[column]])- length(control), " NAs found in 'control_stimulus\n")
 	cat (length(stimulus[[column]])-length(treatment), " NAs found in 'stimulus'")
+	cat ("\nInvestigating feature", colnames(control_stimulus)[column], colnames(stimulus)[column], "\n")
 	print (table(control))
 	print (table(treatment))
-	chisq.test(rbind(table(control), table(treatment)))
+	chisquare= chisq.test(rbind(table(control), table(treatment)))
+	cat ("\np value", chisquare$p.value, "\n")
+	cat ("expected: ", chisquare$expected, "\nobserved: ", chisquare$observed, "\n")
 	
 }
+
+for (c in perceptionfeatures) {cat("\n++++\n"); chisquaretester(controlspread, spread, c)}
 
 chisquaretester(controlspread, spread, 17)
 
