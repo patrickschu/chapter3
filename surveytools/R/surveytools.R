@@ -41,6 +41,8 @@ cols=c("start_date"
 , "participant_residence")                  
 
 
+
+
 #' CSV cleaner
 #'
 #'Takes out all the stuff from MechTurk and Qualtrics we don't want
@@ -61,18 +63,34 @@ csvcleaner=function(spread_sheet) {
 	print (nrow(spread_sheet))
 	#trash headers introdudced by Qualtrics
 	spread_sheet=spread_sheet[4:nrow(spread_sheet),]
-	print (nrow(spread_sheet))
 	spread_sheet= spread_sheet[!is.na((spread_sheet[[17]])), ]
-	print (nrow(spread_sheet))
 	spread_sheet= droplevels(spread_sheet)
-	print (nrow(spread_sheet))
 	colnames(spread_sheet)= cols
 	print (nrow(spread_sheet))
+	spread_sheet=ordermachine(spread_sheet)
 	return(spread_sheet)
 }
 
+#' Order machine to get our labels right
+#' 
+#' Takes a spread_sheet, orders the factors as indicated.
+#'@param
+#' Our Qualtrics spreadsheet
+#'@keywords ugly things
+ordermachine= function(spread_sheet){
+	print ("Running the ordermachine")
+	spread_sheet[['author_gender']]=factor(spread_sheet[['author_gender']], levels=c("female", "male"))
+	spread_sheet[['author_orient']]=factor(spread_sheet[['author_orient']], levels=c("heterosexual", "homosexual"))
+	spread_sheet[['author_friendly']]=factor(spread_sheet[['author_friendly']], levels=c("Very friendly", "Friendly", "Somewhat friendly", "Somewhat unfriendly", "Very unfriendly"))
+	spread_sheet[['author_audience']]=factor(spread_sheet[['author_audience']], levels=c( "woman", "man" ))
+	spread_sheet[['author_sensitive']]=factor(spread_sheet[['author_sensitive']], levels=c("Very sensitive", "Sensitive", "Somewhat sensitive", "Insensitive", "Very insensitive" ))
+	spread_sheet[['author_ethnicity']]=factor(spread_sheet[['author_ethnicity']], levels=c("Asian", "Black / African American", "Hispanic / Latino", "White" ))
+	spread_sheet[['author_assertive']]=factor(spread_sheet[['author_assertive']], levels=c("Very assertive", "Assertive", "Somewhat assertive", "Somewhat timid", "Timid" ))
+	spread_sheet[['author_education']]=factor(spread_sheet[['author_education']], levels=c("Very educated", "Somewhat educated","Of average education", "Somewhat uneducated", "Very uneducated"))
+	spread_sheet[['author_attractive']]=factor(spread_sheet[['author_attractive']], levels=c("Very Attractive", "Attractive" , "Somewhat attractive", "Unattractive" , "Very Unattractive" )) 
+ 	return(spread_sheet)
 
-
+}
 
 
 
