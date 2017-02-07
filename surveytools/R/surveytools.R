@@ -89,6 +89,8 @@ ordermachine= function(spread_sheet){
 	spread_sheet[['author_education']]=factor(spread_sheet[['author_education']], levels=c("Very educated", "Somewhat educated","Of average education", "Somewhat uneducated", "Very uneducated"))
 	spread_sheet[['author_attractive']]=factor(spread_sheet[['author_attractive']], levels=c("Very Attractive", "Attractive" , "Somewhat attractive", "Unattractive" , "Very Unattractive" )) 
  	spread_sheet[['would_you_reply']]=factor(spread_sheet[['would_you_reply']], levels=c("Yes, very likely", "Likely",  "Somewhat likely",  "Unlikely", "No, very unlikely"))
+ 	spread_sheet[['participant_age']]= as.numeric(spread_sheet[['participant_age']])
+ 	print ("Done with ordering")
  	return(spread_sheet)
 
 }
