@@ -123,6 +123,73 @@ barplot_by_column= function(spread_sheet, file_name, vector_of_column_indexes){
 }
 
 
+#' Chi square comparison, version 1 (old)
+#' Run chi square test of independence on survey results
+#' OUTDATED
+#' @param
+#' control_stimulus dataframe with control group
+#' stimulus dataframe with treatment group to compare to control_stimulus
+#' column the column to be read from both spread sheets
+#' output "txt" for verbose text output, "csv" for csv output. Defaults to "csv"
+#' @return
+#' prints out text with p values, expected vs observed, or csv representation of entire results
+chisquaretester= function(control_stimulus, stimulus, column, output="csv")
+{
+	cat ("\n\n***YOU SHOULD NOT RUN THIS VERSION ANYMORE***\n\n")
+	control= na.omit(control_stimulus[[column]])
+	treatment= na.omit(stimulus[[column]])
+	chisquare= chisq.test(table(control,treatment))
+	if (output=="text")
+	{
+		print ("checking for NAs")
+		cat (length(control_stimulus[[column]])- length(control), " NAs found in 'control_stimulus\n")
+		cat (length(stimulus[[column]])-length(treatment), " NAs found in 'stimulus'")
+		cat ("\nInvestigating feature", column, "\n")
+		print (table(control))
+		print (table(treatment))
+	}
+	if (output=="csv")
+	{
+		write.csv(sapply(chisquare, unlist))
+	}
+	
+	cat ("\np value", chisquare$p.value, "\n")
+	cat ("expected: ", chisquare$expected, "\nobserved: ", chisquare$observed, "\n")
+	
+}
+
+
+#' Print basic stats
+#' 
+#' Takes a spread_sheet, prints relevant stats for qualtrics survey
+#'@param
+#' spread_sheet Our Qualtrics spreadsheet
+#' column_indexes A vector of column names or numbers, columns must be factors
+#'@keywords why not
+basicstatsmaker= function(spread_sheet, column_indexes)
+{
+	#print out: number of total responses number of men, women
+	cat ("Total number of responses in spread_sheet", nrow(spread_sheet), "\n")
+	for (ind in column_indexes)
+	{
+		if (is.factor(spread_sheet[[ind]]))
+			{
+			cat("\n\n+++", ind, ", ", nrow(spread_sheet) - length(na.omit(spread_sheet[[ind]])), "NAs in here" )
+			sapply(levels(spread_sheet[[ind]]), function(x) cat("\n", x, ",", nrow(spread_sheet[spread_sheet[[ind]]==x,]), ",", nrow(spread_sheet[spread_sheet[[ind]]==x,])/nrow(spread_sheet)))
+			}
+		if (is.numeric(spread_sheet[[ind]]))
+			{
+			vec= na.omit(spread_sheet[[ind]])
+			cat("\n\n+++", ind )
+			cat("\nmean", mean(vec), 
+			"\nmedian,", median(vec), 
+			"\nstandard_dev,", sd(vec), 
+			"\nmin-max,", min(vec),"-", max(vec))
+			}
+	}
+	
+	
+}
 
 
 # 1 Start Date

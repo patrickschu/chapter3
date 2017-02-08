@@ -12,5 +12,7 @@ ordermachine(spread_sheet)
 \description{
 Takes a spread_sheet, orders the factors as indicated.
 }
+\keyword{file}
 \keyword{things}
 \keyword{ugly}
+\keyword{under:}
