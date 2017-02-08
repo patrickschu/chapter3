@@ -3,6 +3,8 @@
 ###
 install.packages(c("devtools", "roxygen2"), repos='http://cran.us.r-project.org')
 library(devtools)
+library(roxygen2)
+
 perceptionfeatures=c(            
 "author_gender"                                     
 , "author_orient"                                   
@@ -71,27 +73,33 @@ barplot_by_column(spread, "punctuation", perceptionfeatures)
 
 
 
-##
-#Chi square comparison
-##
-#compute author features
-
-chisquaretester= function(control_stimulus, stimulus, column, output="csv")
+#' Chi square comparison, version 2 
+#'
+#' Run chi square test of independence on survey results
+#' Updated based on stats consulting
+#' @param
+#' control_stimulus dataframe with control group
+#' stimulus dataframe with treatment group to compare to control_stimulus
+#' column the column to be read from both spread sheets
+#' output "txt" for verbose text output, "csv" for csv output. Defaults to "csv"
+#' @returns
+#' prints out text with p values, expected vs observed, or csv representation of entire results
+chisquaretester2= function(control_stimulus, stimulus, column, output="csv")
 {
-	#takes the spreadsheet for contronl group (control_stimulus), treatment group to be compared to control_stimulus
-	#takes vector_of_columns with names, indices to computed. They need to be equivalent in both spreadsheets
-	#make tables control stimulus and stimulus
-	control= na.omit(control_stimulus[[column]])
-	treatment= na.omit(stimulus[[column]])
-	chisquare= chisq.test(rbind(table(control), table(treatment)))
+	
+	control_stimulus['stimulus']="control"
+	stimulus['stimulus']="treatment"
+	dataset=rbind(control_stimulus, stimulus)
+
+	chisquare= chisq.test(table(dataset[['stimulus']], dataset[[column]]))
 	if (output=="text")
 	{
 		print ("checking for NAs")
-		cat (length(control_stimulus[[column]])- length(control), " NAs found in 'control_stimulus\n")
-		cat (length(stimulus[[column]])-length(treatment), " NAs found in 'stimulus'")
+		cat (length(control_stimulus[[column]])- length(na.omit(control_stimulus[[column]])), " NAs found in 'control_stimulus\n")
+		cat (length(stimulus[[column]])-length(na.omit(stimulus[[column]])), " NAs found in 'stimulus'")
 		cat ("\nInvestigating feature", column, "\n")
-		print (table(control))
-		print (table(treatment))
+		print (table(control_stimulus[[column]]))
+		print (table(stimulus[[column]]))
 	}
 	if (output=="csv")
 	{
@@ -103,7 +111,7 @@ chisquaretester= function(control_stimulus, stimulus, column, output="csv")
 	
 }
 
-for (c in perceptionfeatures) {cat("\n++++\n"); chisquaretester(controlspread, spread, c, output="text")}
+for (c in perceptionfeatures) {cat("\n++++\n"); chisquaretester2(controlspread, spread, c, output="text")}
 
 
 
