@@ -4,6 +4,9 @@
 install.packages(c("devtools", "roxygen2"), repos='http://cran.us.r-project.org')
 library(devtools)
 library(roxygen2)
+setwd('~/Downloads/chapter3/surveytools')
+document()
+
 
 perceptionfeatures=c(            
 "author_gender"                                     
@@ -113,38 +116,5 @@ chisquaretester2= function(control_stimulus, stimulus, column, output="csv")
 
 for (c in perceptionfeatures) {cat("\n++++\n"); chisquaretester2(controlspread, spread, c, output="text")}
 
-
-
-#' Print basic stats
-#' 
-#' Takes a spread_sheet, prints relevant stats for qualtrics survey
-#'@param
-#' spread_sheet Our Qualtrics spreadsheet
-#' column_indexes A vector of column names or numbers, columns must be factors
-#'@keywords why not
-basicstatsmaker= function(spread_sheet, column_indexes)
-{
-	#print out: number of total responses number of men, women
-	cat ("Total number of responses in spread_sheet", nrow(spread_sheet), "\n")
-	for (ind in column_indexes)
-	{
-		if (is.factor(spread_sheet[[ind]]))
-			{
-			cat("\n\n+++", ind, ", ", nrow(spread_sheet) - length(na.omit(spread_sheet[[ind]])), "NAs in here" )
-			sapply(levels(spread_sheet[[ind]]), function(x) cat("\n", x, ",", nrow(spread_sheet[spread_sheet[[ind]]==x,]), ",", nrow(spread_sheet[spread_sheet[[ind]]==x,])/nrow(spread_sheet)))
-			}
-		if (is.numeric(spread_sheet[[ind]]))
-			{
-			vec= na.omit(spread_sheet[[ind]])
-			cat("\n\n+++", ind )
-			cat("\nmean", mean(vec), 
-			"\nmedian,", median(vec), 
-			"\nstandard_dev,", sd(vec), 
-			"\nmin-max,", min(vec),"-", max(vec))
-			}
-	}
-	
-	
-}
 basicstatsmaker(controlspread, participantfeatures[c(1:(length(participantfeatures)-2))])
 
