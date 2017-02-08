@@ -1,6 +1,7 @@
 ###
 #Computations with perception surveys on MechTurk
 ###
+install.packages(c("devtools", "roxygen2"), repos='http://cran.us.r-project.org')
 library(devtools)
 perceptionfeatures=c(            
 "author_gender"                                     
@@ -32,14 +33,10 @@ participantfeatures=c(
 , "participant_grew_up"                
 , "participant_residence") 
 
-
-
-#moving parts
 setwd('~/Downloads/chapter3')
 install('surveytools')
 library('surveytools')
 
-#setwd('/Users/ps22344/Downloads/chapter3/rplots')
 controlspread= read.csv("/Users/ps22344/Downloads/control_stimulus_adapted_0206.csv",  header=T, na.strings=c(""))
 controlspread=csvcleaner(controlspread)
 print (summary(controlspread))
@@ -47,7 +44,17 @@ print (summary(controlspread))
 
 
 setwd('~/Downloads/chapter3/rplots')
-filename="/Users/ps22344/Downloads/emoticons_0207.csv"
+
+
+#moving parts
+###
+#
+###
+filename="~/Downloads/punctuation_0208.csv"
+###
+#
+###
+
 
 #Read in, clean
 spread=read.csv(filename,   header=T, na.strings=c(""))
@@ -59,7 +66,7 @@ print (summary(spread))
 
 
 #output and inspect
-barplot_by_column(spread, "emoticons", perceptionfeatures)
+barplot_by_column(spread, "punctuation", perceptionfeatures)
 
 
 
@@ -86,7 +93,7 @@ chisquaretester= function(control_stimulus, stimulus, column, output="csv")
 		print (table(control))
 		print (table(treatment))
 	}
-	else (output=="csv")
+	if (output=="csv")
 	{
 		write.csv(sapply(chisquare, unlist))
 	}
@@ -96,9 +103,9 @@ chisquaretester= function(control_stimulus, stimulus, column, output="csv")
 	
 }
 
-for (c in perceptionfeatures) {cat("\n++++\n"); chisquaretester(controlspread, spread, c)}
+for (c in perceptionfeatures) {cat("\n++++\n"); chisquaretester(controlspread, spread, c, output="text")}
 
-chisquaretester(controlspread, spread, 17, output="csv")
+
 
 #' Print basic stats
 #' 
