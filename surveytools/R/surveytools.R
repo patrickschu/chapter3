@@ -91,6 +91,7 @@ ordermachine= function(spread_sheet){
  	spread_sheet[['would_you_reply']]=factor(spread_sheet[['would_you_reply']], levels=c("Yes, very likely", "Likely",  "Somewhat likely",  "Unlikely", "No, very unlikely"))
  	spread_sheet[['participant_age']]= as.numeric(levels(spread_sheet[['participant_age']]))[spread_sheet[['participant_age']]]
  	spread_sheet[['cat']]=paste(substr(spread_sheet[['author_gender']],1,1), "4", substr(spread_sheet[['author_audience']], 1,1), sep="")
+ 	spread_sheet[['cat']]= as.factor(gsub("f", "w", spread_sheet[['cat']]))
  	print ("Done with ordering")
  	return(spread_sheet)
 
