@@ -7,6 +7,15 @@ library(roxygen2)
 setwd('~/Downloads/chapter3/surveytools')
 document()
 
+files=c(
+'~/Downloads/control_stimulus_adapted_0206.csv',
+'~/Downloads/emoticons_2_0211.csv',
+'~/Downloads/emoticons_0207.csv',
+'~/Downloads/punctuation_0208.csv',
+'~/Downloads/abbreviations_0208.csv'
+)
+
+
 
 perceptionfeatures=c(            
 "author_gender"                                     
@@ -18,7 +27,8 @@ perceptionfeatures=c(
 , "author_assertive"                                
 , "author_attractive"                                
 , "author_education"                                                                    
-, "would_you_reply"                           
+, "would_you_reply"  
+,"cat"                         
 )
 
 perceptionfeatures_text=c(
@@ -38,12 +48,22 @@ participantfeatures=c(
 , "participant_grew_up"                
 , "participant_residence") 
 
+
+participantfeaturesnumeric=c(
+"participant_gender"                            
+      
+, "participant_ethnicity"               
+, "participant_age"                                               
+, "participant_orientation"             
+) 
+
 setwd('~/Downloads/chapter3')
 install('surveytools')
 library('surveytools')
 
 controlspread= read.csv("/Users/ps22344/Downloads/control_stimulus_adapted_0206.csv",  header=T, na.strings=c(""))
-controlspread=csvcleaner(controlspread)
+controlspread=surveytools:::csvcleaner(controlspread)
+
 print (summary(controlspread))
 
 
@@ -55,7 +75,7 @@ setwd('~/Downloads/chapter3/rplots')
 ###
 #
 ###
-filename="~/Downloads/punctuation_0208.csv"
+filename="~/Downloads/abbreviations_0208.csv"
 ###
 #
 ###
@@ -65,56 +85,36 @@ filename="~/Downloads/punctuation_0208.csv"
 spread=read.csv(filename,   header=T, na.strings=c(""))
 #spread=read.csv(filename,  header=T)
 cat ("Input file has ", nrow(spread), "rows")
-spread=csvcleaner(spread)
+spread=surveytools:::csvcleaner(spread)
 cat ("Cleaned file has ", nrow(spread), "rows")
 print (summary(spread))
+print (nrow(controlspread[controlspread[['author_gender']]=="male",]))
+print (nrow(controlspread[controlspread[['author_gender']]=="female",]))
+print (nrow(controlspread[spread[['author_gender']]=="male",]))
+print (nrow(controlspread[spread[['author_gender']]=="female",]))
 
 
 #output and inspect
-barplot_by_column(spread, "punctuation", perceptionfeatures)
+surveytools:::barplot_by_column(spread, "abbreviations", perceptionfeatures)
+
+for (c in perceptionfeatures) {cat("\n++++\n"); surveytools:::chisquaretester2(controlspread, spread, c, output="text")}
+
+surveytools:::basicstatsmaker(controlspread, participantfeatures[c(1:(length(participantfeatures)-2))])
+surveytools:::basicstatsmaker(spread, participantfeatures[c(1:(length(participantfeatures)-2))])
 
 
 
-
-#' Chi square comparison, version 2 
-#'
-#' Run chi square test of independence on survey results
-#' Updated based on stats consulting
-#' @param
-#' control_stimulus dataframe with control group
-#' stimulus dataframe with treatment group to compare to control_stimulus
-#' column the column to be read from both spread sheets
-#' output "txt" for verbose text output, "csv" for csv output. Defaults to "csv"
-#' @returns
-#' prints out text with p values, expected vs observed, or csv representation of entire results
-chisquaretester2= function(control_stimulus, stimulus, column, output="csv")
+for (fili in files)
 {
-	
-	control_stimulus['stimulus']="control"
-	stimulus['stimulus']="treatment"
-	dataset=rbind(control_stimulus, stimulus)
-
-	chisquare= chisq.test(table(dataset[['stimulus']], dataset[[column]]))
-	if (output=="text")
-	{
-		print ("checking for NAs")
-		cat (length(control_stimulus[[column]])- length(na.omit(control_stimulus[[column]])), " NAs found in 'control_stimulus\n")
-		cat (length(stimulus[[column]])-length(na.omit(stimulus[[column]])), " NAs found in 'stimulus'")
-		cat ("\nInvestigating feature", column, "\n")
-		print (table(control_stimulus[[column]]))
-		print (table(stimulus[[column]]))
-	}
-	if (output=="csv")
-	{
-		write.csv(sapply(chisquare, unlist))
-	}
-	
-	cat ("\np value", chisquare$p.value, "\n")
-	cat ("expected: ", chisquare$expected, "\nobserved: ", chisquare$observed, "\n")
+	cat ("\n\n+++++\n\n", fili, "\n\n")
+	#Read in, clean
+	spread=read.csv(fili,   header=T, na.strings=c(""))
+	#spread=read.csv(filename,  header=T)
+	cat ("Input file has ", nrow(spread), "rows")
+	spread=surveytools:::csvcleaner(spread)
+	cat ("Cleaned file has ", nrow(spread), "rows")
+	surveytools:::basicstatsmaker(spread, perceptionfeatures)
 	
 }
 
-for (c in perceptionfeatures) {cat("\n++++\n"); chisquaretester2(controlspread, spread, c, output="text")}
-
-basicstatsmaker(controlspread, participantfeatures[c(1:(length(participantfeatures)-2))])
 
