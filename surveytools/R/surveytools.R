@@ -89,7 +89,8 @@ ordermachine= function(spread_sheet){
 	spread_sheet[['author_education']]=factor(spread_sheet[['author_education']], levels=c("Very educated", "Somewhat educated","Of average education", "Somewhat uneducated", "Very uneducated"))
 	spread_sheet[['author_attractive']]=factor(spread_sheet[['author_attractive']], levels=c("Very Attractive", "Attractive" , "Somewhat attractive", "Unattractive" , "Very Unattractive" )) 
  	spread_sheet[['would_you_reply']]=factor(spread_sheet[['would_you_reply']], levels=c("Yes, very likely", "Likely",  "Somewhat likely",  "Unlikely", "No, very unlikely"))
- 	spread_sheet[['participant_age']]= as.numeric(spread_sheet[['participant_age']])
+ 	spread_sheet[['participant_age']]= as.numeric(levels(spread_sheet[['participant_age']]))[spread_sheet[['participant_age']]]
+ 	spread_sheet[['cat']]=paste(substr(spread_sheet[['author_gender']],1,1), "4", substr(spread_sheet[['author_audience']], 1,1), sep="")
  	print ("Done with ordering")
  	return(spread_sheet)
 
@@ -159,6 +160,46 @@ chisquaretester= function(control_stimulus, stimulus, column, output="csv")
 }
 
 
+#' Chi square comparison, version 2 
+#'
+#' Run chi square test of independence on survey results
+#' Updated based on stats consulting
+#' @param
+#' control_stimulus dataframe with control group
+#' stimulus dataframe with treatment group to compare to control_stimulus
+#' column the column to be read from both spread sheets
+#' output "txt" for verbose text output, "csv" for csv output. Defaults to "csv"
+#' @returns
+#' prints out text with p values, expected vs observed, or csv representation of entire results
+chisquaretester2= function(control_stimulus, stimulus, column, output="csv")
+{
+	
+	control_stimulus['stimulus']="control"
+	stimulus['stimulus']="treatment"
+	dataset=rbind(control_stimulus, stimulus)
+
+	chisquare= chisq.test(table(dataset[['stimulus']], dataset[[column]]))
+	if (output=="text")
+	{
+		print ("checking for NAs")
+		cat (length(control_stimulus[[column]])- length(na.omit(control_stimulus[[column]])), " NAs found in 'control_stimulus\n")
+		cat (length(stimulus[[column]])-length(na.omit(stimulus[[column]])), " NAs found in 'stimulus'")
+		cat ("\nInvestigating feature", column, "\n")
+		print (table(control_stimulus[[column]]))
+		print (table(stimulus[[column]]))
+	}
+	if (output=="csv")
+	{
+		write.csv(sapply(chisquare, unlist))
+	}
+	
+	cat ("\np value", chisquare$p.value, "\n")
+	cat ("expected: ", chisquare$expected, "\nobserved: ", chisquare$observed, "\n")
+	
+}
+
+
+
 #' Print basic stats
 #' 
 #' Takes a spread_sheet, prints relevant stats for qualtrics survey
@@ -187,7 +228,6 @@ basicstatsmaker= function(spread_sheet, column_indexes)
 			"\nmin-max,", min(vec),"-", max(vec))
 			}
 	}
-	
 	
 }
 
