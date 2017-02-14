@@ -170,7 +170,7 @@ chisquaretester= function(control_stimulus, stimulus, column, output="csv")
 #' stimulus dataframe with treatment group to compare to control_stimulus
 #' column the column to be read from both spread sheets
 #' output "txt" for verbose text output, "csv" for csv output. Defaults to "csv"
-#' @returns
+#' @return
 #' prints out text with p values, expected vs observed, or csv representation of entire results
 chisquaretester2= function(control_stimulus, stimulus, column, output="csv")
 {
