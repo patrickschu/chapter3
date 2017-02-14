@@ -166,6 +166,10 @@ relativeplotter(controlspread, perceptionfeatures)
 controlmeans= sapply(perceptionfeatures, function(x) mean(as.numeric(controlspread[[x]]), na.rm=TRUE))
 controlmeans[author_orient]
 
+#out units
+controlsd= sapply(perceptionfeatures, function(x) sd(as.numeric(controlspread[[x]]), na.rm=TRUE))
+
+
 ##
 #EFFECT SIZES
 ##
