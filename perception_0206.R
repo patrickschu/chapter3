@@ -1,9 +1,12 @@
 ###
 #Computations with perception surveys on MechTurk
 ###
-install.packages(c("devtools", "roxygen2"), repos='http://cran.us.r-project.org')
+install.packages(c("devtools", "roxygen2", "pwr", "effsize", "likert"), repos='http://cran.us.r-project.org')
 library(devtools)
 library(roxygen2)
+library(pwr)
+library(effsize)
+
 setwd('~/Downloads/chapter3/surveytools')
 document()
 
@@ -101,7 +104,7 @@ print (nrow(controlspread[spread[['author_gender']]=="female",]))
 #output and inspect
 #surveytools:::barplot_by_column(spread, "capitals", perceptionfeatures)
 
-for (c in perceptionfeatures) {cat("\n++++\n"); surveytools:::chisquaretester2(controlspread, spread, c, output="text")}
+# for (c in perceptionfeatures) {cat("\n++++\n"); surveytools:::chisquaretester2(controlspread, spread, c, output="text")}
 
 # surveytools:::basicstatsmaker(controlspread, participantfeatures[c(1:(length(participantfeatures)-2))])
 # surveytools:::basicstatsmaker(spread, participantfeatures[c(1:(length(participantfeatures)-2))])
@@ -123,15 +126,50 @@ for (c in perceptionfeatures) {cat("\n++++\n"); surveytools:::chisquaretester2(c
 
 
 #check for differences in participant makeup
-for (fili in files)
+#for (fili in files)
+# {
+	# spread=read.csv(fili,   header=T, na.strings=c(""))
+	# spread=read.csv(filename,  header=T)
+	# cat ("Input file has ", nrow(spread), "rows")
+	# spread=surveytools:::csvcleaner(spread)
+	# cat ("Cleaned file has ", nrow(spread), "rows")
+	# for (c in participantfeaturesnumeric) {cat("\n++++\n"); c= surveytools:::chisquaretester2(controlspread, spread, c, output="text")}
+# }
+
+
+##
+#PLOTTING RELATIVE TO CONTROL
+##
+#plot the means of control
+
+relativeplotter= function(data_set, vector_of_columns)
+#plot the means for all stimuli to compare
 {
-	spread=read.csv(fili,   header=T, na.strings=c(""))
-	spread=read.csv(filename,  header=T)
-	cat ("Input file has ", nrow(spread), "rows")
-	spread=surveytools:::csvcleaner(spread)
-	cat ("Cleaned file has ", nrow(spread), "rows")
-	for (c in participantfeaturesnumeric) {cat("\n++++\n"); surveytools:::chisquaretester2(controlspread, spread, c, output="text")}
+	cat("my friend")
+	#iterate over stimuli
+	for (lev in levels(data_set[['stimulus']]))
+	{
+	for (col in vector_of_columns[!vector_of_columns == "author_attractive"])
+	{
+	print (col)
+	plot(mean(as.numeric(na.omit(data_set[data_set[['stimulus']]==lev,][[col]]))))	
+	}		
+	}
+
+	
 }
+controlspread['stimulus']= as.factor('control')
+print (summary(controlspread))
+relativeplotter(controlspread, perceptionfeatures)
+
+#these are our 0s
+controlmeans= sapply(perceptionfeatures, function(x) mean(as.numeric(controlspread[[x]]), na.rm=TRUE))
+controlmeans[author_orient]
+
+##
+#EFFECT SIZES
+##
+#http://www.ats.ucla.edu/stat/mult_pkg/faq/general/effect_size_power/effect_size_power.htm
 
 
 
