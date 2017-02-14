@@ -14,7 +14,7 @@ files=c(
 '~/Downloads/punctuation_0208.csv',
 '~/Downloads/abbreviations_0208.csv',
 '/Users/ps22344/Downloads/prosody_0211.csv',
-'/Users/ps22344/Downloads/capitals_0212.csv',
+'/Users/ps22344/Downloads/capitals_0212.csv'
 
 
 )
@@ -79,7 +79,7 @@ setwd('~/Downloads/chapter3/rplots')
 ###
 #
 ###
-filename='/Users/ps22344/Downloads/prosody_0211.csv'
+filename='/Users/ps22344/Downloads/capitals_0212.csv'
 ###
 #
 ###
@@ -99,26 +99,38 @@ print (nrow(controlspread[spread[['author_gender']]=="female",]))
 
 
 #output and inspect
-surveytools:::barplot_by_column(spread, "abbreviations", perceptionfeatures)
+#surveytools:::barplot_by_column(spread, "capitals", perceptionfeatures)
 
 for (c in perceptionfeatures) {cat("\n++++\n"); surveytools:::chisquaretester2(controlspread, spread, c, output="text")}
 
-surveytools:::basicstatsmaker(controlspread, participantfeatures[c(1:(length(participantfeatures)-2))])
-surveytools:::basicstatsmaker(spread, participantfeatures[c(1:(length(participantfeatures)-2))])
+# surveytools:::basicstatsmaker(controlspread, participantfeatures[c(1:(length(participantfeatures)-2))])
+# surveytools:::basicstatsmaker(spread, participantfeatures[c(1:(length(participantfeatures)-2))])
 
 
 
+# # for (fili in files)
+# {
+	# cat ("\n\n+++++\n\n", fili, "\n\n")
+	# #Read in, clean
+	# spread=read.csv(fili,   header=T, na.strings=c(""))
+	# #spread=read.csv(filename,  header=T)
+	# cat ("Input file has ", nrow(spread), "rows")
+	# spread=surveytools:::csvcleaner(spread)
+	# cat ("Cleaned file has ", nrow(spread), "rows")
+	# surveytools:::basicstatsmaker(spread, perceptionfeatures)
+	
+# }
+
+
+#check for differences in participant makeup
 for (fili in files)
 {
-	cat ("\n\n+++++\n\n", fili, "\n\n")
-	#Read in, clean
 	spread=read.csv(fili,   header=T, na.strings=c(""))
-	#spread=read.csv(filename,  header=T)
+	spread=read.csv(filename,  header=T)
 	cat ("Input file has ", nrow(spread), "rows")
 	spread=surveytools:::csvcleaner(spread)
 	cat ("Cleaned file has ", nrow(spread), "rows")
-	surveytools:::basicstatsmaker(spread, perceptionfeatures)
-	
+	for (c in participantfeaturesnumeric) {cat("\n++++\n"); surveytools:::chisquaretester2(controlspread, spread, c, output="text")}
 }
 
 
