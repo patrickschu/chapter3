@@ -99,7 +99,7 @@ print (nrow(controlspread[controlspread[['author_gender']]=="male",]))
 print (nrow(controlspread[controlspread[['author_gender']]=="female",]))
 print (nrow(controlspread[spread[['author_gender']]=="male",]))
 print (nrow(controlspread[spread[['author_gender']]=="female",]))
-
+spread['stimulus']=as.factor("treatment")
 
 #output and inspect
 #surveytools:::barplot_by_column(spread, "capitals", perceptionfeatures)
@@ -142,17 +142,30 @@ print (nrow(controlspread[spread[['author_gender']]=="female",]))
 ##
 #plot the means of control
 
-relativeplotter= function(data_set, vector_of_columns)
+relativeplotter= function(control_stimulus, data_set, vector_of_columns)
 #plot the means for all stimuli to compare
 {
 	cat("my friend")
+	#these are our 0s
+	controlmeans= sapply(vector_of_columns, function(x) mean(as.numeric(control_stimulus[[x]]), na.rm=TRUE))
+	#out units
+	controlsd= sapply(vector_of_columns, function(x) sd(as.numeric(control_stimulus[[x]]), na.rm=TRUE))
+	plot(1, xlim=c(1,length(vector_of_columns)), ylim=c(-1,1), type="n")
 	#iterate over stimuli
+	stimuluscounter=0
 	for (lev in levels(data_set[['stimulus']]))
 	{
-	for (col in vector_of_columns[!vector_of_columns == "author_attractive"])
+	stimuluscounter= stimuluscounter + 1	
+	colcounter= 1
+	for (column in vector_of_columns[!vector_of_columns == "author_attractive"])
 	{
-	print (col)
-	plot(mean(as.numeric(na.omit(data_set[data_set[['stimulus']]==lev,][[col]]))))	
+	print (column)
+	print (mean(as.numeric(na.omit(data_set[data_set[['stimulus']]==lev,][[column]]))))
+	cat ("controls", controlmeans[column], controlsd[column])
+	colmean= mean(as.numeric(na.omit(data_set[data_set[['stimulus']]==lev,][[column]])))
+	distance= (colmean - controlmeans[column]) / controlsd[column]
+	points(colcounter, distance, col=stimuluscounter)
+	colcounter= colcounter+1
 	}		
 	}
 
@@ -160,14 +173,9 @@ relativeplotter= function(data_set, vector_of_columns)
 }
 controlspread['stimulus']= as.factor('control')
 print (summary(controlspread))
-relativeplotter(controlspread, perceptionfeatures)
+relativeplotter(controlspread, spread, perceptionfeatures)
 
-#these are our 0s
-controlmeans= sapply(perceptionfeatures, function(x) mean(as.numeric(controlspread[[x]]), na.rm=TRUE))
-controlmeans[author_orient]
 
-#out units
-controlsd= sapply(perceptionfeatures, function(x) sd(as.numeric(controlspread[[x]]), na.rm=TRUE))
 
 
 ##
