@@ -157,7 +157,7 @@ chisquaretester= function(control_stimulus, stimulus, column, output="csv")
 	
 	cat ("\np value", chisquare$p.value, "\n")
 	cat ("expected: ", chisquare$expected, "\nobserved: ", chisquare$observed, "\n")
-	
+	return(chisquare)
 }
 
 
