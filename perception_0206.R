@@ -12,7 +12,11 @@ files=c(
 '~/Downloads/emoticons_2_0211.csv',
 '~/Downloads/emoticons_0207.csv',
 '~/Downloads/punctuation_0208.csv',
-'~/Downloads/abbreviations_0208.csv'
+'~/Downloads/abbreviations_0208.csv',
+'/Users/ps22344/Downloads/prosody_0211.csv',
+'/Users/ps22344/Downloads/capitals_0212.csv',
+
+
 )
 
 
@@ -75,7 +79,7 @@ setwd('~/Downloads/chapter3/rplots')
 ###
 #
 ###
-filename="~/Downloads/abbreviations_0208.csv"
+filename='/Users/ps22344/Downloads/prosody_0211.csv'
 ###
 #
 ###
@@ -116,5 +120,6 @@ for (fili in files)
 	surveytools:::basicstatsmaker(spread, perceptionfeatures)
 	
 }
+
 
 
