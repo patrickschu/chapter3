@@ -43,6 +43,39 @@ cols=c("start_date"
 
 
 
+
+#' Build your own spreadsheet
+#'
+#'Takes a vector of files and combines their content into a big spreadsheet.
+#'Uses read.csv to read, csvcleaner to clean, rbind to combine. 
+#'Add columns 'stimulus' that takes its value from the filename. 
+#'@param  
+#' vector_of_files a vector of file names to be read with read.csv()
+#'@keywords builder
+#'@return spread sheet containing all the data contained in vector_of_files
+#'@export
+#'@examples This could be an example
+spreadsheetbuilder= function(vector_of_files)
+{
+	outputspread=data.frame()
+	print (vector_of_files)
+	for (fili in vector_of_files)
+	{
+		name=strsplit(fili, "(_|/)")
+		cat(name[[1]])
+		tempspread=read.csv(fili,   header=T, na.strings=c(""))
+		cat ("\n+++\nInput file ", fili, "has", nrow(spread), "rows")
+		tempspread=surveytools:::csvcleaner(tempspread)
+		tempspread['stimulus']= as.factor(name[[1]][length(name[[1]])-1])
+		cat ("\nstimulus called", name[[1]][length(name[[1]])-1])
+		outputspread= rbind(outputspread, tempspread)
+	}
+	cat ("\nouputspread is", nrow(outputspread))
+	return(outputspread)
+}
+
+
+
 #' CSV cleaner
 #'
 #'Takes out all the stuff from MechTurk and Qualtrics we don't want
@@ -94,6 +127,7 @@ ordermachine= function(spread_sheet){
  	spread_sheet[['cat']]=paste(substr(spread_sheet[['author_gender']],1,1), "4", substr(spread_sheet[['author_audience']], 1,1), sep="")
  	spread_sheet[['cat']]= as.factor(gsub("f", "w", spread_sheet[['cat']]))
  	spread_sheet[['cat']]= factor(spread_sheet[['cat']], levels=c("m4m", "m4w", "w4w", "w4m"))
+ 	cat ('levels of gender', levels(spread_sheet[['cat']]))
  	print ("Done with ordering")
  	return(spread_sheet)
 
