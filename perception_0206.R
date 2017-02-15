@@ -21,16 +21,16 @@ files=c(
 
 perceptionfeatures=c(            
 "author_gender"                                     
-, "author_orient"                                   
-, "author_friendly"                                   
-, "author_audience"                       
+, "author_orient" 
+, "author_audience" 
+,"cat"                                   
+, "author_friendly"  
 , "author_sensitive"                                  
 , "author_ethnicity"                           
 , "author_assertive"                                
 , "author_attractive"                                
 , "author_education"                                                                    
 , "would_you_reply"  
-,"cat"                         
 )
 
 perceptionfeatures_text=c(
@@ -63,7 +63,7 @@ setwd('~/Downloads/chapter3')
 install('surveytools')
 library('surveytools')
 
-controlspread= read.csv("/Users/ps22344/Downloads/control_stimulus_adapted_0206.csv",  header=T, na.strings=c(""))
+controlspread= read.csv("~/Downloads/adapted_control_0206.csv",  header=T, na.strings=c(""))
 controlspread=surveytools:::csvcleaner(controlspread)
 
 print (summary(controlspread))
@@ -147,9 +147,16 @@ relativeplotter= function(control_stimulus, data_set, vector_of_columns, filenam
 	controlsd= sapply(vector_of_columns, function(x) sd(as.numeric(control_stimulus[[x]]), na.rm=TRUE))
 	#set up plot
 	#png(paste(filename,".png"), width=331.8, height=215.9, unit="mm", res=750)
-	plot(100, xlim=c(1,length(vector_of_columns)), ylim=c(-1,1), type="n", xaxt="n")
+	plot(100, 
+	xlim=c(1,length(vector_of_columns)), 
+	ylim=c(-1,1),
+	xlab= "Feature",
+	ylab= "Distance to control mean (standard deviations)",
+	type="n", 
+	xaxt="n")
 	abline(a=0, b=0)
 	axis(side=1, at=seq(1, length(vector_of_columns), 1), labels=vector_of_columns, cex.axis=0.8)
+
 	#iterate over stimuli
 	stimuluscounter=0
 	for (lev in levels(data_set[['stimulus']]))
