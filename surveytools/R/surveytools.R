@@ -90,9 +90,10 @@ ordermachine= function(spread_sheet){
 	spread_sheet[['author_attractive']]=factor(spread_sheet[['author_attractive']], levels=c("Very Attractive", "Attractive" , "Somewhat attractive", "Unattractive" , "Very Unattractive" )) 
  	spread_sheet[['would_you_reply']]=factor(spread_sheet[['would_you_reply']], levels=c("Yes, very likely", "Likely",  "Somewhat likely",  "Unlikely", "No, very unlikely"))
  	spread_sheet[['author_ethnicity']]=factor(spread_sheet[['author_ethnicity']], levels=c("Asian", "Black / African American", "Hispanic / Latino", "White"))
- 	spread_sheet[['participant_age']]= as.numeric(levels(spread_sheet[['participant_age']]))[spread_sheet[['participant_age']]]
+ 		spread_sheet[['participant_age']]= as.numeric(levels(spread_sheet[['participant_age']]))[spread_sheet[['participant_age']]]
  	spread_sheet[['cat']]=paste(substr(spread_sheet[['author_gender']],1,1), "4", substr(spread_sheet[['author_audience']], 1,1), sep="")
  	spread_sheet[['cat']]= as.factor(gsub("f", "w", spread_sheet[['cat']]))
+ 	spread_sheet[['cat']]= factor(spread_sheet[['cat']], levels=c("m4m", "m4w", "w4w", "w4m"))
  	print ("Done with ordering")
  	return(spread_sheet)
 
