@@ -11,18 +11,13 @@ setwd('~/Downloads/chapter3/surveytools')
 document()
 
 files=c(
-'~/Downloads/control_stimulus_adapted_0206.csv',
-'~/Downloads/emoticons_2_0211.csv',
-'~/Downloads/emoticons_0207.csv',
-'~/Downloads/punctuation_0208.csv',
-'~/Downloads/abbreviations_0208.csv',
+'/Users/ps22344/Downloads/clippings_0208.csv',
+#'/Users/ps22344/Downloads/adapted_control_0206.csv',
+'/Users/ps22344/Downloads/capitals_0212.csv',
 '/Users/ps22344/Downloads/prosody_0211.csv',
-'/Users/ps22344/Downloads/capitals_0212.csv'
-
-
+'/Users/ps22344/Downloads/punctuation_0208.csv',
+'/Users/ps22344/Downloads/second_emoticons_0211.csv'
 )
-
-
 
 perceptionfeatures=c(            
 "author_gender"                                     
@@ -100,7 +95,7 @@ print (nrow(controlspread[controlspread[['author_gender']]=="female",]))
 print (nrow(controlspread[spread[['author_gender']]=="male",]))
 print (nrow(controlspread[spread[['author_gender']]=="female",]))
 spread['stimulus']=as.factor("treatment")
-
+fulldataset=surveytools:::spreadsheetbuilder(files)
 #output and inspect
 #surveytools:::barplot_by_column(spread, "capitals", perceptionfeatures)
 
@@ -142,7 +137,7 @@ spread['stimulus']=as.factor("treatment")
 ##
 #plot the means of control
 
-relativeplotter= function(control_stimulus, data_set, vector_of_columns)
+relativeplotter= function(control_stimulus, data_set, vector_of_columns, filename)
 #plot the means for all stimuli to compare
 {
 	cat("running relativeplotter")
@@ -151,39 +146,40 @@ relativeplotter= function(control_stimulus, data_set, vector_of_columns)
 	#out units
 	controlsd= sapply(vector_of_columns, function(x) sd(as.numeric(control_stimulus[[x]]), na.rm=TRUE))
 	#set up plot
-	plot(100, xlim=c(1,length(vector_of_columns)), ylim=c(-2,2), type="n", xaxt="n")
+	#png(paste(filename,".png"), width=331.8, height=215.9, unit="mm", res=750)
+	plot(100, xlim=c(1,length(vector_of_columns)), ylim=c(-1,1), type="n", xaxt="n")
 	abline(a=0, b=0)
 	axis(side=1, at=seq(1, length(vector_of_columns), 1), labels=vector_of_columns, cex.axis=0.8)
 	#iterate over stimuli
 	stimuluscounter=0
 	for (lev in levels(data_set[['stimulus']]))
-	{
-	cat ("\n---\nStimulus is", lev)
-	stimuluscounter= stimuluscounter + 1	
-	colcounter= 1
-	for (column in vector_of_columns)
-	{
-	cat ("\n--working on", column, "mean:")
-	print (mean(as.numeric(na.omit(data_set[data_set[['stimulus']]==lev,][[column]]))))
-	cat ("controls", controlmeans[column], controlsd[column])
-	colmean= mean(as.numeric(na.omit(data_set[data_set[['stimulus']]==lev,][[column]])))
-	distance= (colmean - controlmeans[column]) / controlsd[column]
-	cat ("\ndistance:", distance)
-	points(colcounter, distance, col=stimuluscounter)
-	#text(colcounter, distance, col=stimuluscounter, labels= column)
-	colcounter= colcounter+1
-	}		
-	}
-
-	
+		{
+		cat ("\n---\nStimulus is", lev)
+		stimuluscounter= stimuluscounter + 1	
+		colcounter= 1
+		for (column in vector_of_columns)
+			{
+			cat ("\n--working on", column, "mean:")
+			print (mean(as.numeric(na.omit(data_set[data_set[['stimulus']]==lev,][[column]]))))
+			cat ("controls", controlmeans[column], controlsd[column])
+			colmean= mean(as.numeric(na.omit(data_set[data_set[['stimulus']]==lev,][[column]])))
+			distance= (colmean - controlmeans[column]) / controlsd[column]
+			cat ("\ndistance:", distance)
+			#points(colcounter, distance, col=stimuluscounter)
+			text(colcounter, distance, col=stimuluscounter, labels= lev, cex=0.7)
+			colcounter= colcounter+1
+			}
+		}
+	#dev.off()	
 }
+
+
 controlspread['stimulus']= as.factor('control')
 print (summary(controlspread))
-relativeplotter(controlspread, spread, perceptionfeatures[!perceptionfeatures == "author_attractive"])
+relativeplotter(controlspread, fulldataset, perceptionfeatures[!perceptionfeatures == "author_attractive"], "testplot")
 
 
-
-
+print (summary(t))
 ##
 #EFFECT SIZES
 ##
