@@ -145,26 +145,32 @@ spread['stimulus']=as.factor("treatment")
 relativeplotter= function(control_stimulus, data_set, vector_of_columns)
 #plot the means for all stimuli to compare
 {
-	cat("my friend")
+	cat("running relativeplotter")
 	#these are our 0s
 	controlmeans= sapply(vector_of_columns, function(x) mean(as.numeric(control_stimulus[[x]]), na.rm=TRUE))
 	#out units
 	controlsd= sapply(vector_of_columns, function(x) sd(as.numeric(control_stimulus[[x]]), na.rm=TRUE))
-	plot(1, xlim=c(1,length(vector_of_columns)), ylim=c(-1,1), type="n")
+	#set up plot
+	plot(100, xlim=c(1,length(vector_of_columns)), ylim=c(-2,2), type="n", xaxt="n")
+	abline(a=0, b=0)
+	axis(side=1, at=seq(1, length(vector_of_columns), 1), labels=vector_of_columns, cex.axis=0.8)
 	#iterate over stimuli
 	stimuluscounter=0
 	for (lev in levels(data_set[['stimulus']]))
 	{
+	cat ("\n---\nStimulus is", lev)
 	stimuluscounter= stimuluscounter + 1	
 	colcounter= 1
-	for (column in vector_of_columns[!vector_of_columns == "author_attractive"])
+	for (column in vector_of_columns)
 	{
-	print (column)
+	cat ("\n--working on", column, "mean:")
 	print (mean(as.numeric(na.omit(data_set[data_set[['stimulus']]==lev,][[column]]))))
 	cat ("controls", controlmeans[column], controlsd[column])
 	colmean= mean(as.numeric(na.omit(data_set[data_set[['stimulus']]==lev,][[column]])))
 	distance= (colmean - controlmeans[column]) / controlsd[column]
+	cat ("\ndistance:", distance)
 	points(colcounter, distance, col=stimuluscounter)
+	#text(colcounter, distance, col=stimuluscounter, labels= column)
 	colcounter= colcounter+1
 	}		
 	}
@@ -173,7 +179,7 @@ relativeplotter= function(control_stimulus, data_set, vector_of_columns)
 }
 controlspread['stimulus']= as.factor('control')
 print (summary(controlspread))
-relativeplotter(controlspread, spread, perceptionfeatures)
+relativeplotter(controlspread, spread, perceptionfeatures[!perceptionfeatures == "author_attractive"])
 
 
 
