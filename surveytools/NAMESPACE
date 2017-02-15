@@ -2,3 +2,4 @@
 
 export(barplot_by_column)
 export(csvcleaner)
+export(spreadsheetbuilder)
