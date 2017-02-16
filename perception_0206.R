@@ -6,9 +6,21 @@ library(devtools)
 library(roxygen2)
 library(pwr)
 library(effsize)
+library(grDevices)
 
 setwd('~/Downloads/chapter3/surveytools')
 document()
+
+plotnames=c(
+"Gender",
+"Addressee",
+"Friendly",
+"Sensitive",
+"Assertive",
+"Educated",
+"Likely to Reply?"
+)
+
 
 files=c(
 '/Users/ps22344/Downloads/clippings_0208.csv',
@@ -149,14 +161,13 @@ relativeplotter= function(control_stimulus, data_set, vector_of_columns, filenam
 	#png(paste(filename,".png"), width=331.8, height=215.9, unit="mm", res=750)
 	plot(100, 
 	xlim=c(1,length(vector_of_columns)), 
-	ylim=c(1,-1),
+	ylim=c(.75,-.75),
 	xlab= "Feature",
 	ylab= "Distance to control mean (standard deviations)",
 	type="n", 
 	xaxt="n")
-	text(4,0.75, "LESS", cex=1.7)
-	text(4,-0.75, "MORE", cex=1.7)
 	abline(a=0, b=0)
+	abline(v=2.5, lty=3)
 	axis(side=1, at=seq(1, length(vector_of_columns), 1), labels=vector_of_columns, cex.axis=0.8)
 
 	#iterate over stimuli
@@ -179,13 +190,37 @@ relativeplotter= function(control_stimulus, data_set, vector_of_columns, filenam
 			colcounter= colcounter+1
 			}
 		}
+	
+	#add transparent text for orientation
+	text(1.5,0.5, 
+	"female", 	
+	cex=4, 	
+	col=rgb(col2rgb("blue")['red',], col2rgb("blue")['green',], col2rgb("blue")['blue',], alpha=100, maxColorValue=255))
+	
+	
+	text(1.5,-0.5, 
+	"male", 	
+	cex=4, 	
+	col=rgb(col2rgb("blue")['red',], col2rgb("blue")['green',], col2rgb("blue")['blue',], alpha=100, maxColorValue=255))
+	
+	
+	text(7/2+2.5,0.5, 
+	"less", 	
+	cex=4, 	
+	col=rgb(col2rgb("blue")['red',], col2rgb("blue")['green',], col2rgb("blue")['blue',], alpha=100, maxColorValue=255))
+	
+	text(7/2+2.5,-0.5, 
+	"more", 
+	cex=4, 	
+	col=rgb(col2rgb("blue")['red',], col2rgb("blue")['green',], col2rgb("blue")['blue',], alpha=100, maxColorValue=255))
+	
 	#dev.off()	
 }
 
 
 controlspread['stimulus']= as.factor('control')
 print (summary(controlspread))
-relativeplotter(controlspread, fullspread, perceptionfeatures[!perceptionfeatures == "author_attractive"], "testplot")
+relativeplotter(controlspread, fullspread, perceptionfeatures[!perceptionfeatures %in% c("author_attractive", "author_orient")], "testplot")
 
 for (fili in files){
 
