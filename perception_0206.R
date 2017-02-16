@@ -192,14 +192,14 @@ relativeplotter= function(control_stimulus, data_set, vector_of_columns, filenam
 		}
 	
 	#add transparent text for orientation
-	text(1.5,0.5, 
-	"female", 	
+	text(1.5,-0.5, 
+	"f", 	
 	cex=4, 	
 	col=rgb(col2rgb("blue")['red',], col2rgb("blue")['green',], col2rgb("blue")['blue',], alpha=100, maxColorValue=255))
 	
 	
-	text(1.5,-0.5, 
-	"male", 	
+	text(1.5,0.5, 
+	"m", 	
 	cex=4, 	
 	col=rgb(col2rgb("blue")['red',], col2rgb("blue")['green',], col2rgb("blue")['blue',], alpha=100, maxColorValue=255))
 	
