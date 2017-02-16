@@ -1,7 +1,7 @@
 ###
 #Computations with perception surveys on MechTurk
 ###
-install.packages(c("devtools", "roxygen2", "pwr", "effsize", "likert"), repos='http://cran.us.r-project.org')
+#install.packages(c("devtools", "roxygen2", "pwr", "effsize", "likert"), repos='http://cran.us.r-project.org')
 library(devtools)
 library(roxygen2)
 library(pwr)
@@ -12,7 +12,7 @@ document()
 
 files=c(
 '/Users/ps22344/Downloads/clippings_0208.csv',
-#'/Users/ps22344/Downloads/adapted_control_0206.csv',
+'/Users/ps22344/Downloads/adapted_control_0206.csv',
 '/Users/ps22344/Downloads/capitals_0212.csv',
 '/Users/ps22344/Downloads/prosody_0211.csv',
 '/Users/ps22344/Downloads/punctuation_0208.csv',
@@ -95,7 +95,7 @@ print (nrow(controlspread[controlspread[['author_gender']]=="female",]))
 print (nrow(controlspread[spread[['author_gender']]=="male",]))
 print (nrow(controlspread[spread[['author_gender']]=="female",]))
 spread['stimulus']=as.factor("treatment")
-fulldataset=surveytools:::spreadsheetbuilder(files)
+fullspread=surveytools:::spreadsheetbuilder(files)
 #output and inspect
 #surveytools:::barplot_by_column(spread, "capitals", perceptionfeatures)
 
@@ -146,7 +146,7 @@ relativeplotter= function(control_stimulus, data_set, vector_of_columns, filenam
 	#out units
 	controlsd= sapply(vector_of_columns, function(x) sd(as.numeric(control_stimulus[[x]]), na.rm=TRUE))
 	#set up plot
-	#png(paste(filename,".png"), width=331.8, height=215.9, unit="mm", res=750)
+	png(paste(filename,".png"), width=331.8, height=215.9, unit="mm", res=750)
 	plot(100, 
 	xlim=c(1,length(vector_of_columns)), 
 	ylim=c(-1,1),
@@ -154,6 +154,8 @@ relativeplotter= function(control_stimulus, data_set, vector_of_columns, filenam
 	ylab= "Distance to control mean (standard deviations)",
 	type="n", 
 	xaxt="n")
+	text(4,0.75, "LESS", cex=1.7)
+	text(4,-0.75, "MORE", cex=1.7)
 	abline(a=0, b=0)
 	axis(side=1, at=seq(1, length(vector_of_columns), 1), labels=vector_of_columns, cex.axis=0.8)
 
@@ -177,16 +179,20 @@ relativeplotter= function(control_stimulus, data_set, vector_of_columns, filenam
 			colcounter= colcounter+1
 			}
 		}
-	#dev.off()	
+	dev.off()	
 }
 
 
 controlspread['stimulus']= as.factor('control')
 print (summary(controlspread))
-relativeplotter(controlspread, fulldataset, perceptionfeatures[!perceptionfeatures == "author_attractive"], "testplot")
+relativeplotter(controlspread, fullspread, perceptionfeatures[!perceptionfeatures == "author_attractive"], "testplot")
 
+for (fili in files){
 
 print (summary(t))
+	
+}
+
 ##
 #EFFECT SIZES
 ##
