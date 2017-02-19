@@ -24,7 +24,7 @@ plotnames=c(
 
 files=c(
 '/Users/ps22344/Downloads/clippings_0208.csv',
-'/Users/ps22344/Downloads/adapted_control_0206.csv',
+#'/Users/ps22344/Downloads/adapted_control_0206.csv',
 '/Users/ps22344/Downloads/capitals_0212.csv',
 '/Users/ps22344/Downloads/prosody_0211.csv',
 '/Users/ps22344/Downloads/punctuation_0208.csv',
@@ -79,7 +79,7 @@ library('surveytools')
 controlspread= read.csv("~/Downloads/adapted_control_0206.csv",  header=T, na.strings=c(""))
 controlspread=surveytools:::csvcleaner(controlspread)
 
-print (summary(controlspread))
+#print (summary(controlspread))
 
 
 
@@ -90,7 +90,7 @@ setwd('~/Downloads/chapter3/rplots')
 ###
 #
 ###
-filename='/Users/ps22344/Downloads/single_letter_0218.csv'
+filename='/Users/ps22344/Downloads/prosody_0211.csv'
 ###
 #
 ###
@@ -112,10 +112,10 @@ fullspread=surveytools:::spreadsheetbuilder(files)
 #output and inspect
 #surveytools:::barplot_by_column(spread, "capitals", perceptionfeatures)
 
-for (c in perceptionfeatures) {cat("\n++++\n"); surveytools:::chisquaretester2(controlspread, spread, c, output="text")}
+for (c in perceptionfeatures) {cat("\n++++\n"); surveytools:::chisquaretester2(controlspread, spread, c, output="csv")}
 
 # surveytools:::basicstatsmaker(controlspread, participantfeatures[c(1:(length(participantfeatures)-2))])
-# surveytools:::basicstatsmaker(spread, participantfeatures[c(1:(length(participantfeatures)-2))])
+surveytools:::basicstatsmaker(spread, perceptionfeatures)
 
 
 
@@ -159,17 +159,17 @@ relativeplotter= function(control_stimulus, data_set, vector_of_columns, filenam
 	#out units
 	controlsd= sapply(vector_of_columns, function(x) sd(as.numeric(control_stimulus[[x]]), na.rm=TRUE))
 	#set up plot
-	#png(paste(filename,".png"), width=331.8, height=215.9, unit="mm", res=750)
+	png(paste(filename,".png"), width=331.8, height=215.9, unit="mm", res=750)
 	plot(100, 
 	xlim=c(1,length(vector_of_columns)), 
 	ylim=c(.75,-.75),
-	xlab= "Feature",
+	xlab= "Characteristic",
 	ylab= "Distance to control mean (standard deviations)",
 	type="n", 
 	xaxt="n")
 	abline(a=0, b=0)
 	abline(v=2.5, lty=3)
-	axis(side=1, at=seq(1, length(vector_of_columns), 1), labels=vector_of_columns, cex.axis=0.8)
+	axis(side=1, at=seq(1, length(vector_of_columns), 1), labels=plotnames, cex.axis=0.8)
 
 	#iterate over stimuli
 	stimuluscounter=0
@@ -205,23 +205,23 @@ relativeplotter= function(control_stimulus, data_set, vector_of_columns, filenam
 	col=rgb(col2rgb("blue")['red',], col2rgb("blue")['green',], col2rgb("blue")['blue',], alpha=100, maxColorValue=255))
 	
 	
-	text(6/2+2.5,0.5, 
+	text(5/2+2.5,0.5, 
 	"less", 	
 	cex=4, 	
 	col=rgb(col2rgb("blue")['red',], col2rgb("blue")['green',], col2rgb("blue")['blue',], alpha=100, maxColorValue=255))
 	
-	text(6/2+2.5,-0.5, 
+	text(5/2+2.5,-0.5, 
 	"more", 
 	cex=4, 	
 	col=rgb(col2rgb("blue")['red',], col2rgb("blue")['green',], col2rgb("blue")['blue',], alpha=100, maxColorValue=255))
 	
-	#dev.off()	
+	dev.off()	
 }
 
 
 controlspread['stimulus']= as.factor('control')
 print (summary(controlspread))
-relativeplotter(controlspread, fullspread, perceptionfeatures[!perceptionfeatures %in% c("author_attractive", "author_orient", "cat")], "testplot")
+relativeplotter(controlspread, fullspread, perceptionfeatures[!perceptionfeatures %in% c("author_attractive", "author_orient", "cat", "author_ethnicity")], "testplot")
 
 
 
@@ -281,12 +281,12 @@ relativeplotter_attractive= function(control_stimulus, data_set, vector_of_colum
 	col=rgb(col2rgb("blue")['red',], col2rgb("blue")['green',], col2rgb("blue")['blue',], alpha=100, maxColorValue=255))
 	
 	
-	text(7/2+2.5,0.5, 
+	text(2+2.5,0.5, 
 	"less", 	
 	cex=4, 	
 	col=rgb(col2rgb("blue")['red',], col2rgb("blue")['green',], col2rgb("blue")['blue',], alpha=100, maxColorValue=255))
 	
-	text(7/2+2.5,-0.5, 
+	text(5/2+2.5,-0.5, 
 	"more", 
 	cex=4, 	
 	col=rgb(col2rgb("blue")['red',], col2rgb("blue")['green',], col2rgb("blue")['blue',], alpha=100, maxColorValue=255))
@@ -294,7 +294,7 @@ relativeplotter_attractive= function(control_stimulus, data_set, vector_of_colum
 	#dev.off()	
 }
 
-relativeplotter(spread, fullspread, c("author_attractive"), "atttractiveplot")
+#relativeplotter(spread, fullspread, c("author_attractive"), "atttractiveplot")
 
 
 
