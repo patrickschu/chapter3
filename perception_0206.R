@@ -1,7 +1,7 @@
 ###
 #Computations with perception surveys on MechTurk
 ###
-install.packages(c("devtools", "roxygen2", "pwr", "effsize", "likert"), repos='http://cran.us.r-project.org')
+#install.packages(c("devtools", "roxygen2", "pwr", "effsize", "likert"), repos='http://cran.us.r-project.org')
 library(devtools)
 library(roxygen2)
 library(pwr)
@@ -14,10 +14,10 @@ document()
 plotnames=c(
 "Gender",
 "Addressee",
-"Friendly",
-"Sensitive",
 "Assertive",
 "Educated",
+"Friendly",
+"Sensitive",
 "Likely to Reply?"
 )
 
@@ -28,20 +28,21 @@ files=c(
 '/Users/ps22344/Downloads/capitals_0212.csv',
 '/Users/ps22344/Downloads/prosody_0211.csv',
 '/Users/ps22344/Downloads/punctuation_0208.csv',
-'/Users/ps22344/Downloads/second_emoticons_0211.csv'
+'/Users/ps22344/Downloads/second_emoticons_0211.csv',
+'/Users/ps22344/Downloads/single_letter_0218.csv'
 )
 
 perceptionfeatures=c(            
 "author_gender"                                     
 , "author_orient" 
 , "author_audience" 
-,"cat"                                   
+,"cat"  
+, "author_assertive"  
+, "author_education"                                
 , "author_friendly"  
 , "author_sensitive"                                  
 , "author_ethnicity"                           
-, "author_assertive"                                
 , "author_attractive"                                
-, "author_education"                                                                    
 , "would_you_reply"  
 )
 
@@ -89,7 +90,7 @@ setwd('~/Downloads/chapter3/rplots')
 ###
 #
 ###
-filename='/Users/ps22344/Downloads/second_emoticons_0211.csv'
+filename='/Users/ps22344/Downloads/single_letter_0218.csv'
 ###
 #
 ###
@@ -111,7 +112,7 @@ fullspread=surveytools:::spreadsheetbuilder(files)
 #output and inspect
 #surveytools:::barplot_by_column(spread, "capitals", perceptionfeatures)
 
-# for (c in perceptionfeatures) {cat("\n++++\n"); surveytools:::chisquaretester2(controlspread, spread, c, output="text")}
+for (c in perceptionfeatures) {cat("\n++++\n"); surveytools:::chisquaretester2(controlspread, spread, c, output="text")}
 
 # surveytools:::basicstatsmaker(controlspread, participantfeatures[c(1:(length(participantfeatures)-2))])
 # surveytools:::basicstatsmaker(spread, participantfeatures[c(1:(length(participantfeatures)-2))])
@@ -158,7 +159,7 @@ relativeplotter= function(control_stimulus, data_set, vector_of_columns, filenam
 	#out units
 	controlsd= sapply(vector_of_columns, function(x) sd(as.numeric(control_stimulus[[x]]), na.rm=TRUE))
 	#set up plot
-	png(paste(filename,".png"), width=331.8, height=215.9, unit="mm", res=750)
+	#png(paste(filename,".png"), width=331.8, height=215.9, unit="mm", res=750)
 	plot(100, 
 	xlim=c(1,length(vector_of_columns)), 
 	ylim=c(.75,-.75),
@@ -204,23 +205,23 @@ relativeplotter= function(control_stimulus, data_set, vector_of_columns, filenam
 	col=rgb(col2rgb("blue")['red',], col2rgb("blue")['green',], col2rgb("blue")['blue',], alpha=100, maxColorValue=255))
 	
 	
-	text(7/2+2.5,0.5, 
+	text(6/2+2.5,0.5, 
 	"less", 	
 	cex=4, 	
 	col=rgb(col2rgb("blue")['red',], col2rgb("blue")['green',], col2rgb("blue")['blue',], alpha=100, maxColorValue=255))
 	
-	text(7/2+2.5,-0.5, 
+	text(6/2+2.5,-0.5, 
 	"more", 
 	cex=4, 	
 	col=rgb(col2rgb("blue")['red',], col2rgb("blue")['green',], col2rgb("blue")['blue',], alpha=100, maxColorValue=255))
 	
-	dev.off()	
+	#dev.off()	
 }
 
 
 controlspread['stimulus']= as.factor('control')
 print (summary(controlspread))
-relativeplotter(controlspread, fullspread, perceptionfeatures[!perceptionfeatures %in% c("author_attractive", "author_orient")], "testplot")
+relativeplotter(controlspread, fullspread, perceptionfeatures[!perceptionfeatures %in% c("author_attractive", "author_orient", "cat")], "testplot")
 
 
 
