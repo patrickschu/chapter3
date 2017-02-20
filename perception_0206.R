@@ -22,15 +22,18 @@ plotnames=c(
 )
 
 
+
 files=c(
-'/Users/ps22344/Downloads/clippings_0208.csv',
-#'/Users/ps22344/Downloads/adapted_control_0206.csv',
-'/Users/ps22344/Downloads/capitals_0212.csv',
-'/Users/ps22344/Downloads/prosody_0211.csv',
-'/Users/ps22344/Downloads/punctuation_0208.csv',
-'/Users/ps22344/Downloads/second_emoticons_0211.csv',
-'/Users/ps22344/Downloads/single_letter_0218.csv'
+#'/Users/ps22344/Downloads/adapted_control_0206.csv', 
+'/Users/ps22344/Downloads/Capitals_0212.csv', 
+'/Users/ps22344/Downloads/Clippings_0208.csv', 
+'/Users/ps22344/Downloads/Prosody_0211.csv', 
+'/Users/ps22344/Downloads/Punctuation_0208.csv', 
+'/Users/ps22344/Downloads/second_Emoticons_0211.csv', 
+'/Users/ps22344/Downloads/Single\ letter_0218.csv'
 )
+
+
 
 perceptionfeatures=c(            
 "author_gender"                                     
@@ -90,7 +93,7 @@ setwd('~/Downloads/chapter3/rplots')
 ###
 #
 ###
-filename='/Users/ps22344/Downloads/prosody_0211.csv'
+filename='/Users/ps22344/Downloads/Single\ letter_0218.csv'
 ###
 #
 ###
