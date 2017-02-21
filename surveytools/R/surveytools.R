@@ -62,7 +62,6 @@ spreadsheetbuilder= function(vector_of_files)
 	for (fili in vector_of_files)
 	{
 		name=strsplit(fili, "(_|/)")
-		cat(name[[1]])
 		tempspread=read.csv(fili,   header=T, na.strings=c(""))
 		cat ("\n+++\nInput file ", fili, "has", nrow(tempspread), "rows")
 		tempspread=surveytools:::csvcleaner(tempspread)
@@ -70,7 +69,7 @@ spreadsheetbuilder= function(vector_of_files)
 		cat ("\nstimulus called", name[[1]][length(name[[1]])-1])
 		outputspread= rbind(outputspread, tempspread)
 	}
-	cat ("\nouputspread is", nrow(outputspread))
+	cat ("\nOuputspread from spreadsheetbuilder is", nrow(outputspread), "lines")
 	return(outputspread)
 }
 
