@@ -24,7 +24,7 @@ plotnames=c(
 
 
 files=c(
-#'/Users/ps22344/Downloads/adapted_control_0206.csv', 
+'/Users/ps22344/Downloads/adapted_control_0206.csv', 
 '/Users/ps22344/Downloads/Capitals_0212.csv', 
 '/Users/ps22344/Downloads/Clippings_0208.csv', 
 '/Users/ps22344/Downloads/Prosody_0211.csv', 
