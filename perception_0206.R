@@ -162,7 +162,7 @@ relativeplotter= function(control_stimulus, data_set, vector_of_columns, filenam
 	#out units
 	controlsd= sapply(vector_of_columns, function(x) sd(as.numeric(control_stimulus[[x]]), na.rm=TRUE))
 	#set up plot
-	png(paste(filename,".png"), width=331.8, height=215.9, unit="mm", res=750)
+	#png(paste(filename,".png"), width=331.8, height=215.9, unit="mm", res=750)
 	plot(100, 
 	xlim=c(1,length(vector_of_columns)), 
 	ylim=c(.75,-.75),
@@ -218,7 +218,7 @@ relativeplotter= function(control_stimulus, data_set, vector_of_columns, filenam
 	cex=4, 	
 	col=rgb(col2rgb("blue")['red',], col2rgb("blue")['green',], col2rgb("blue")['blue',], alpha=100, maxColorValue=255))
 	
-	dev.off()	
+	#dev.off()	
 }
 
 
