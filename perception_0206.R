@@ -234,5 +234,49 @@ relativeplotter_attractive= function(control_stimulus, data_set, vector_of_colum
 ##
 #http://www.ats.ucla.edu/stat/mult_pkg/faq/general/effect_size_power/effect_size_power.htm
 
+#BARPLOTTING
+barspread=surveytools:::spreadsheetbuilder(c('/Users/ps22344/Downloads/Clippings_0208.csv', '/Users/ps22344/Downloads/Prosody_0211.csv', '/Users/ps22344/Downloads/adapted_control_0206.csv'))
+###
+#
+###
+
+#gender by stimulus
+percentages=aggregate(barspread[['author_gender']], list(barspread[['stimulus']]), function(x) table(x)/length(x))
+
+g=t(percentages[['x']])
+
+colnames(g)= c('Clippings', 'Prosody', 'Control')
+g= g[,c('Control', 'Clippings', 'Prosody')]
+
+par(mar=c(5.1,  4.1,  4.1, 12.0))
+barplot(g, 
+main= "Author gender by stimulus",
+col=c("black", "white"),
+ylab= "Proportion",
+legend.text= TRUE,
+args.legend= list(x=5,y=.9)
+)
 
 
+
+#education by stimulus
+# barspread=surveytools:::spreadsheetbuilder(c('/Users/ps22344/Downloads/Clippings_0208.csv', '/Users/ps22344/Downloads/Prosody_0211.csv', '/Users/ps22344/Downloads/adapted_control_0206.csv'))
+
+
+# levels(barspread$author_education) = list("Below average"= c("Somewhat uneducated",  "Very uneducated"),  "Average"= "Of average education", "Above average"=c("Very educated", "Somewhat educated"))
+# percentages=aggregate(barspread[['author_education']], list(barspread[['stimulus']]), function(x) table(x)/length(x))
+# f=t(percentages[['x']])
+# colnames(f)= c('Clippings', 'Prosody', 'Control')
+# f= f[,c('Control', 'Clippings', 'Prosody')]
+
+# #$mar
+# #[1]  5.1  4.1  4.1 12.0
+# par(mar=c(5.1,  4.1,  4.1, 12.0))
+# barplot(f,
+# main= "Author education by stimulus",
+# col= c(1,1,0),
+# density= c(200,50,100),
+# ylab= "Proportion",
+# legend.text= TRUE,
+# args.legend= list(x=5.75,y=.9)
+# )
