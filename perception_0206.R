@@ -82,9 +82,6 @@ library('surveytools')
 controlspread= read.csv("~/Downloads/adapted_control_0206.csv",  header=T, na.strings=c(""))
 controlspread=surveytools:::csvcleaner(controlspread)
 
-#print (summary(controlspread))
-
-
 
 setwd('~/Downloads/chapter3/rplots')
 
@@ -105,7 +102,6 @@ spread=read.csv(filename,   header=T, na.strings=c(""))
 cat ("Input file has ", nrow(spread), "rows")
 spread=surveytools:::csvcleaner(spread)
 cat ("Cleaned file has ", nrow(spread), "rows")
-print (summary(spread))
 print (nrow(controlspread[controlspread[['author_gender']]=="male",]))
 print (nrow(controlspread[controlspread[['author_gender']]=="female",]))
 print (nrow(controlspread[spread[['author_gender']]=="male",]))
@@ -115,7 +111,20 @@ fullspread=surveytools:::spreadsheetbuilder(files)
 #output and inspect
 #surveytools:::barplot_by_column(spread, "capitals", perceptionfeatures)
 
-for (c in participantfeaturesnumeric) {cat("\n++++\n"); surveytools:::chisquaretester2(controlspread, spread, c, output="text")}
+sink("chis.txt")
+for (fili in files){
+	cat("\n---\nstarting", fili)
+	spread=read.csv(fili ,   header=T, na.strings=c(""))
+	#spread=read.csv(filename,  header=T)
+	cat ("Input file has ", nrow(spread), "rows")
+	spread=surveytools:::csvcleaner(spread)
+	for (c in perceptionfeatures) {
+	cat("\n++++\n"); surveytools:::chisquaretester2(controlspread, spread, c, output="text")
+	
+	}
+	cat("\n---\nending", fili)
+}
+sink()
 
 # surveytools:::basicstatsmaker(controlspread, participantfeatures[c(1:(length(participantfeatures)-2))])
 surveytools:::basicstatsmaker(spread, perceptionfeatures)
