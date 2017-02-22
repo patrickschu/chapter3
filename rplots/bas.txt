@@ -1,0 +1,554 @@
+
+---
+starting /Users/ps22344/Downloads/adapted_control_0206.csvInput file has  209 rows[1] 208
+[1] 208
+[1] 208
+[1] 201
+[1] "Running the ordermachine"
+levels of gender m4m m4w w4w w4m[1] "Done with ordering"
+
+++++
+Total number of responses in spread_sheet 201 
+
+
++++ author_gender ,  0 NAs in here
+ female , 81 , 0.4029851
+ male , 120 , 0.5970149
+
++++ author_orient ,  0 NAs in here
+ heterosexual , 185 , 0.920398
+ homosexual , 16 , 0.07960199
+
++++ author_audience ,  0 NAs in here
+ woman , 121 , 0.60199
+ man , 80 , 0.39801
+
++++ cat ,  0 NAs in here
+ m4m , 46 , 0.2288557
+ m4w , 74 , 0.3681592
+ w4w , 47 , 0.2338308
+ w4m , 34 , 0.1691542
+
++++ author_assertive ,  0 NAs in here
+ Very assertive , 18 , 0.08955224
+ Assertive , 70 , 0.3482587
+ Somewhat assertive , 83 , 0.4129353
+ Somewhat timid , 29 , 0.1442786
+ Timid , 1 , 0.004975124
+
++++ author_education ,  0 NAs in here
+ Very educated , 22 , 0.1094527
+ Somewhat educated , 60 , 0.2985075
+ Of average education , 105 , 0.5223881
+ Somewhat uneducated , 12 , 0.05970149
+ Very uneducated , 2 , 0.009950249
+
++++ author_friendly ,  0 NAs in here
+ Very friendly , 51 , 0.2537313
+ Friendly , 118 , 0.5870647
+ Somewhat friendly , 29 , 0.1442786
+ Somewhat unfriendly , 1 , 0.004975124
+ Very unfriendly , 2 , 0.009950249
+
++++ author_sensitive ,  0 NAs in here
+ Very sensitive , 2 , 0.009950249
+ Sensitive , 53 , 0.2636816
+ Somewhat sensitive , 124 , 0.6169154
+ Insensitive , 19 , 0.09452736
+ Very insensitive , 3 , 0.01492537
+
++++ author_ethnicity ,  1 NAs in here
+ Asian , 10 , 0.04975124
+ Black / African American , 5 , 0.02487562
+ Hispanic / Latino , 8 , 0.039801
+ White , 181 , 0.9004975
+
++++ author_attractive ,  201 NAs in here
+ Very Attractive , 201 , 1
+ Attractive , 201 , 1
+ Somewhat attractive , 201 , 1
+ Unattractive , 201 , 1
+ Very Unattractive , 201 , 1
+
++++ would_you_reply ,  0 NAs in here
+ Yes, very likely , 8 , 0.039801
+ Likely , 28 , 0.1393035
+ Somewhat likely , 36 , 0.1791045
+ Unlikely , 64 , 0.318408
+ No, very unlikely , 65 , 0.3233831
+---
+ending /Users/ps22344/Downloads/adapted_control_0206.csv
+---
+starting /Users/ps22344/Downloads/Capitals_0212.csvInput file has  103 rows[1] 103
+[1] 103
+[1] 103
+[1] 100
+[1] "Running the ordermachine"
+levels of gender m4m m4w w4w w4m[1] "Done with ordering"
+
+++++
+Total number of responses in spread_sheet 100 
+
+
++++ author_gender ,  0 NAs in here
+ female , 42 , 0.42
+ male , 58 , 0.58
+
++++ author_orient ,  0 NAs in here
+ heterosexual , 92 , 0.92
+ homosexual , 8 , 0.08
+
++++ author_audience ,  0 NAs in here
+ woman , 55 , 0.55
+ man , 45 , 0.45
+
++++ cat ,  0 NAs in here
+ m4m , 26 , 0.26
+ m4w , 32 , 0.32
+ w4w , 23 , 0.23
+ w4m , 19 , 0.19
+
++++ author_assertive ,  0 NAs in here
+ Very assertive , 8 , 0.08
+ Assertive , 33 , 0.33
+ Somewhat assertive , 45 , 0.45
+ Somewhat timid , 13 , 0.13
+ Timid , 1 , 0.01
+
++++ author_education ,  0 NAs in here
+ Very educated , 3 , 0.03
+ Somewhat educated , 29 , 0.29
+ Of average education , 60 , 0.6
+ Somewhat uneducated , 7 , 0.07
+ Very uneducated , 1 , 0.01
+
++++ author_friendly ,  0 NAs in here
+ Very friendly , 25 , 0.25
+ Friendly , 61 , 0.61
+ Somewhat friendly , 13 , 0.13
+ Somewhat unfriendly , 1 , 0.01
+ Very unfriendly , 0 , 0
+
++++ author_sensitive ,  0 NAs in here
+ Very sensitive , 5 , 0.05
+ Sensitive , 18 , 0.18
+ Somewhat sensitive , 67 , 0.67
+ Insensitive , 10 , 0.1
+ Very insensitive , 0 , 0
+
++++ author_ethnicity ,  0 NAs in here
+ Asian , 3 , 0.03
+ Black / African American , 2 , 0.02
+ Hispanic / Latino , 4 , 0.04
+ White , 91 , 0.91
+
++++ author_attractive ,  4 NAs in here
+ Very Attractive , 4 , 0.04
+ Attractive , 21 , 0.21
+ Somewhat attractive , 62 , 0.62
+ Unattractive , 25 , 0.25
+ Very Unattractive , 4 , 0.04
+
++++ would_you_reply ,  0 NAs in here
+ Yes, very likely , 1 , 0.01
+ Likely , 1 , 0.01
+ Somewhat likely , 19 , 0.19
+ Unlikely , 40 , 0.4
+ No, very unlikely , 39 , 0.39
+---
+ending /Users/ps22344/Downloads/Capitals_0212.csv
+---
+starting /Users/ps22344/Downloads/Clippings_0208.csvInput file has  101 rows[1] 101
+[1] 101
+[1] 101
+[1] 98
+[1] "Running the ordermachine"
+levels of gender m4m m4w w4w w4m[1] "Done with ordering"
+
+++++
+Total number of responses in spread_sheet 98 
+
+
++++ author_gender ,  0 NAs in here
+ female , 52 , 0.5306122
+ male , 46 , 0.4693878
+
++++ author_orient ,  1 NAs in here
+ heterosexual , 95 , 0.9693878
+ homosexual , 4 , 0.04081633
+
++++ author_audience ,  1 NAs in here
+ woman , 64 , 0.6530612
+ man , 35 , 0.3571429
+
++++ cat ,  1 NAs in here
+ m4m , 15 , 0.1530612
+ m4w , 33 , 0.3367347
+ w4w , 32 , 0.3265306
+ w4m , 21 , 0.2142857
+
++++ author_assertive ,  1 NAs in here
+ Very assertive , 4 , 0.04081633
+ Assertive , 31 , 0.3163265
+ Somewhat assertive , 47 , 0.4795918
+ Somewhat timid , 19 , 0.1938776
+ Timid , 1 , 0.01020408
+
++++ author_education ,  0 NAs in here
+ Very educated , 1 , 0.01020408
+ Somewhat educated , 29 , 0.2959184
+ Of average education , 49 , 0.5
+ Somewhat uneducated , 19 , 0.1938776
+ Very uneducated , 0 , 0
+
++++ author_friendly ,  0 NAs in here
+ Very friendly , 21 , 0.2142857
+ Friendly , 65 , 0.6632653
+ Somewhat friendly , 12 , 0.122449
+ Somewhat unfriendly , 0 , 0
+ Very unfriendly , 0 , 0
+
++++ author_sensitive ,  0 NAs in here
+ Very sensitive , 0 , 0
+ Sensitive , 23 , 0.2346939
+ Somewhat sensitive , 70 , 0.7142857
+ Insensitive , 4 , 0.04081633
+ Very insensitive , 1 , 0.01020408
+
++++ author_ethnicity ,  0 NAs in here
+ Asian , 2 , 0.02040816
+ Black / African American , 2 , 0.02040816
+ Hispanic / Latino , 3 , 0.03061224
+ White , 91 , 0.9285714
+
++++ author_attractive ,  4 NAs in here
+ Very Attractive , 4 , 0.04081633
+ Attractive , 20 , 0.2040816
+ Somewhat attractive , 73 , 0.744898
+ Unattractive , 13 , 0.1326531
+ Very Unattractive , 4 , 0.04081633
+
++++ would_you_reply ,  0 NAs in here
+ Yes, very likely , 4 , 0.04081633
+ Likely , 8 , 0.08163265
+ Somewhat likely , 11 , 0.1122449
+ Unlikely , 42 , 0.4285714
+ No, very unlikely , 33 , 0.3367347
+---
+ending /Users/ps22344/Downloads/Clippings_0208.csv
+---
+starting /Users/ps22344/Downloads/Prosody_0211.csvInput file has  103 rows[1] 103
+[1] 103
+[1] 103
+[1] 100
+[1] "Running the ordermachine"
+levels of gender m4m m4w w4w w4m[1] "Done with ordering"
+
+++++
+Total number of responses in spread_sheet 100 
+
+
++++ author_gender ,  0 NAs in here
+ female , 61 , 0.61
+ male , 39 , 0.39
+
++++ author_orient ,  0 NAs in here
+ heterosexual , 98 , 0.98
+ homosexual , 2 , 0.02
+
++++ author_audience ,  0 NAs in here
+ woman , 49 , 0.49
+ man , 51 , 0.51
+
++++ cat ,  0 NAs in here
+ m4m , 16 , 0.16
+ m4w , 23 , 0.23
+ w4w , 26 , 0.26
+ w4m , 35 , 0.35
+
++++ author_assertive ,  0 NAs in here
+ Very assertive , 6 , 0.06
+ Assertive , 27 , 0.27
+ Somewhat assertive , 44 , 0.44
+ Somewhat timid , 21 , 0.21
+ Timid , 2 , 0.02
+
++++ author_education ,  0 NAs in here
+ Very educated , 1 , 0.01
+ Somewhat educated , 23 , 0.23
+ Of average education , 61 , 0.61
+ Somewhat uneducated , 12 , 0.12
+ Very uneducated , 3 , 0.03
+
++++ author_friendly ,  0 NAs in here
+ Very friendly , 27 , 0.27
+ Friendly , 63 , 0.63
+ Somewhat friendly , 10 , 0.1
+ Somewhat unfriendly , 0 , 0
+ Very unfriendly , 0 , 0
+
++++ author_sensitive ,  0 NAs in here
+ Very sensitive , 2 , 0.02
+ Sensitive , 28 , 0.28
+ Somewhat sensitive , 57 , 0.57
+ Insensitive , 13 , 0.13
+ Very insensitive , 0 , 0
+
++++ author_ethnicity ,  0 NAs in here
+ Asian , 2 , 0.02
+ Black / African American , 1 , 0.01
+ Hispanic / Latino , 3 , 0.03
+ White , 94 , 0.94
+
++++ author_attractive ,  2 NAs in here
+ Very Attractive , 2 , 0.02
+ Attractive , 31 , 0.31
+ Somewhat attractive , 61 , 0.61
+ Unattractive , 12 , 0.12
+ Very Unattractive , 2 , 0.02
+
++++ would_you_reply ,  1 NAs in here
+ Yes, very likely , 3 , 0.03
+ Likely , 13 , 0.13
+ Somewhat likely , 24 , 0.24
+ Unlikely , 33 , 0.33
+ No, very unlikely , 31 , 0.31
+---
+ending /Users/ps22344/Downloads/Prosody_0211.csv
+---
+starting /Users/ps22344/Downloads/Punctuation_0208.csvInput file has  101 rows[1] 101
+[1] 101
+[1] 101
+[1] 98
+[1] "Running the ordermachine"
+levels of gender m4m m4w w4w w4m[1] "Done with ordering"
+
+++++
+Total number of responses in spread_sheet 98 
+
+
++++ author_gender ,  0 NAs in here
+ female , 41 , 0.4183673
+ male , 57 , 0.5816327
+
++++ author_orient ,  1 NAs in here
+ heterosexual , 88 , 0.8979592
+ homosexual , 11 , 0.1122449
+
++++ author_audience ,  0 NAs in here
+ woman , 53 , 0.5408163
+ man , 45 , 0.4591837
+
++++ cat ,  0 NAs in here
+ m4m , 24 , 0.244898
+ m4w , 33 , 0.3367347
+ w4w , 20 , 0.2040816
+ w4m , 21 , 0.2142857
+
++++ author_assertive ,  0 NAs in here
+ Very assertive , 5 , 0.05102041
+ Assertive , 27 , 0.2755102
+ Somewhat assertive , 48 , 0.4897959
+ Somewhat timid , 14 , 0.1428571
+ Timid , 4 , 0.04081633
+
++++ author_education ,  0 NAs in here
+ Very educated , 5 , 0.05102041
+ Somewhat educated , 41 , 0.4183673
+ Of average education , 41 , 0.4183673
+ Somewhat uneducated , 10 , 0.1020408
+ Very uneducated , 1 , 0.01020408
+
++++ author_friendly ,  0 NAs in here
+ Very friendly , 20 , 0.2040816
+ Friendly , 53 , 0.5408163
+ Somewhat friendly , 21 , 0.2142857
+ Somewhat unfriendly , 3 , 0.03061224
+ Very unfriendly , 1 , 0.01020408
+
++++ author_sensitive ,  0 NAs in here
+ Very sensitive , 5 , 0.05102041
+ Sensitive , 21 , 0.2142857
+ Somewhat sensitive , 63 , 0.6428571
+ Insensitive , 7 , 0.07142857
+ Very insensitive , 2 , 0.02040816
+
++++ author_ethnicity ,  0 NAs in here
+ Asian , 3 , 0.03061224
+ Black / African American , 3 , 0.03061224
+ Hispanic / Latino , 3 , 0.03061224
+ White , 89 , 0.9081633
+
++++ author_attractive ,  4 NAs in here
+ Very Attractive , 4 , 0.04081633
+ Attractive , 27 , 0.2755102
+ Somewhat attractive , 62 , 0.6326531
+ Unattractive , 17 , 0.1734694
+ Very Unattractive , 4 , 0.04081633
+
++++ would_you_reply ,  0 NAs in here
+ Yes, very likely , 2 , 0.02040816
+ Likely , 13 , 0.1326531
+ Somewhat likely , 21 , 0.2142857
+ Unlikely , 31 , 0.3163265
+ No, very unlikely , 31 , 0.3163265
+---
+ending /Users/ps22344/Downloads/Punctuation_0208.csv
+---
+starting /Users/ps22344/Downloads/second_Emoticons_0211.csvInput file has  200 rows[1] 200
+[1] 200
+[1] 200
+[1] 197
+[1] "Running the ordermachine"
+levels of gender m4m m4w w4w w4m[1] "Done with ordering"
+
+++++
+Total number of responses in spread_sheet 197 
+
+
++++ author_gender ,  0 NAs in here
+ female , 98 , 0.4974619
+ male , 99 , 0.5025381
+
++++ author_orient ,  0 NAs in here
+ heterosexual , 179 , 0.9086294
+ homosexual , 18 , 0.09137056
+
++++ author_audience ,  1 NAs in here
+ woman , 95 , 0.4822335
+ man , 103 , 0.5228426
+
++++ cat ,  1 NAs in here
+ m4m , 41 , 0.2081218
+ m4w , 59 , 0.2994924
+ w4w , 37 , 0.1878173
+ w4m , 63 , 0.319797
+
++++ author_assertive ,  0 NAs in here
+ Very assertive , 13 , 0.06598985
+ Assertive , 67 , 0.3401015
+ Somewhat assertive , 77 , 0.3908629
+ Somewhat timid , 40 , 0.2030457
+ Timid , 0 , 0
+
++++ author_education ,  100 NAs in here
+ Very educated , 104 , 0.5279188
+ Somewhat educated , 127 , 0.6446701
+ Of average education , 156 , 0.7918782
+ Somewhat uneducated , 109 , 0.5532995
+ Very uneducated , 101 , 0.5126904
+
++++ author_friendly ,  0 NAs in here
+ Very friendly , 50 , 0.2538071
+ Friendly , 118 , 0.5989848
+ Somewhat friendly , 29 , 0.1472081
+ Somewhat unfriendly , 0 , 0
+ Very unfriendly , 0 , 0
+
++++ author_sensitive ,  0 NAs in here
+ Very sensitive , 2 , 0.01015228
+ Sensitive , 58 , 0.2944162
+ Somewhat sensitive , 124 , 0.6294416
+ Insensitive , 12 , 0.06091371
+ Very insensitive , 1 , 0.005076142
+
++++ author_ethnicity ,  0 NAs in here
+ Asian , 9 , 0.04568528
+ Black / African American , 2 , 0.01015228
+ Hispanic / Latino , 7 , 0.03553299
+ White , 179 , 0.9086294
+
++++ author_attractive ,  103 NAs in here
+ Very Attractive , 103 , 0.5228426
+ Attractive , 121 , 0.6142132
+ Somewhat attractive , 164 , 0.8324873
+ Unattractive , 118 , 0.5989848
+ Very Unattractive , 103 , 0.5228426
+
++++ would_you_reply ,  100 NAs in here
+ Yes, very likely , 106 , 0.5380711
+ Likely , 110 , 0.5583756
+ Somewhat likely , 116 , 0.5888325
+ Unlikely , 128 , 0.6497462
+ No, very unlikely , 137 , 0.6954315
+---
+ending /Users/ps22344/Downloads/second_Emoticons_0211.csv
+---
+starting /Users/ps22344/Downloads/Single letter_0218.csvInput file has  100 rows[1] 100
+[1] 100
+[1] 100
+[1] 97
+[1] "Running the ordermachine"
+levels of gender m4m m4w w4w w4m[1] "Done with ordering"
+
+++++
+Total number of responses in spread_sheet 97 
+
+
++++ author_gender ,  1 NAs in here
+ female , 46 , 0.4742268
+ male , 52 , 0.5360825
+
++++ author_orient ,  1 NAs in here
+ heterosexual , 93 , 0.9587629
+ homosexual , 5 , 0.05154639
+
++++ author_audience ,  1 NAs in here
+ woman , 55 , 0.5670103
+ man , 43 , 0.443299
+
++++ cat ,  1 NAs in here
+ m4m , 21 , 0.2164948
+ m4w , 32 , 0.3298969
+ w4w , 24 , 0.2474227
+ w4m , 23 , 0.2371134
+
++++ author_assertive ,  0 NAs in here
+ Very assertive , 4 , 0.04123711
+ Assertive , 23 , 0.2371134
+ Somewhat assertive , 50 , 0.5154639
+ Somewhat timid , 19 , 0.1958763
+ Timid , 1 , 0.01030928
+
++++ author_education ,  1 NAs in here
+ Very educated , 3 , 0.03092784
+ Somewhat educated , 21 , 0.2164948
+ Of average education , 60 , 0.6185567
+ Somewhat uneducated , 16 , 0.1649485
+ Very uneducated , 1 , 0.01030928
+
++++ author_friendly ,  0 NAs in here
+ Very friendly , 18 , 0.185567
+ Friendly , 60 , 0.6185567
+ Somewhat friendly , 18 , 0.185567
+ Somewhat unfriendly , 1 , 0.01030928
+ Very unfriendly , 0 , 0
+
++++ author_sensitive ,  1 NAs in here
+ Very sensitive , 2 , 0.02061856
+ Sensitive , 28 , 0.2886598
+ Somewhat sensitive , 60 , 0.6185567
+ Insensitive , 10 , 0.1030928
+ Very insensitive , 1 , 0.01030928
+
++++ author_ethnicity ,  0 NAs in here
+ Asian , 5 , 0.05154639
+ Black / African American , 2 , 0.02061856
+ Hispanic / Latino , 2 , 0.02061856
+ White , 88 , 0.9072165
+
++++ author_attractive ,  2 NAs in here
+ Very Attractive , 2 , 0.02061856
+ Attractive , 12 , 0.1237113
+ Somewhat attractive , 73 , 0.7525773
+ Unattractive , 16 , 0.1649485
+ Very Unattractive , 2 , 0.02061856
+
++++ would_you_reply ,  1 NAs in here
+ Yes, very likely , 1 , 0.01030928
+ Likely , 4 , 0.04123711
+ Somewhat likely , 23 , 0.2371134
+ Unlikely , 32 , 0.3298969
+ No, very unlikely , 41 , 0.4226804
+---
+ending /Users/ps22344/Downloads/Single letter_0218.csv
