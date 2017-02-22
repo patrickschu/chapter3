@@ -1,7 +1,7 @@
 ###
 #Computations with perception surveys on MechTurk
 ###
-#install.packages(c("devtools", "roxygen2", "pwr", "effsize", "likert"), repos='http://cran.us.r-project.org')
+install.packages(c("devtools", "roxygen2", "pwr", "effsize", "likert"), repos='http://cran.us.r-project.org')
 library(devtools)
 library(roxygen2)
 library(pwr)
@@ -275,26 +275,26 @@ dev.off()
 
 
 #education by stimulus
-barspread=surveytools:::spreadsheetbuilder(c('/Users/ps22344/Downloads/Clippings_0208.csv', '/Users/ps22344/Downloads/Prosody_0211.csv', '/Users/ps22344/Downloads/adapted_control_0206.csv'))
+barspread=surveytools:::spreadsheetbuilder(c('/Users/ps22344/Downloads/Single\ letter_0218.csv','/Users/ps22344/Downloads/Clippings_0208.csv', '/Users/ps22344/Downloads/Prosody_0211.csv', '/Users/ps22344/Downloads/adapted_control_0206.csv'))
 
 
 levels(barspread$author_education) = list("Below average"= c("Somewhat uneducated",  "Very uneducated"),  "Average"= "Of average education", "Above average"=c("Very educated", "Somewhat educated"))
 percentages=aggregate(barspread[['author_education']], list(barspread[['stimulus']]), function(x) table(x)/length(x))
 f=t(percentages[['x']])
-colnames(f)= c('Clippings', 'Prosody', 'Control')
-f= f[,c('Control', 'Clippings', 'Prosody')]
+colnames(f)= c('Single letter', 'Clippings', 'Prosody', 'Control')
+f= f[,c('Control', 'Clippings', 'Prosody', 'Single letter')]
 png("barplottest.png", width=331.8, height=215.9, unit="mm", res=500)
 par(cex=1.25)
 # #$mar
 # #[1]  5.1  4.1  4.1 12.0
-par(mar=c(5.1,  4.1,  4.1, 12.0))
+par(mar=c(5.1,  4.1,  4.1, 14.0))
 barplot(f,
 main= "Author education by stimulus",
 col= c(1,1,0),
 density= c(200,50,100),
 ylab= "Proportion",
 legend.text= TRUE,
-args.legend= list(x=4.5,y=.9)
+args.legend= list(x=6.25,y=.9)
 )
 
 dev.off()
