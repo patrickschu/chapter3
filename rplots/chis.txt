@@ -1,0 +1,1051 @@
+
+---
+starting /Users/ps22344/Downloads/Capitals_0212.csvInput file has  103 rows[1] 103
+[1] 103
+[1] 103
+[1] 100
+[1] "Running the ordermachine"
+levels of gender m4m m4w w4w w4m[1] "Done with ordering"
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.female","expected.male","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",0.0250831965367279,1,0.874159929386301,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","control","female",81,82.1362126245847,118.863787375415,"control","female",-0.125369609702061,"control","female",-0.282845170879301
+"2",0.0250831965367279,1,0.874159929386301,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","treatment","female",42,40.8637873754153,59.1362126245847,"treatment","female",0.177742098176157,"treatment","female",0.282845170879301
+"3",0.0250831965367279,1,0.874159929386301,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","control","male",120,82.1362126245847,118.863787375415,"control","male",0.104216102767392,"control","male",0.282845170879301
+"4",0.0250831965367279,1,0.874159929386301,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","treatment","male",58,40.8637873754153,59.1362126245847,"treatment","male",-0.147751826089586,"treatment","male",-0.282845170879301
+
+p value 0.8741599 
+expected:  82.13621 40.86379 118.8638 59.13621 
+observed:  81 42 120 58 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.heterosexual","expected.homosexual","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",7.99808966735034e-30,1,0.999999999999998,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","control","heterosexual",185,184.97342192691,16.0265780730897,"control","heterosexual",0.00195419917657063,"control","heterosexual",0.0120068670195658
+"2",7.99808966735034e-30,1,0.999999999999998,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","treatment","heterosexual",92,92.0265780730897,7.9734219269103,"treatment","heterosexual",-0.00277055550163425,"treatment","heterosexual",-0.0120068670195658
+"3",7.99808966735034e-30,1,0.999999999999998,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","control","homosexual",16,184.97342192691,16.0265780730897,"control","homosexual",-0.00663900643549813,"control","homosexual",-0.012006867019569
+"4",7.99808966735034e-30,1,0.999999999999998,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","treatment","homosexual",8,92.0265780730897,7.9734219269103,"treatment","homosexual",0.0094124161067003,"treatment","homosexual",0.0120068670195686
+
+p value 1 
+expected:  184.9734 92.02658 16.02658 7.973422 
+observed:  185 92 16 8 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.woman","expected.man","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",0.544638636928992,1,0.46051665713976,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","control","woman",121,117.528239202658,83.4717607973422,"control","woman",0.320242288050497,"control","woman",0.86216456452258
+"2",0.544638636928992,1,0.46051665713976,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","treatment","woman",55,58.4717607973422,41.5282392026578,"treatment","woman",-0.454021802716778,"treatment","woman",-0.862164564522579
+"3",0.544638636928992,1,0.46051665713976,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","control","man",80,117.528239202658,83.4717607973422,"control","man",-0.379996859543064,"control","man",-0.86216456452258
+"4",0.544638636928992,1,0.46051665713976,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","treatment","man",45,58.4717607973422,41.5282392026578,"treatment","man",0.538738529026658,"treatment","man",0.862164564522579
+
+p value 0.4605167 
+expected:  117.5282 58.47176 83.47176 41.52824 
+observed:  121 55 80 45 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.m4m","expected.m4w","expected.w4w","expected.w4m","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",0.879589202832796,3,0.830350399903798,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","m4m",46,48.0797342192691,70.7840531561462,46.7441860465116,35.3920265780731,"control","m4m",-0.299934765947707,"control","m4m",-0.596589441506781
+"2",0.879589202832796,3,0.830350399903798,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","m4m",26,23.9202657807309,35.2159468438538,23.2558139534884,17.6079734219269,"treatment","m4m",0.425230921131628,"treatment","m4m",0.59658944150678
+"3",0.879589202832796,3,0.830350399903798,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","m4w",74,48.0797342192691,70.7840531561462,46.7441860465116,35.3920265780731,"control","m4w",0.382244414599805,"control","m4w",0.823930041548383
+"4",0.879589202832796,3,0.830350399903798,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","m4w",32,23.9202657807309,35.2159468438538,23.2558139534884,17.6079734219269,"treatment","m4w",-0.541924988269063,"treatment","m4w",-0.823930041548385
+"5",0.879589202832796,3,0.830350399903798,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","w4w",47,48.0797342192691,70.7840531561462,46.7441860465116,35.3920265780731,"control","w4w",0.0374162646436894,"control","w4w",0.0741004651715499
+"6",0.879589202832796,3,0.830350399903798,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","w4w",23,23.9202657807309,35.2159468438538,23.2558139534884,17.6079734219269,"treatment","w4w",-0.0530467104387451,"treatment","w4w",-0.0741004651715499
+"7",0.879589202832796,3,0.830350399903798,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","w4m",34,48.0797342192691,70.7840531561462,46.7441860465116,35.3920265780731,"control","w4m",-0.233988660720521,"control","w4m",-0.447234673903065
+"8",0.879589202832796,3,0.830350399903798,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","w4m",19,23.9202657807309,35.2159468438538,23.2558139534884,17.6079734219269,"treatment","w4m",0.331736180759687,"treatment","w4m",0.447234673903064
+
+p value 0.8303504 
+expected:  48.07973 23.92027 70.78405 35.21595 46.74419 23.25581 35.39203 17.60797 
+observed:  46 26 74 32 47 23 34 19 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.Very.assertive","expected.Assertive","expected.Somewhat.assertive","expected.Somewhat.timid","expected.Timid","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",0.702652031203363,4,0.951001469285176,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very assertive",18,17.3621262458472,68.78073089701,85.4750830564784,28.046511627907,1.33554817275748,"control","Very assertive",0.153085225480757,"control","Very assertive",0.277864731661553
+"2",0.702652031203363,4,0.951001469285176,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very assertive",8,8.63787375415282,34.21926910299,42.5249169435216,13.953488372093,0.664451827242525,"treatment","Very assertive",-0.217035765217609,"treatment","Very assertive",-0.277864731661553
+"3",0.702652031203363,4,0.951001469285176,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Assertive",70,17.3621262458472,68.78073089701,85.4750830564784,28.046511627907,1.33554817275748,"control","Assertive",0.147016532511263,"control","Assertive",0.314485101476777
+"4",0.702652031203363,4,0.951001469285176,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Assertive",33,8.63787375415282,34.21926910299,42.5249169435216,13.953488372093,0.664451827242525,"treatment","Assertive",-0.20843190799776,"treatment","Assertive",-0.314485101476775
+"5",0.702652031203363,4,0.951001469285176,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat assertive",83,17.3621262458472,68.78073089701,85.4750830564784,28.046511627907,1.33554817275748,"control","Somewhat assertive",-0.267713339414188,"control","Somewhat assertive",-0.612651435507043
+"6",0.702652031203363,4,0.951001469285176,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat assertive",45,8.63787375415282,34.21926910299,42.5249169435216,13.953488372093,0.664451827242525,"treatment","Somewhat assertive",0.37954916482795,"treatment","Somewhat assertive",0.612651435507041
+"7",0.702652031203363,4,0.951001469285176,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat timid",29,17.3621262458472,68.78073089701,85.4750830564784,28.046511627907,1.33554817275748,"control","Somewhat timid",0.180042889804068,"control","Somewhat timid",0.336738357006279
+"8",0.702652031203363,4,0.951001469285176,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat timid",13,8.63787375415282,34.21926910299,42.5249169435216,13.953488372093,0.664451827242525,"treatment","Somewhat timid",-0.255254850609523,"treatment","Somewhat timid",-0.336738357006279
+"9",0.702652031203363,4,0.951001469285176,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Timid",1,17.3621262458472,68.78073089701,85.4750830564784,28.046511627907,1.33554817275748,"control","Timid",-0.290352185565991,"control","Timid",-0.505424163369954
+"10",0.702652031203363,4,0.951001469285176,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Timid",1,8.63787375415282,34.21926910299,42.5249169435216,13.953488372093,0.664451827242525,"treatment","Timid",0.411645268699307,"treatment","Timid",0.505424163369954
+
+p value 0.9510015 
+expected:  17.36213 8.637874 68.78073 34.21927 85.47508 42.52492 28.04651 13.95349 1.335548 0.6644518 
+observed:  18 8 70 33 83 45 29 13 1 1 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.Very.educated","expected.Somewhat.educated","expected.Of.average.education","expected.Somewhat.uneducated","expected.Very.uneducated","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",5.93778832490238,4,0.203842701212514,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very educated",22,16.6943521594684,59.4318936877076,110.182724252492,12.687707641196,2.00332225913621,"control","Very educated",1.29853492655698,"control","Very educated",2.35269478517319
+"2",5.93778832490238,4,0.203842701212514,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very educated",3,8.30564784053156,29.5681063122924,54.8172757475083,6.31229235880399,0.996677740863787,"treatment","Very educated",-1.84099099414733,"treatment","Very educated",-2.35269478517319
+"3",5.93778832490238,4,0.203842701212514,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat educated",60,16.6943521594684,59.4318936877076,110.182724252492,12.687707641196,2.00332225913621,"control","Somewhat educated",0.0736919129756569,"control","Somewhat educated",0.152341559008149
+"4",5.93778832490238,4,0.203842701212514,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat educated",29,8.30564784053156,29.5681063122924,54.8172757475083,6.31229235880399,0.996677740863787,"treatment","Somewhat educated",-0.104476318160642,"treatment","Somewhat educated",-0.152341559008149
+"5",5.93778832490238,4,0.203842701212514,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Of average education",105,16.6943521594684,59.4318936877076,110.182724252492,12.687707641196,2.00332225913621,"control","Of average education",-0.49374345274862,"control","Of average education",-1.27437836872497
+"6",5.93778832490238,4,0.203842701212514,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Of average education",60,8.30564784053156,29.5681063122924,54.8172757475083,6.31229235880399,0.996677740863787,"treatment","Of average education",0.700002157307803,"treatment","Of average education",1.27437836872497
+"7",5.93778832490238,4,0.203842701212514,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat uneducated",12,16.6943521594684,59.4318936877076,110.182724252492,12.687707641196,2.00332225913621,"control","Somewhat uneducated",-0.193068876106617,"control","Somewhat uneducated",-0.346062236287636
+"8",5.93778832490238,4,0.203842701212514,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat uneducated",7,8.30564784053156,29.5681063122924,54.8172757475083,6.31229235880399,0.996677740863787,"treatment","Somewhat uneducated",0.273722373494304,"treatment","Somewhat uneducated",0.346062236287636
+"9",5.93778832490238,4,0.203842701212514,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very uneducated",2,16.6943521594684,59.4318936877076,110.182724252492,12.687707641196,2.00332225913621,"control","Very uneducated",-0.00234724323544093,"control","Very uneducated",-0.00409276170934978
+"10",5.93778832490238,4,0.203842701212514,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very uneducated",1,8.30564784053156,29.5681063122924,54.8172757475083,6.31229235880399,0.996677740863787,"treatment","Very uneducated",0.00332779162819863,"treatment","Very uneducated",0.00409276170934964
+
+p value 0.2038427 
+expected:  16.69435 8.305648 59.43189 29.56811 110.1827 54.81728 12.68771 6.312292 2.003322 0.9966777 
+observed:  22 3 60 29 105 60 12 7 2 1 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.Very.friendly","expected.Friendly","expected.Somewhat.friendly","expected.Somewhat.unfriendly","expected.Very.unfriendly","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",1.40910188960129,4,0.842611531227706,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very friendly",51,50.7508305647841,119.531561461794,28.046511627907,1.33554817275748,1.33554817275748,"control","Very friendly",0.0349762456714886,"control","Very friendly",0.0701856663141205
+"2",1.40910188960129,4,0.842611531227706,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very friendly",25,25.2491694352159,59.468438538206,13.953488372093,0.664451827242525,0.664451827242525,"treatment","Very friendly",-0.0495873865025913,"treatment","Very friendly",-0.0701856663141205
+"3",1.40910188960129,4,0.842611531227706,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Friendly",118,50.7508305647841,119.531561461794,28.046511627907,1.33554817275748,1.33554817275748,"control","Friendly",-0.140085483493656,"control","Friendly",-0.381750587110534
+"4",1.40910188960129,4,0.842611531227706,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Friendly",61,25.2491694352159,59.468438538206,13.953488372093,0.664451827242525,0.664451827242525,"treatment","Friendly",0.19860545007164,"treatment","Friendly",0.381750587110532
+"5",1.40910188960129,4,0.842611531227706,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat friendly",29,50.7508305647841,119.531561461794,28.046511627907,1.33554817275748,1.33554817275748,"control","Somewhat friendly",0.180042889804068,"control","Somewhat friendly",0.336738357006279
+"6",1.40910188960129,4,0.842611531227706,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat friendly",13,25.2491694352159,59.468438538206,13.953488372093,0.664451827242525,0.664451827242525,"treatment","Somewhat friendly",-0.255254850609523,"treatment","Somewhat friendly",-0.336738357006279
+"7",1.40910188960129,4,0.842611531227706,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat unfriendly",1,50.7508305647841,119.531561461794,28.046511627907,1.33554817275748,1.33554817275748,"control","Somewhat unfriendly",-0.290352185565991,"control","Somewhat unfriendly",-0.505424163369954
+"8",1.40910188960129,4,0.842611531227706,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat unfriendly",1,25.2491694352159,59.468438538206,13.953488372093,0.664451827242525,0.664451827242525,"treatment","Somewhat unfriendly",0.411645268699307,"treatment","Somewhat unfriendly",0.505424163369954
+"9",1.40910188960129,4,0.842611531227706,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very unfriendly",2,50.7508305647841,119.531561461794,28.046511627907,1.33554817275748,1.33554817275748,"control","Very unfriendly",0.574954822902953,"control","Very unfriendly",1.00083992746526
+"10",1.40910188960129,4,0.842611531227706,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very unfriendly",0,25.2491694352159,59.468438538206,13.953488372093,0.664451827242525,0.664451827242525,"treatment","Very unfriendly",-0.815139145939222,"treatment","Very unfriendly",-1.00083992746526
+
+p value 0.8426115 
+expected:  50.75083 25.24917 119.5316 59.46844 28.04651 13.95349 1.335548 0.6644518 1.335548 0.6644518 
+observed:  51 25 118 61 29 13 1 1 2 0 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.Very.sensitive","expected.Sensitive","expected.Somewhat.sensitive","expected.Insensitive","expected.Very.insensitive","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",8.3979967001686,4,0.0780401088808552,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very sensitive",2,4.67441860465116,47.4119601328904,127.544850498339,19.3654485049834,2.00332225913621,"control","Very sensitive",-1.23698827710128,"control","Very sensitive",-2.17149290263688
+"2",8.3979967001686,4,0.0780401088808552,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very sensitive",5,2.32558139534884,23.5880398671096,63.4551495016611,9.63455149501661,0.996677740863787,"treatment","Very sensitive",1.75373355882495,"treatment","Very sensitive",2.17149290263688
+"3",8.3979967001686,4,0.0780401088808552,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Sensitive",53,4.67441860465116,47.4119601328904,127.544850498339,19.3654485049834,2.00332225913621,"control","Sensitive",0.811550483066612,"control","Sensitive",1.61071283054422
+"4",8.3979967001686,4,0.0780401088808552,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Sensitive",18,2.32558139534884,23.5880398671096,63.4551495016611,9.63455149501661,0.996677740863787,"treatment","Sensitive",-1.15057138631071,"treatment","Sensitive",-1.61071283054422
+"5",8.3979967001686,4,0.0780401088808552,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat sensitive",124,4.67441860465116,47.4119601328904,127.544850498339,19.3654485049834,2.00332225913621,"control","Somewhat sensitive",-0.313882034764245,"control","Somewhat sensitive",-0.900817080527815
+"6",8.3979967001686,4,0.0780401088808552,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat sensitive",67,2.32558139534884,23.5880398671096,63.4551495016611,9.63455149501661,0.996677740863787,"treatment","Somewhat sensitive",0.445004587406649,"treatment","Somewhat sensitive",0.900817080527813
+"7",8.3979967001686,4,0.0780401088808552,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Insensitive",19,4.67441860465116,47.4119601328904,127.544850498339,19.3654485049834,2.00332225913621,"control","Insensitive",-0.0830447935359679,"control","Insensitive",-0.151563439819601
+"8",8.3979967001686,4,0.0780401088808552,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Insensitive",10,2.32558139534884,23.5880398671096,63.4551495016611,9.63455149501661,0.996677740863787,"treatment","Insensitive",0.11773631489136,"treatment","Insensitive",0.151563439819601
+"9",8.3979967001686,4,0.0780401088808552,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very insensitive",3,4.67441860465116,47.4119601328904,127.544850498339,19.3654485049834,2.00332225913621,"control","Very insensitive",0.70417297063225,"control","Very insensitive",1.22782851280489
+"10",8.3979967001686,4,0.0780401088808552,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very insensitive",0,2.32558139534884,23.5880398671096,63.4551495016611,9.63455149501661,0.996677740863787,"treatment","Very insensitive",-0.998337488459583,"treatment","Very insensitive",-1.22782851280489
+
+p value 0.07804011 
+expected:  4.674419 2.325581 47.41196 23.58804 127.5449 63.45515 19.36545 9.634551 2.003322 0.9966777 
+observed:  2 5 53 18 124 67 19 10 3 0 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.Asian","expected.Black...African.American","expected.Hispanic...Latino","expected.White","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",0.427834619255283,3,0.934434352545519,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Asian",9,8,4,7.33333333333333,180.666666666667,"control","Asian",0.353553390593274,"control","Asian",0.625
+"2",0.427834619255283,3,0.934434352545519,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Asian",3,4,2,3.66666666666667,90.3333333333333,"treatment","Asian",-0.5,"treatment","Asian",-0.625
+"3",0.427834619255283,3,0.934434352545519,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Black / African American",4,8,4,7.33333333333333,180.666666666667,"control","Black / African American",0,"control","Black / African American",0
+"4",0.427834619255283,3,0.934434352545519,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Black / African American",2,4,2,3.66666666666667,90.3333333333333,"treatment","Black / African American",0,"treatment","Black / African American",0
+"5",0.427834619255283,3,0.934434352545519,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Hispanic / Latino",7,8,4,7.33333333333333,180.666666666667,"control","Hispanic / Latino",-0.123091490979333,"control","Hispanic / Latino",-0.217220278198822
+"6",0.427834619255283,3,0.934434352545519,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Hispanic / Latino",4,4,2,3.66666666666667,90.3333333333333,"treatment","Hispanic / Latino",0.174077655955698,"treatment","Hispanic / Latino",0.217220278198823
+"7",0.427834619255283,3,0.934434352545519,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","White",180,8,4,7.33333333333333,180.666666666667,"control","White",-0.0495986350643436,"control","White",-0.276307059341804
+"8",0.427834619255283,3,0.934434352545519,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","White",91,4,2,3.66666666666667,90.3333333333333,"treatment","White",0.0701430623831899,"treatment","White",0.27630705934181
+
+p value 0.9344344 
+expected:  8 4 4 2 7.333333 3.666667 180.6667 90.33333 
+observed:  9 3 4 2 7 4 180 91 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.Very.Attractive","expected.Attractive","expected.Somewhat.attractive","expected.Unattractive","expected.Very.Unattractive","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very Attractive",0,0,0,0,0,0,"control","Very Attractive",NA,"control","Very Attractive",NA
+"2",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very Attractive",0,0,17,58,21,0,"treatment","Very Attractive",NA,"treatment","Very Attractive",NA
+"3",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Attractive",0,0,0,0,0,0,"control","Attractive",NA,"control","Attractive",NA
+"4",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Attractive",17,0,17,58,21,0,"treatment","Attractive",0,"treatment","Attractive",NA
+"5",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat attractive",0,0,0,0,0,0,"control","Somewhat attractive",NA,"control","Somewhat attractive",NA
+"6",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat attractive",58,0,17,58,21,0,"treatment","Somewhat attractive",0,"treatment","Somewhat attractive",NA
+"7",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Unattractive",0,0,0,0,0,0,"control","Unattractive",NA,"control","Unattractive",NA
+"8",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Unattractive",21,0,17,58,21,0,"treatment","Unattractive",0,"treatment","Unattractive",NA
+"9",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very Unattractive",0,0,0,0,0,0,"control","Very Unattractive",NA,"control","Very Unattractive",NA
+"10",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very Unattractive",0,0,17,58,21,0,"treatment","Very Unattractive",NA,"treatment","Very Unattractive",NA
+
+p value NaN 
+expected:  0 0 0 17 0 58 0 21 0 0 
+observed:  0 0 0 17 0 58 0 21 0 0 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.Yes..very.likely","expected.Likely","expected.Somewhat.likely","expected.Unlikely","expected.No..very.unlikely","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",15.7594095440262,4,0.00335958957771779,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Yes, very likely",8,6.00996677740864,19.3654485049834,36.7275747508306,69.4485049833887,69.4485049833887,"control","Yes, very likely",0.811753726787341,"control","Yes, very likely",1.42987924073007
+"2",15.7594095440262,4,0.00335958957771779,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Yes, very likely",1,2.99003322259136,9.63455149501661,18.2724252491694,34.5514950166113,34.5514950166113,"treatment","Yes, very likely",-1.15085953401612,"treatment","Yes, very likely",-1.42987924073007
+"3",15.7594095440262,4,0.00335958957771779,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Likely",28,6.00996677740864,19.3654485049834,36.7275747508306,69.4485049833887,69.4485049833887,"control","Likely",1.96212198545438,"control","Likely",3.5810307281013
+"4",15.7594095440262,4,0.00335958957771779,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Likely",1,2.99003322259136,9.63455149501661,18.2724252491694,34.5514950166113,34.5514950166113,"treatment","Likely",-2.78178802184223,"treatment","Likely",-3.5810307281013
+"5",15.7594095440262,4,0.00335958957771779,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat likely",36,6.00996677740864,19.3654485049834,36.7275747508306,69.4485049833887,69.4485049833887,"control","Somewhat likely",-0.120055343197599,"control","Somewhat likely",-0.230398918215865
+"6",15.7594095440262,4,0.00335958957771779,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat likely",19,2.99003322259136,9.63455149501661,18.2724252491694,34.5514950166113,34.5514950166113,"treatment","Somewhat likely",0.170207825069501,"treatment","Somewhat likely",0.230398918215866
+"7",15.7594095440262,4,0.00335958957771779,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Unlikely",64,6.00996677740864,19.3654485049834,36.7275747508306,69.4485049833887,69.4485049833887,"control","Unlikely",-0.653801483824065,"control","Unlikely",-1.4021009527055
+"8",15.7594095440262,4,0.00335958957771779,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Unlikely",40,2.99003322259136,9.63455149501661,18.2724252491694,34.5514950166113,34.5514950166113,"treatment","Unlikely",0.926923580616872,"treatment","Unlikely",1.4021009527055
+"9",15.7594095440262,4,0.00335958957771779,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","No, very unlikely",65,6.00996677740864,19.3654485049834,36.7275747508306,69.4485049833887,69.4485049833887,"control","No, very unlikely",-0.533804991975867,"control","No, very unlikely",-1.14476413150772
+"10",15.7594095440262,4,0.00335958957771779,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","No, very unlikely",39,2.99003322259136,9.63455149501661,18.2724252491694,34.5514950166113,34.5514950166113,"treatment","No, very unlikely",0.75679919173536,"treatment","No, very unlikely",1.14476413150772
+
+p value 0.00335959 
+expected:  6.009967 2.990033 19.36545 9.634551 36.72757 18.27243 69.4485 34.5515 69.4485 34.5515 
+observed:  8 1 28 1 36 19 64 40 65 39 
+
+---
+ending /Users/ps22344/Downloads/Capitals_0212.csv
+---
+starting /Users/ps22344/Downloads/Clippings_0208.csvInput file has  101 rows[1] 101
+[1] 101
+[1] 101
+[1] 98
+[1] "Running the ordermachine"
+levels of gender m4m m4w w4w w4m[1] "Done with ordering"
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.female","expected.male","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",3.84386355250173,1,0.0499283464953048,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","control","female",81,89.4080267558528,111.591973244147,"control","female",-0.889213054624675,"control","female",-2.0845385758072
+"2",3.84386355250173,1,0.0499283464953048,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","treatment","female",52,43.5919732441472,54.4080267558528,"treatment","female",1.27347616485112,"treatment","female",2.0845385758072
+"3",3.84386355250173,1,0.0499283464953048,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","control","male",120,89.4080267558528,111.591973244147,"control","male",0.79593500717175,"control","male",2.0845385758072
+"4",3.84386355250173,1,0.0499283464953048,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","treatment","male",46,43.5919732441472,54.4080267558528,"treatment","male",-1.13988909084523,"treatment","male",-2.0845385758072
+
+p value 0.04992835 
+expected:  89.40803 43.59197 111.592 54.40803 
+observed:  81 52 120 46 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.heterosexual","expected.homosexual","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",1.8453155529749,1,0.174329207687885,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","control","heterosexual",185,188.184563758389,12.8154362416107,"control","heterosexual",-0.232144260146704,"control","heterosexual",-1.61143037795848
+"2",1.8453155529749,1,0.174329207687885,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","treatment","heterosexual",94,90.8154362416107,6.18456375838926,"treatment","heterosexual",0.3341720413344,"treatment","heterosexual",1.61143037795848
+"3",1.8453155529749,1,0.174329207687885,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","control","homosexual",16,188.184563758389,12.8154362416107,"control","homosexual",0.889576396761194,"control","homosexual",1.61143037795848
+"4",1.8453155529749,1,0.174329207687885,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","treatment","homosexual",3,90.8154362416107,6.18456375838926,"treatment","homosexual",-1.28054667490261,"treatment","homosexual",-1.61143037795848
+
+p value 0.1743292 
+expected:  188.1846 90.81544 12.81544 6.184564 
+observed:  185 94 16 3 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.woman","expected.man","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",0.43991405296291,1,0.507163941248019,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","control","woman",121,124.107382550336,76.8926174496644,"control","woman",-0.278930441618294,"control","woman",-0.790449057037861
+"2",0.43991405296291,1,0.507163941248019,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","treatment","woman",63,59.8926174496644,37.1073825503356,"treatment","woman",0.401520825916549,"treatment","woman",0.790449057037861
+"3",0.43991405296291,1,0.507163941248019,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","control","man",80,124.107382550336,76.8926174496644,"control","man",0.354366288742749,"control","man",0.790449057037861
+"4",0.43991405296291,1,0.507163941248019,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","treatment","man",34,59.8926174496644,37.1073825503356,"treatment","man",-0.510110850961485,"treatment","man",-0.790449057037861
+
+p value 0.5071639 
+expected:  124.1074 59.89262 76.89262 37.10738 
+observed:  121 63 80 34 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.m4m","expected.m4w","expected.w4w","expected.w4m","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",4.92431889676826,3,0.177423511326391,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","m4m",46,40.4697986577181,71.496644295302,52.6107382550336,36.4228187919463,"control","m4m",0.869311493068016,"control","m4m",1.70497234812268
+"2",4.92431889676826,3,0.177423511326391,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","m4m",14,19.5302013422819,34.503355704698,25.3892617449664,17.5771812080537,"treatment","m4m",-1.2513753129645,"treatment","m4m",-1.70497234812268
+"3",4.92431889676826,3,0.177423511326391,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","m4w",74,40.4697986577181,71.496644295302,52.6107382550336,36.4228187919463,"control","m4w",0.296059999515135,"control","m4w",0.646486583890738
+"4",4.92431889676826,3,0.177423511326391,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","m4w",32,19.5302013422819,34.503355704698,25.3892617449664,17.5771812080537,"treatment","m4w",-0.426178852464034,"treatment","m4w",-0.64648658389074
+"5",4.92431889676826,3,0.177423511326391,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","w4w",47,40.4697986577181,71.496644295302,52.6107382550336,36.4228187919463,"control","w4w",-0.773540062139097,"control","w4w",-1.57798135552171
+"6",4.92431889676826,3,0.177423511326391,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","w4w",31,19.5302013422819,34.503355704698,25.3892617449664,17.5771812080537,"treatment","w4w",1.11351218184591,"treatment","w4w",1.57798135552171
+"7",4.92431889676826,3,0.177423511326391,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","w4m",34,40.4697986577181,71.496644295302,52.6107382550336,36.4228187919463,"control","w4m",-0.40145249087647,"control","w4m",-0.777623972822218
+"8",4.92431889676826,3,0.177423511326391,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","w4m",20,19.5302013422819,34.503355704698,25.3892617449664,17.5771812080537,"treatment","w4m",0.5778915157764,"treatment","w4m",0.777623972822219
+
+p value 0.1774235 
+expected:  40.4698 19.5302 71.49664 34.50336 52.61074 25.38926 36.42282 17.57718 
+observed:  46 14 74 32 47 31 34 20 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.Very.assertive","expected.Assertive","expected.Somewhat.assertive","expected.Somewhat.timid","expected.Timid","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",5.24463170439627,4,0.263104945854612,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very assertive",18,14.1644295302013,67.4496644295302,87.010067114094,31.7013422818792,0.674496644295302,"control","Very assertive",1.01913196232901,"control","Very assertive",1.85276754555438
+"2",5.24463170439627,4,0.263104945854612,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very assertive",3,6.83557046979866,32.5503355704698,41.989932885906,15.2986577181208,0.325503355704698,"treatment","Very assertive",-1.46704212296869,"treatment","Very assertive",-1.85276754555438
+"3",5.24463170439627,4,0.263104945854612,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Assertive",70,14.1644295302013,67.4496644295302,87.010067114094,31.7013422818792,0.674496644295302,"control","Assertive",0.310532765878949,"control","Assertive",0.66773667979082
+"4",5.24463170439627,4,0.263104945854612,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Assertive",30,6.83557046979866,32.5503355704698,41.989932885906,15.2986577181208,0.325503355704698,"treatment","Assertive",-0.44701242326391,"treatment","Assertive",-0.66773667979082
+"5",5.24463170439627,4,0.263104945854612,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat assertive",83,14.1644295302013,67.4496644295302,87.010067114094,31.7013422818792,0.674496644295302,"control","Somewhat assertive",-0.429899449892761,"control","Somewhat assertive",-1.00058487566782
+"6",5.24463170439627,4,0.263104945854612,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat assertive",46,6.83557046979866,32.5503355704698,41.989932885906,15.2986577181208,0.325503355704698,"treatment","Somewhat assertive",0.618840959705026,"treatment","Somewhat assertive",1.00058487566782
+"7",5.24463170439627,4,0.263104945854612,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat timid",29,14.1644295302013,67.4496644295302,87.010067114094,31.7013422818792,0.674496644295302,"control","Somewhat timid",-0.479778509211503,"control","Somewhat timid",-0.91629291151237
+"8",5.24463170439627,4,0.263104945854612,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat timid",18,6.83557046979866,32.5503355704698,41.989932885906,15.2986577181208,0.325503355704698,"treatment","Somewhat timid",0.690641946995644,"treatment","Somewhat timid",0.91629291151237
+"9",5.24463170439627,4,0.263104945854612,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Timid",1,14.1644295302013,67.4496644295302,87.010067114094,31.7013422818792,0.674496644295302,"control","Timid",0.396337872240238,"control","Timid",0.695853387538105
+"10",5.24463170439627,4,0.263104945854612,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Timid",0,6.83557046979866,32.5503355704698,41.989932885906,15.2986577181208,0.325503355704698,"treatment","Timid",-0.570529013902622,"treatment","Timid",-0.695853387538104
+
+p value 0.2631049 
+expected:  14.16443 6.83557 67.44966 32.55034 87.01007 41.98993 31.70134 15.29866 0.6744966 0.3255034 
+observed:  18 3 70 30 83 46 29 18 1 0 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.Very.educated","expected.Somewhat.educated","expected.Of.average.education","expected.Somewhat.uneducated","expected.Very.uneducated","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",20.9164459778452,4,0.000328979423499993,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very educated",22,15.4615384615385,59.8294314381271,103.52508361204,20.8394648829431,1.34448160535117,"control","Very educated",1.66283524397432,"control","Very educated",3.02310220672627
+"2",20.9164459778452,4,0.000328979423499993,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very educated",1,7.53846153846154,29.1705685618729,50.4749163879599,10.1605351170569,0.655518394648829,"treatment","Very educated",-2.38141021239223,"treatment","Very educated",-3.02310220672627
+"3",20.9164459778452,4,0.000328979423499993,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat educated",60,15.4615384615385,59.8294314381271,103.52508361204,20.8394648829431,1.34448160535117,"control","Somewhat educated",0.022051673310598,"control","Somewhat educated",0.0459610617724464
+"4",20.9164459778452,4,0.000328979423499993,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat educated",29,7.53846153846154,29.1705685618729,50.4749163879599,10.1605351170569,0.655518394648829,"treatment","Somewhat educated",-0.0315810482201959,"treatment","Somewhat educated",-0.0459610617724455
+"5",20.9164459778452,4,0.000328979423499993,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Of average education",105,15.4615384615385,59.8294314381271,103.52508361204,20.8394648829431,1.34448160535117,"control","Of average education",0.14495880701348,"control","Of average education",0.363595714286266
+"6",20.9164459778452,4,0.000328979423499993,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Of average education",49,7.53846153846154,29.1705685618729,50.4749163879599,10.1605351170569,0.655518394648829,"treatment","Of average education",-0.20760107451958,"treatment","Of average education",-0.363595714286266
+"7",20.9164459778452,4,0.000328979423499993,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat uneducated",12,15.4615384615385,59.8294314381271,103.52508361204,20.8394648829431,1.34448160535117,"control","Somewhat uneducated",-1.93634479896729,"control","Somewhat uneducated",-3.57250994805066
+"8",20.9164459778452,4,0.000328979423499993,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat uneducated",19,7.53846153846154,29.1705685618729,50.4749163879599,10.1605351170569,0.655518394648829,"treatment","Somewhat uneducated",2.773113749954,"treatment","Somewhat uneducated",3.57250994805066
+"9",20.9164459778452,4,0.000328979423499993,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very uneducated",2,15.4615384615385,59.8294314381271,103.52508361204,20.8394648829431,1.34448160535117,"control","Very uneducated",0.56533705296984,"control","Very uneducated",0.990803145048569
+"10",20.9164459778452,4,0.000328979423499993,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very uneducated",0,7.53846153846154,29.1705685618729,50.4749163879599,10.1605351170569,0.655518394648829,"treatment","Very uneducated",-0.809640904752736,"treatment","Very uneducated",-0.990803145048569
+
+p value 0.0003289794 
+expected:  15.46154 7.538462 59.82943 29.17057 103.5251 50.47492 20.83946 10.16054 1.344482 0.6555184 
+observed:  22 1 60 29 105 49 12 19 2 0 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.Very.friendly","expected.Friendly","expected.Somewhat.friendly","expected.Somewhat.unfriendly","expected.Very.unfriendly","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",2.74232723991664,4,0.601828470850265,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very friendly",51,48.4013377926421,123.020066889632,27.561872909699,0.672240802675585,1.34448160535117,"control","Very friendly",0.373526267140787,"control","Very friendly",0.748800920476589
+"2",2.74232723991664,4,0.601828470850265,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very friendly",21,23.5986622073579,59.9799331103679,13.438127090301,0.327759197324415,0.655518394648829,"treatment","Very friendly",-0.534941312068772,"treatment","Very friendly",-0.748800920476588
+"3",2.74232723991664,4,0.601828470850265,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Friendly",118,48.4013377926421,123.020066889632,27.561872909699,0.672240802675585,1.34448160535117,"control","Friendly",-0.45260726893683,"control","Friendly",-1.2692602532266
+"4",2.74232723991664,4,0.601828470850265,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Friendly",65,23.5986622073579,59.9799331103679,13.438127090301,0.327759197324415,0.655518394648829,"treatment","Friendly",0.648196251766343,"treatment","Friendly",1.2692602532266
+"5",2.74232723991664,4,0.601828470850265,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat friendly",29,48.4013377926421,123.020066889632,27.561872909699,0.672240802675585,1.34448160535117,"control","Somewhat friendly",0.27393208579214,"control","Somewhat friendly",0.515099587207144
+"6",2.74232723991664,4,0.601828470850265,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat friendly",12,23.5986622073579,59.9799331103679,13.438127090301,0.327759197324415,0.655518394648829,"treatment","Somewhat friendly",-0.392308660146118,"treatment","Somewhat friendly",-0.515099587207145
+"7",2.74232723991664,4,0.601828470850265,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat unfriendly",1,48.4013377926421,123.020066889632,27.561872909699,0.672240802675585,1.34448160535117,"control","Somewhat unfriendly",0.399753663810992,"control","Somewhat unfriendly",0.699427125427015
+"8",2.74232723991664,4,0.601828470850265,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat unfriendly",0,23.5986622073579,59.9799331103679,13.438127090301,0.327759197324415,0.655518394648829,"treatment","Somewhat unfriendly",-0.572502574076671,"treatment","Somewhat unfriendly",-0.699427125427015
+"9",2.74232723991664,4,0.601828470850265,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very unfriendly",2,48.4013377926421,123.020066889632,27.561872909699,0.672240802675585,1.34448160535117,"control","Very unfriendly",0.56533705296984,"control","Very unfriendly",0.990803145048569
+"10",2.74232723991664,4,0.601828470850265,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very unfriendly",0,23.5986622073579,59.9799331103679,13.438127090301,0.327759197324415,0.655518394648829,"treatment","Very unfriendly",-0.809640904752736,"treatment","Very unfriendly",-0.990803145048569
+
+p value 0.6018285 
+expected:  48.40134 23.59866 123.0201 59.97993 27.56187 13.43813 0.6722408 0.3277592 1.344482 0.6555184 
+observed:  51 21 118 65 29 12 1 0 2 0 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.Very.sensitive","expected.Sensitive","expected.Somewhat.sensitive","expected.Insensitive","expected.Very.insensitive","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",4.73605228973782,4,0.315467603350236,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very sensitive",2,1.34448160535117,51.0903010033445,130.414715719064,15.4615384615385,2.68896321070234,"control","Very sensitive",0.56533705296984,"control","Very sensitive",0.990803145048569
+"2",4.73605228973782,4,0.315467603350236,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very sensitive",0,0.655518394648829,24.9096989966555,63.5852842809365,7.53846153846154,1.31103678929766,"treatment","Very sensitive",-0.809640904752736,"treatment","Very sensitive",-0.990803145048569
+"3",4.73605228973782,4,0.315467603350236,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Sensitive",53,1.34448160535117,51.0903010033445,130.414715719064,15.4615384615385,2.68896321070234,"control","Sensitive",0.26717492074499,"control","Sensitive",0.540382664251146
+"4",4.73605228973782,4,0.315467603350236,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Sensitive",23,0.655518394648829,24.9096989966555,63.5852842809365,7.53846153846154,1.31103678929766,"treatment","Sensitive",-0.382631464580042,"treatment","Sensitive",-0.540382664251145
+"5",4.73605228973782,4,0.315467603350236,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat sensitive",124,1.34448160535117,51.0903010033445,130.414715719064,15.4615384615385,2.68896321070234,"control","Somewhat sensitive",-0.561712534267849,"control","Somewhat sensitive",-1.65568462529425
+"6",4.73605228973782,4,0.315467603350236,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat sensitive",70,0.655518394648829,24.9096989966555,63.5852842809365,7.53846153846154,1.31103678929766,"treatment","Somewhat sensitive",0.804450092323661,"treatment","Somewhat sensitive",1.65568462529425
+"7",4.73605228973782,4,0.315467603350236,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Insensitive",19,1.34448160535117,51.0903010033445,130.414715719064,15.4615384615385,2.68896321070234,"control","Insensitive",0.89988730850375,"control","Insensitive",1.63603178246363
+"8",4.73605228973782,4,0.315467603350236,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Insensitive",4,0.655518394648829,24.9096989966555,63.5852842809365,7.53846153846154,1.31103678929766,"treatment","Insensitive",-1.28876317376521,"treatment","Insensitive",-1.63603178246363
+"9",4.73605228973782,4,0.315467603350236,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very insensitive",3,1.34448160535117,51.0903010033445,130.414715719064,15.4615384615385,2.68896321070234,"control","Very insensitive",0.189679034359297,"control","Very insensitive",0.333554245311503
+"10",4.73605228973782,4,0.315467603350236,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very insensitive",1,0.655518394648829,24.9096989966555,63.5852842809365,7.53846153846154,1.31103678929766,"treatment","Very insensitive",-0.27164662953638,"treatment","Very insensitive",-0.333554245311503
+
+p value 0.3154676 
+expected:  1.344482 0.6555184 51.0903 24.9097 130.4147 63.58528 15.46154 7.538462 2.688963 1.311037 
+observed:  2 0 53 23 124 70 19 4 3 1 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.Asian","expected.Black...African.American","expected.Hispanic...Latino","expected.White","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",1.17488907525439,3,0.759033032284137,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Asian",9,7.38255033557047,4.02684563758389,6.71140939597315,181.879194630872,"control","Asian",0.595288600082894,"control","Asian",1.05776658543527
+"2",1.17488907525439,3,0.759033032284137,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Asian",2,3.61744966442953,1.97315436241611,3.28859060402685,89.1208053691275,"treatment","Asian",-0.850412285832706,"treatment","Asian",-1.05776658543526
+"3",1.17488907525439,3,0.759033032284137,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Black / African American",4,7.38255033557047,4.02684563758389,6.71140939597315,181.879194630872,"control","Black / African American",-0.0133780012418132,"control","Black / African American",-0.0235669311173244
+"4",1.17488907525439,3,0.759033032284137,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Black / African American",2,3.61744966442953,1.97315436241611,3.28859060402685,89.1208053691275,"treatment","Black / African American",0.0191114303454471,"treatment","Black / African American",0.023566931117324
+"5",1.17488907525439,3,0.759033032284137,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Hispanic / Latino",7,7.38255033557047,4.02684563758389,6.71140939597315,181.879194630872,"control","Hispanic / Latino",0.111397468432431,"control","Hispanic / Latino",0.197597890433716
+"6",1.17488907525439,3,0.759033032284137,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Hispanic / Latino",3,3.61744966442953,1.97315436241611,3.28859060402685,89.1208053691275,"treatment","Hispanic / Latino",-0.159139240617758,"treatment","Hispanic / Latino",-0.197597890433716
+"7",1.17488907525439,3,0.759033032284137,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","White",180,7.38255033557047,4.02684563758389,6.71140939597315,181.879194630872,"control","White",-0.139341426311437,"control","White",-0.807237996503201
+"8",1.17488907525439,3,0.759033032284137,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","White",91,3.61744966442953,1.97315436241611,3.28859060402685,89.1208053691275,"treatment","White",0.199059180444909,"treatment","White",0.807237996503201
+
+p value 0.759033 
+expected:  7.38255 3.61745 4.026846 1.973154 6.711409 3.288591 181.8792 89.12081 
+observed:  9 2 4 2 7 3 180 91 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.Very.Attractive","expected.Attractive","expected.Somewhat.attractive","expected.Unattractive","expected.Very.Unattractive","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very Attractive",0,0,0,0,0,0,"control","Very Attractive",NA,"control","Very Attractive",NA
+"2",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very Attractive",0,0,16,69,9,0,"treatment","Very Attractive",NA,"treatment","Very Attractive",NA
+"3",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Attractive",0,0,0,0,0,0,"control","Attractive",NA,"control","Attractive",NA
+"4",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Attractive",16,0,16,69,9,0,"treatment","Attractive",0,"treatment","Attractive",NA
+"5",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat attractive",0,0,0,0,0,0,"control","Somewhat attractive",NA,"control","Somewhat attractive",NA
+"6",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat attractive",69,0,16,69,9,0,"treatment","Somewhat attractive",0,"treatment","Somewhat attractive",NA
+"7",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Unattractive",0,0,0,0,0,0,"control","Unattractive",NA,"control","Unattractive",NA
+"8",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Unattractive",9,0,16,69,9,0,"treatment","Unattractive",0,"treatment","Unattractive",NA
+"9",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very Unattractive",0,0,0,0,0,0,"control","Very Unattractive",NA,"control","Very Unattractive",NA
+"10",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very Unattractive",0,0,16,69,9,0,"treatment","Very Unattractive",NA,"treatment","Very Unattractive",NA
+
+p value NaN 
+expected:  0 0 0 16 0 69 0 9 0 0 
+observed:  0 0 0 16 0 69 0 9 0 0 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.Yes..very.likely","expected.Likely","expected.Somewhat.likely","expected.Unlikely","expected.No..very.unlikely","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",5.98608268601632,4,0.200190040496269,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Yes, very likely",8,8.06688963210702,24.2006688963211,31.5953177257525,71.257525083612,65.8795986622074,"control","Yes, very likely",-0.023550804633757,"control","Yes, very likely",-0.0419877837589683
+"2",5.98608268601632,4,0.200190040496269,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Yes, very likely",4,3.93311036789298,11.7993311036789,15.4046822742475,34.742474916388,32.1204013377926,"treatment","Yes, very likely",0.0337280117607061,"treatment","Yes, very likely",0.0419877837589678
+"3",5.98608268601632,4,0.200190040496269,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Likely",28,8.06688963210702,24.2006688963211,31.5953177257525,71.257525083612,65.8795986622074,"control","Likely",0.772313200832121,"control","Likely",1.43838032650407
+"4",5.98608268601632,4,0.200190040496269,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Likely",8,3.93311036789298,11.7993311036789,15.4046822742475,34.742474916388,32.1204013377926,"treatment","Likely",-1.10605939481479,"treatment","Likely",-1.43838032650407
+"5",5.98608268601632,4,0.200190040496269,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat likely",36,8.06688963210702,24.2006688963211,31.5953177257525,71.257525083612,65.8795986622074,"control","Somewhat likely",0.783615870470378,"control","Somewhat likely",1.49094321586989
+"6",5.98608268601632,4,0.200190040496269,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat likely",11,3.93311036789298,11.7993311036789,15.4046822742475,34.742474916388,32.1204013377926,"treatment","Somewhat likely",-1.12224638207128,"treatment","Somewhat likely",-1.49094321586989
+"7",5.98608268601632,4,0.200190040496269,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Unlikely",64,8.06688963210702,24.2006688963211,31.5953177257525,71.257525083612,65.8795986622074,"control","Unlikely",-0.859751967474228,"control","Unlikely",-1.86918666613256
+"8",5.98608268601632,4,0.200190040496269,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Unlikely",42,3.93311036789298,11.7993311036789,15.4046822742475,34.742474916388,32.1204013377926,"treatment","Unlikely",1.23128381051987,"treatment","Unlikely",1.86918666613256
+"9",5.98608268601632,4,0.200190040496269,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","No, very unlikely",65,8.06688963210702,24.2006688963211,31.5953177257525,71.257525083612,65.8795986622074,"control","No, very unlikely",-0.108370003594073,"control","No, very unlikely",-0.230870907224232
+"10",5.98608268601632,4,0.200190040496269,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","No, very unlikely",33,3.93311036789298,11.7993311036789,15.4046822742475,34.742474916388,32.1204013377926,"treatment","No, very unlikely",0.155200843986858,"treatment","No, very unlikely",0.230870907224232
+
+p value 0.20019 
+expected:  8.06689 3.93311 24.20067 11.79933 31.59532 15.40468 71.25753 34.74247 65.8796 32.1204 
+observed:  8 4 28 8 36 11 64 42 65 33 
+
+---
+ending /Users/ps22344/Downloads/Clippings_0208.csv
+---
+starting /Users/ps22344/Downloads/Prosody_0211.csvInput file has  103 rows[1] 103
+[1] 103
+[1] 103
+[1] 100
+[1] "Running the ordermachine"
+levels of gender m4m m4w w4w w4m[1] "Done with ordering"
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.female","expected.male","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",10.6679755294966,1,0.00109006356730953,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","control","female",81,94.8239202657807,106.176079734219,"control","female",-1.4196205161906,"control","female",-3.38875522746373
+"2",10.6679755294966,1,0.00109006356730953,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","treatment","female",61,47.1760797342193,52.8239202657807,"treatment","female",2.0126594456287,"treatment","female",3.38875522746373
+"3",10.6679755294966,1,0.00109006356730953,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","control","male",120,94.8239202657807,106.176079734219,"control","male",1.34158402156132,"control","male",3.38875522746373
+"4",10.6679755294966,1,0.00109006356730953,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","treatment","male",39,47.1760797342193,52.8239202657807,"treatment","male",-1.90202361990759,"treatment","male",-3.38875522746373
+
+p value 0.001090064 
+expected:  94.82392 47.17608 106.1761 52.82392 
+observed:  81 61 120 39 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.heterosexual","expected.homosexual","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",3.2256672199466,1,0.0724922492449035,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","control","heterosexual",185,188.980066445183,12.0199335548173,"control","heterosexual",-0.28952250238326,"control","heterosexual",-2.05405735823773
+"2",3.2256672199466,1,0.0724922492449035,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","treatment","heterosexual",98,94.0199335548173,5.98006644518272,"treatment","heterosexual",0.410468989774371,"treatment","heterosexual",2.05405735823773
+"3",3.2256672199466,1,0.0724922492449035,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","control","homosexual",16,188.980066445183,12.0199335548173,"control","homosexual",1.14799312972956,"control","homosexual",2.05405735823773
+"4",3.2256672199466,1,0.0724922492449035,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","treatment","homosexual",2,94.0199335548173,5.98006644518272,"treatment","homosexual",-1.62756116139198,"treatment","homosexual",-2.05405735823773
+
+p value 0.07249225 
+expected:  188.9801 94.01993 12.01993 5.980066 
+observed:  185 98 16 2 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.woman","expected.man","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",2.96685002301023,1,0.0849871910792304,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","control","woman",121,113.521594684385,87.4784053156146,"control","woman",0.701891135917667,"control","woman",1.84586784968493
+"2",2.96685002301023,1,0.0849871910792304,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","treatment","woman",49,56.4784053156146,43.5215946843854,"treatment","woman",-0.99510242941437,"treatment","woman",-1.84586784968492
+"3",2.96685002301023,1,0.0849871910792304,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","control","man",80,113.521594684385,87.4784053156146,"control","man",-0.799573828927057,"control","man",-1.84586784968493
+"4",2.96685002301023,1,0.0849871910792304,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","treatment","man",51,56.4784053156146,43.5215946843854,"treatment","man",1.13359154852583,"treatment","man",1.84586784968492
+
+p value 0.08498719 
+expected:  113.5216 56.47841 87.47841 43.52159 
+observed:  121 49 80 51 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.m4m","expected.m4w","expected.w4w","expected.w4m","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",15.2081049314517,3,0.00164717423131834,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","m4m",46,41.4019933554817,64.7740863787375,48.7475083056478,46.0764119601329,"control","m4m",0.714593347565111,"control","m4m",1.39131835300209
+"2",15.2081049314517,3,0.00164717423131834,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","m4m",16,20.5980066445183,32.2259136212625,24.2524916943522,22.9235880398671,"treatment","m4m",-1.01311092250181,"treatment","m4m",-1.39131835300209
+"3",15.2081049314517,3,0.00164717423131834,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","m4w",74,41.4019933554817,64.7740863787375,48.7475083056478,46.0764119601329,"control","m4w",1.1463275659948,"control","m4w",2.41579538895441
+"4",15.2081049314517,3,0.00164717423131834,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","m4w",23,20.5980066445183,32.2259136212625,24.2524916943522,22.9235880398671,"treatment","m4w",-1.6251998172547,"treatment","m4w",-2.41579538895441
+"5",15.2081049314517,3,0.00164717423131834,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","w4w",47,41.4019933554817,64.7740863787375,48.7475083056478,46.0764119601329,"control","w4w",-0.250289734482393,"control","w4w",-0.498932862204537
+"6",15.2081049314517,3,0.00164717423131834,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","w4w",26,20.5980066445183,32.2259136212625,24.2524916943522,22.9235880398671,"treatment","w4w",0.354846941492253,"treatment","w4w",0.498932862204537
+"7",15.2081049314517,3,0.00164717423131834,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","w4m",34,41.4019933554817,64.7740863787375,48.7475083056478,46.0764119601329,"control","w4m",-1.77909276407062,"control","w4m",-3.51577518487869
+"8",15.2081049314517,3,0.00164717423131834,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","w4m",35,20.5980066445183,32.2259136212625,24.2524916943522,22.9235880398671,"treatment","w4m",2.52229931549936,"treatment","w4m",3.51577518487869
+
+p value 0.001647174 
+expected:  41.40199 20.59801 64.77409 32.22591 48.74751 24.25249 46.07641 22.92359 
+observed:  46 16 74 23 47 26 34 35 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.Very.assertive","expected.Assertive","expected.Somewhat.assertive","expected.Somewhat.timid","expected.Timid","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",5.36529375370624,4,0.251826448993138,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very assertive",18,16.0265780730897,64.7740863787375,84.8073089700997,33.3887043189369,2.00332225913621,"control","Very assertive",0.492946227835716,"control","Very assertive",0.891509876202963
+"2",5.36529375370624,4,0.251826448993138,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very assertive",6,7.9734219269103,32.2259136212625,42.1926910299003,16.6112956810631,0.996677740863787,"treatment","Very assertive",-0.698871895922492,"treatment","Very assertive",-0.891509876202963
+"3",5.36529375370624,4,0.251826448993138,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Assertive",70,16.0265780730897,64.7740863787375,84.8073089700997,33.3887043189369,2.00332225913621,"control","Assertive",0.649324184843293,"control","Assertive",1.36839976479125
+"4",5.36529375370624,4,0.251826448993138,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Assertive",27,7.9734219269103,32.2259136212625,42.1926910299003,16.6112956810631,0.996677740863787,"treatment","Assertive",-0.92057591377085,"treatment","Assertive",-1.36839976479124
+"5",5.36529375370624,4,0.251826448993138,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat assertive",83,16.0265780730897,64.7740863787375,84.8073089700997,33.3887043189369,2.00332225913621,"control","Somewhat assertive",-0.196252755279516,"control","Somewhat assertive",-0.447824277771355
+"6",5.36529375370624,4,0.251826448993138,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat assertive",44,7.9734219269103,32.2259136212625,42.1926910299003,16.6112956810631,0.996677740863787,"treatment","Somewhat assertive",0.27823630127852,"treatment","Somewhat assertive",0.447824277771355
+"7",5.36529375370624,4,0.251826448993138,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat timid",29,16.0265780730897,64.7740863787375,84.8073089700997,33.3887043189369,2.00332225913621,"control","Somewhat timid",-0.7595153210548,"control","Somewhat timid",-1.44299947734763
+"8",5.36529375370624,4,0.251826448993138,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat timid",21,7.9734219269103,32.2259136212625,42.1926910299003,16.6112956810631,0.996677740863787,"treatment","Somewhat timid",1.07679881178571,"treatment","Somewhat timid",1.44299947734763
+"9",5.36529375370624,4,0.251826448993138,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Timid",1,16.0265780730897,64.7740863787375,84.8073089700997,33.3887043189369,2.00332225913621,"control","Timid",-0.708867457103132,"control","Timid",-1.23601403622358
+"10",5.36529375370624,4,0.251826448993138,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Timid",2,7.9734219269103,32.2259136212625,42.1926910299003,16.6112956810631,0.996677740863787,"treatment","Timid",1.00499307171598,"treatment","Timid",1.23601403622358
+
+p value 0.2518264 
+expected:  16.02658 7.973422 64.77409 32.22591 84.80731 42.19269 33.3887 16.6113 2.003322 0.9966777 
+observed:  18 6 70 27 83 44 29 21 1 2 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.Very.educated","expected.Somewhat.educated","expected.Of.average.education","expected.Somewhat.uneducated","expected.Very.uneducated","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",15.3708136035381,4,0.00399080400410706,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very educated",22,15.358803986711,55.4252491694352,110.85049833887,16.0265780730897,3.33887043189369,"control","Very educated",1.69460155115218,"control","Very educated",3.05922695523905
+"2",15.3708136035381,4,0.00399080400410706,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very educated",1,7.64119601328904,27.5747508305648,55.1495016611296,7.9734219269103,1.66112956810631,"treatment","Very educated",-2.40251234721207,"treatment","Very educated",-3.05922695523905
+"3",15.3708136035381,4,0.00399080400410706,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat educated",60,15.358803986711,55.4252491694352,110.85049833887,16.0265780730897,3.33887043189369,"control","Somewhat educated",0.614488299049694,"control","Somewhat educated",1.25271381349716
+"4",15.3708136035381,4,0.00399080400410706,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat educated",23,7.64119601328904,27.5747508305648,55.1495016611296,7.9734219269103,1.66112956810631,"treatment","Somewhat educated",-0.87118752173953,"treatment","Somewhat educated",-1.25271381349716
+"5",15.3708136035381,4,0.00399080400410706,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Of average education",105,15.358803986711,55.4252491694352,110.85049833887,16.0265780730897,3.33887043189369,"control","Of average education",-0.555679065291643,"control","Of average education",-1.43953970106423
+"6",15.3708136035381,4,0.00399080400410706,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Of average education",61,7.64119601328904,27.5747508305648,55.1495016611296,7.9734219269103,1.66112956810631,"treatment","Of average education",0.787811042981006,"treatment","Of average education",1.43953970106422
+"7",15.3708136035381,4,0.00399080400410706,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat uneducated",12,15.358803986711,55.4252491694352,110.85049833887,16.0265780730897,3.33887043189369,"control","Somewhat uneducated",-1.00580947497793,"control","Somewhat uneducated",-1.81904035346463
+"8",15.3708136035381,4,0.00399080400410706,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat uneducated",12,7.64119601328904,27.5747508305648,55.1495016611296,7.9734219269103,1.66112956810631,"treatment","Somewhat uneducated",1.42598104016509,"treatment","Somewhat uneducated",1.81904035346463
+"9",15.3708136035381,4,0.00399080400410706,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very uneducated",2,15.358803986711,55.4252491694352,110.85049833887,16.0265780730897,3.33887043189369,"control","Very uneducated",-0.732721217205046,"control","Very uneducated",-1.28191552593164
+"10",15.3708136035381,4,0.00399080400410706,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very uneducated",3,7.64119601328904,27.5747508305648,55.1495016611296,7.9734219269103,1.66112956810631,"treatment","Very uneducated",1.03881161338633,"treatment","Very uneducated",1.28191552593163
+
+p value 0.003990804 
+expected:  15.3588 7.641196 55.42525 27.57475 110.8505 55.1495 16.02658 7.973422 3.33887 1.66113 
+observed:  22 1 60 23 105 61 12 12 2 3 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.Very.friendly","expected.Friendly","expected.Somewhat.friendly","expected.Somewhat.unfriendly","expected.Very.unfriendly","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",2.77591477024849,4,0.595997363741863,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very friendly",51,52.0863787375415,120.867109634551,26.0431893687708,0.667774086378738,1.33554817275748,"control","Very friendly",-0.150528652801397,"control","Very friendly",-0.30341233929862
+"2",2.77591477024849,4,0.595997363741863,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very friendly",27,25.9136212624585,60.1328903654485,12.9568106312292,0.332225913621262,0.664451827242525,"treatment","Very friendly",0.213411197882278,"treatment","Very friendly",0.30341233929862
+"3",2.77591477024849,4,0.595997363741863,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Friendly",118,52.0863787375415,120.867109634551,26.0431893687708,0.667774086378738,1.33554817275748,"control","Friendly",-0.260789578112429,"control","Friendly",-0.716582345717071
+"4",2.77591477024849,4,0.595997363741863,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Friendly",63,25.9136212624585,60.1328903654485,12.9568106312292,0.332225913621262,0.664451827242525,"treatment","Friendly",0.369733039022262,"treatment","Friendly",0.716582345717071
+"5",2.77591477024849,4,0.595997363741863,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat friendly",29,52.0863787375415,120.867109634551,26.0431893687708,0.667774086378738,1.33554817275748,"control","Somewhat friendly",0.579397246062881,"control","Somewhat friendly",1.07743797025697
+"6",2.77591477024849,4,0.595997363741863,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat friendly",10,25.9136212624585,60.1328903654485,12.9568106312292,0.332225913621262,0.664451827242525,"treatment","Somewhat friendly",-0.821437367775507,"treatment","Somewhat friendly",-1.07743797025697
+"7",2.77591477024849,4,0.595997363741863,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat unfriendly",1,52.0863787375415,120.867109634551,26.0431893687708,0.667774086378738,1.33554817275748,"control","Somewhat unfriendly",0.406554454150588,"control","Somewhat unfriendly",0.706520213867691
+"8",2.77591477024849,4,0.595997363741863,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat unfriendly",0,25.9136212624585,60.1328903654485,12.9568106312292,0.332225913621262,0.664451827242525,"treatment","Somewhat unfriendly",-0.576390417704235,"treatment","Somewhat unfriendly",-0.706520213867691
+"9",2.77591477024849,4,0.595997363741863,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very unfriendly",2,52.0863787375415,120.867109634551,26.0431893687708,0.667774086378738,1.33554817275748,"control","Very unfriendly",0.574954822902953,"control","Very unfriendly",1.00083992746526
+"10",2.77591477024849,4,0.595997363741863,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very unfriendly",0,25.9136212624585,60.1328903654485,12.9568106312292,0.332225913621262,0.664451827242525,"treatment","Very unfriendly",-0.815139145939222,"treatment","Very unfriendly",-1.00083992746526
+
+p value 0.5959974 
+expected:  52.08638 25.91362 120.8671 60.13289 26.04319 12.95681 0.6677741 0.3322259 1.335548 0.6644518 
+observed:  51 27 118 63 29 10 1 0 2 0 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.Very.sensitive","expected.Sensitive","expected.Somewhat.sensitive","expected.Insensitive","expected.Very.insensitive","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",3.1009306806675,4,0.541079256207326,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very sensitive",2,2.67109634551495,54.0897009966777,120.867109634551,21.3687707641196,2.00332225913621,"control","Very sensitive",-0.410619998692094,"control","Very sensitive",-0.717180327503877
+"2",3.1009306806675,4,0.541079256207326,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very sensitive",2,1.32890365448505,26.9102990033223,60.1328903654485,10.6312292358804,0.996677740863787,"treatment","Very sensitive",0.582154321881277,"treatment","Very sensitive",0.717180327503876
+"3",3.1009306806675,4,0.541079256207326,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Sensitive",53,2.67109634551495,54.0897009966777,120.867109634551,21.3687707641196,2.00332225913621,"control","Sensitive",-0.148166512179326,"control","Sensitive",-0.300680464820208
+"4",3.1009306806675,4,0.541079256207326,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Sensitive",28,1.32890365448505,26.9102990033223,60.1328903654485,10.6312292358804,0.996677740863787,"treatment","Sensitive",0.210062285563321,"treatment","Sensitive",0.300680464820208
+"5",3.1009306806675,4,0.541079256207326,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat sensitive",124,2.67109634551495,54.0897009966777,120.867109634551,21.3687707641196,2.00332225913621,"control","Somewhat sensitive",0.284964741784496,"control","Somewhat sensitive",0.783009446131167
+"6",3.1009306806675,4,0.541079256207326,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat sensitive",57,1.32890365448505,26.9102990033223,60.1328903654485,10.6312292358804,0.996677740863787,"treatment","Somewhat sensitive",-0.404007248896863,"treatment","Somewhat sensitive",-0.783009446131167
+"7",3.1009306806675,4,0.541079256207326,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Insensitive",19,2.67109634551495,54.0897009966777,120.867109634551,21.3687707641196,2.00332225913621,"control","Insensitive",-0.512428485912257,"control","Insensitive",-0.94042381770012
+"8",3.1009306806675,4,0.541079256207326,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Insensitive",13,1.32890365448505,26.9102990033223,60.1328903654485,10.6312292358804,0.996677740863787,"treatment","Insensitive",0.726492763818332,"treatment","Insensitive",0.940423817700119
+"9",3.1009306806675,4,0.541079256207326,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very insensitive",3,2.67109634551495,54.0897009966777,120.867109634551,21.3687707641196,2.00332225913621,"control","Very insensitive",0.70417297063225,"control","Very insensitive",1.22782851280489
+"10",3.1009306806675,4,0.541079256207326,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very insensitive",0,1.32890365448505,26.9102990033223,60.1328903654485,10.6312292358804,0.996677740863787,"treatment","Very insensitive",-0.998337488459583,"treatment","Very insensitive",-1.22782851280489
+
+p value 0.5410793 
+expected:  2.671096 1.328904 54.0897 26.9103 120.8671 60.13289 21.36877 10.63123 2.003322 0.9966777 
+observed:  2 2 53 28 124 57 19 13 3 0 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.Asian","expected.Black...African.American","expected.Hispanic...Latino","expected.White","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",1.70315195753152,3,0.636233270806192,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Asian",9,7.33333333333333,3.33333333333333,6.66666666666667,182.666666666667,"control","Asian",0.615457454896664,"control","Asian",1.08610139099411
+"2",1.70315195753152,3,0.636233270806192,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Asian",2,3.66666666666667,1.66666666666667,3.33333333333333,91.3333333333333,"treatment","Asian",-0.870388279778489,"treatment","Asian",-1.08610139099411
+"3",1.70315195753152,3,0.636233270806192,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Black / African American",4,7.33333333333333,3.33333333333333,6.66666666666667,182.666666666667,"control","Black / African American",0.365148371670111,"control","Black / African American",0.63779280414328
+"4",1.70315195753152,3,0.636233270806192,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Black / African American",1,3.66666666666667,1.66666666666667,3.33333333333333,91.3333333333333,"treatment","Black / African American",-0.516397779494322,"treatment","Black / African American",-0.637792804143281
+"5",1.70315195753152,3,0.636233270806192,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Hispanic / Latino",7,7.33333333333333,3.33333333333333,6.66666666666667,182.666666666667,"control","Hispanic / Latino",0.12909944487358,"control","Hispanic / Latino",0.227429413073671
+"6",1.70315195753152,3,0.636233270806192,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Hispanic / Latino",3,3.66666666666667,1.66666666666667,3.33333333333333,91.3333333333333,"treatment","Hispanic / Latino",-0.182574185835055,"treatment","Hispanic / Latino",-0.227429413073671
+"7",1.70315195753152,3,0.636233270806192,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","White",180,7.33333333333333,3.33333333333333,6.66666666666667,182.666666666667,"control","White",-0.197305449466795,"control","White",-1.16084346573391
+"8",1.70315195753152,3,0.636233270806192,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","White",94,3.66666666666667,1.66666666666667,3.33333333333333,91.3333333333333,"treatment","White",0.279032042566063,"treatment","White",1.16084346573391
+
+p value 0.6362333 
+expected:  7.333333 3.666667 3.333333 1.666667 6.666667 3.333333 182.6667 91.33333 
+observed:  9 2 4 1 7 3 180 94 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.Very.Attractive","expected.Attractive","expected.Somewhat.attractive","expected.Unattractive","expected.Very.Unattractive","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very Attractive",0,0,0,0,0,0,"control","Very Attractive",NA,"control","Very Attractive",NA
+"2",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very Attractive",0,0,29,59,10,0,"treatment","Very Attractive",NA,"treatment","Very Attractive",NA
+"3",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Attractive",0,0,0,0,0,0,"control","Attractive",NA,"control","Attractive",NA
+"4",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Attractive",29,0,29,59,10,0,"treatment","Attractive",0,"treatment","Attractive",NA
+"5",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat attractive",0,0,0,0,0,0,"control","Somewhat attractive",NA,"control","Somewhat attractive",NA
+"6",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat attractive",59,0,29,59,10,0,"treatment","Somewhat attractive",0,"treatment","Somewhat attractive",NA
+"7",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Unattractive",0,0,0,0,0,0,"control","Unattractive",NA,"control","Unattractive",NA
+"8",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Unattractive",10,0,29,59,10,0,"treatment","Unattractive",0,"treatment","Unattractive",NA
+"9",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very Unattractive",0,0,0,0,0,0,"control","Very Unattractive",NA,"control","Very Unattractive",NA
+"10",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very Unattractive",0,0,29,59,10,0,"treatment","Very Unattractive",NA,"treatment","Very Unattractive",NA
+
+p value NaN 
+expected:  0 0 0 29 0 59 0 10 0 0 
+observed:  0 0 0 29 0 59 0 10 0 0 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.Yes..very.likely","expected.Likely","expected.Somewhat.likely","expected.Unlikely","expected.No..very.unlikely","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",1.97400530125842,4,0.740540204465021,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Yes, very likely",8,6.7,26.8,39.53,64.32,63.65,"control","Yes, very likely",0.502233816036066,"control","Yes, very likely",0.889222840515532
+"2",1.97400530125842,4,0.740540204465021,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Yes, very likely",2,3.3,13.2,19.47,31.68,31.35,"treatment","Yes, very likely",-0.715626447332134,"treatment","Yes, very likely",-0.889222840515532
+"3",1.97400530125842,4,0.740540204465021,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Likely",28,6.7,26.8,39.53,64.32,63.65,"control","Likely",0.231800222785877,"control","Likely",0.43344184115389
+"4",1.97400530125842,4,0.740540204465021,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Likely",12,3.3,13.2,19.47,31.68,31.35,"treatment","Likely",-0.330289129537908,"treatment","Likely",-0.43344184115389
+"5",1.97400530125842,4,0.740540204465021,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat likely",36,6.7,26.8,39.53,64.32,63.65,"control","Somewhat likely",-0.561450274130555,"control","Somewhat likely",-1.09045170116155
+"6",1.97400530125842,4,0.740540204465021,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat likely",23,3.3,13.2,19.47,31.68,31.35,"treatment","Somewhat likely",0.800003210060329,"treatment","Somewhat likely",1.09045170116155
+"7",1.97400530125842,4,0.740540204465021,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Unlikely",64,6.7,26.8,39.53,64.32,63.65,"control","Unlikely",-0.0399003734443045,"control","Unlikely",-0.0842297543602341
+"8",1.97400530125842,4,0.740540204465021,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Unlikely",32,3.3,13.2,19.47,31.68,31.35,"treatment","Unlikely",0.0568535243614962,"treatment","Unlikely",0.0842297543602359
+"9",1.97400530125842,4,0.740540204465021,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","No, very unlikely",65,6.7,26.8,39.53,64.32,63.65,"control","No, very unlikely",0.169213327014385,"control","No, very unlikely",0.3563373052583
+"10",1.97400530125842,4,0.740540204465021,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","No, very unlikely",30,3.3,13.2,19.47,31.68,31.35,"treatment","No, very unlikely",-0.241109873899569,"treatment","No, very unlikely",-0.3563373052583
+
+p value 0.7405402 
+expected:  6.7 3.3 26.8 13.2 39.53 19.47 64.32 31.68 63.65 31.35 
+observed:  8 2 28 12 36 23 64 32 65 30 
+
+---
+ending /Users/ps22344/Downloads/Prosody_0211.csv
+---
+starting /Users/ps22344/Downloads/Punctuation_0208.csvInput file has  101 rows[1] 101
+[1] 101
+[1] 101
+[1] 98
+[1] "Running the ordermachine"
+levels of gender m4m m4w w4w w4m[1] "Done with ordering"
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.female","expected.male","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",0.0165627603420898,1,0.897597893422827,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","control","female",81,82.0133779264214,118.986622073579,"control","female",-0.111899743310883,"control","female",-0.254039124639038
+"2",0.0165627603420898,1,0.897597893422827,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","treatment","female",41,39.9866220735786,58.0133779264214,"treatment","female",0.160255919791367,"treatment","female",0.25403912463904
+"3",0.0165627603420898,1,0.897597893422827,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","control","male",120,82.0133779264214,118.986622073579,"control","male",0.0929014243221244,"control","male",0.254039124639038
+"4",0.0165627603420898,1,0.897597893422827,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","treatment","male",57,39.9866220735786,58.0133779264214,"treatment","male",-0.133047697556445,"treatment","male",-0.25403912463904
+
+p value 0.8975979 
+expected:  82.01338 39.98662 118.9866 58.01338 
+observed:  81 41 120 57 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.heterosexual","expected.homosexual","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",0.206358888140814,1,0.649636363131287,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","control","heterosexual",185,183.463087248322,17.5369127516779,"control","heterosexual",0.113468382821559,"control","heterosexual",0.673315462752971
+"2",0.206358888140814,1,0.649636363131287,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","treatment","heterosexual",87,88.5369127516778,8.46308724832215,"treatment","heterosexual",-0.163337922248999,"treatment","heterosexual",-0.673315462752971
+"3",0.206358888140814,1,0.649636363131287,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","control","homosexual",16,183.463087248322,17.5369127516779,"control","homosexual",-0.36700555963291,"control","homosexual",-0.673315462752974
+"4",0.206358888140814,1,0.649636363131287,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","treatment","homosexual",10,88.5369127516778,8.46308724832215,"treatment","homosexual",0.528305102034824,"treatment","homosexual",0.673315462752973
+
+p value 0.6496364 
+expected:  183.4631 88.53691 17.53691 8.463087 
+observed:  185 87 16 10 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.woman","expected.man","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",0.777510511598703,1,0.377903596796248,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","control","woman",121,116.969899665552,84.0301003344482,"control","woman",0.372630843765895,"control","woman",1.00665798750413
+"2",0.777510511598703,1,0.377903596796248,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","treatment","woman",53,57.0301003344482,40.9698996655518,"treatment","woman",-0.533658941865765,"treatment","woman",-1.00665798750413
+"3",0.777510511598703,1,0.377903596796248,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","control","man",80,116.969899665552,84.0301003344482,"control","man",-0.439641233337082,"control","man",-1.00665798750413
+"4",0.777510511598703,1,0.377903596796248,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","treatment","man",45,57.0301003344482,40.9698996655518,"treatment","man",0.62962709423653,"treatment","man",1.00665798750413
+
+p value 0.3779036 
+expected:  116.9699 57.0301 84.0301 40.9699 
+observed:  121 53 80 45 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.m4m","expected.m4w","expected.w4w","expected.w4m","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",1.24389503355957,3,0.742496850165847,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","m4m",46,47.056856187291,71.9297658862876,45.0401337792642,36.9732441471572,"control","m4m",-0.154065160155829,"control","m4m",-0.307499808074302
+"2",1.24389503355957,3,0.742496850165847,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","m4m",24,22.943143812709,35.0702341137124,21.9598662207358,18.0267558528428,"treatment","m4m",0.22064263257497,"treatment","m4m",0.307499808074302
+"3",1.24389503355957,3,0.742496850165847,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","m4w",74,47.056856187291,71.9297658862876,45.0401337792642,36.9732441471572,"control","m4w",0.244098514976273,"control","m4w",0.532074779137597
+"4",1.24389503355957,3,0.742496850165847,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","m4w",33,22.943143812709,35.0702341137124,21.9598662207358,18.0267558528428,"treatment","m4w",-0.349582857652764,"treatment","m4w",-0.532074779137597
+"5",1.24389503355957,3,0.742496850165847,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","w4w",47,47.056856187291,71.9297658862876,45.0401337792642,36.9732441471572,"control","w4w",0.292029410515215,"control","w4w",0.579082912244182
+"6",1.24389503355957,3,0.742496850165847,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","w4w",20,22.943143812709,35.0702341137124,21.9598662207358,18.0267558528428,"treatment","w4w",-0.418226533891386,"treatment","w4w",-0.579082912244183
+"7",1.24389503355957,3,0.742496850165847,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","w4m",34,47.056856187291,71.9297658862876,45.0401337792642,36.9732441471572,"control","w4m",-0.488975155362708,"control","w4m",-0.945474958258481
+"8",1.24389503355957,3,0.742496850165847,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","w4m",21,22.943143812709,35.0702341137124,21.9598662207358,18.0267558528428,"treatment","w4m",0.700280098588538,"treatment","w4m",0.945474958258481
+
+p value 0.7424969 
+expected:  47.05686 22.94314 71.92977 35.07023 45.04013 21.95987 36.97324 18.02676 
+observed:  46 24 74 33 47 20 34 21 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.Very.assertive","expected.Assertive","expected.Somewhat.assertive","expected.Somewhat.timid","expected.Timid","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",8.29627889319597,4,0.081308552618465,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very assertive",18,15.4615384615385,65.2073578595318,88.0635451505017,28.9063545150502,3.36120401337793,"control","Very assertive",0.64557133001356,"control","Very assertive",1.17367497437608
+"2",8.29627889319597,4,0.081308552618465,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very assertive",5,7.53846153846154,31.7926421404682,42.9364548494983,14.0936454849498,1.63879598662207,"treatment","Very assertive",-0.924547494222868,"treatment","Very assertive",-1.17367497437608
+"3",8.29627889319597,4,0.081308552618465,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Assertive",70,15.4615384615385,65.2073578595318,88.0635451505017,28.9063545150502,3.36120401337793,"control","Assertive",0.593508168268522,"control","Assertive",1.26127319525754
+"4",8.29627889319597,4,0.081308552618465,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Assertive",27,7.53846153846154,31.7926421404682,42.9364548494983,14.0936454849498,1.63879598662207,"treatment","Assertive",-0.849985840855014,"treatment","Assertive",-1.26127319525754
+"5",8.29627889319597,4,0.081308552618465,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat assertive",83,15.4615384615385,65.2073578595318,88.0635451505017,28.9063545150502,3.36120401337793,"control","Somewhat assertive",-0.539580945074979,"control","Somewhat assertive",-1.25736137208199
+"6",8.29627889319597,4,0.081308552618465,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat assertive",48,7.53846153846154,31.7926421404682,42.9364548494983,14.0936454849498,1.63879598662207,"treatment","Somewhat assertive",0.772754593499375,"treatment","Somewhat assertive",1.25736137208199
+"7",8.29627889319597,4,0.081308552618465,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat timid",29,15.4615384615385,65.2073578595318,88.0635451505017,28.9063545150502,3.36120401337793,"control","Somewhat timid",0.0174176749189704,"control","Somewhat timid",0.0328797380202173
+"8",8.29627889319597,4,0.081308552618465,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat timid",14,7.53846153846154,31.7926421404682,42.9364548494983,14.0936454849498,1.63879598662207,"treatment","Somewhat timid",-0.0249445211595512,"treatment","Somewhat timid",-0.0328797380202179
+"9",8.29627889319597,4,0.081308552618465,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Timid",1,15.4615384615385,65.2073578595318,88.0635451505017,28.9063545150502,3.36120401337793,"control","Timid",-1.2879116628049,"control","Timid",-2.26866599406782
+"10",8.29627889319597,4,0.081308552618465,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Timid",4,7.53846153846154,31.7926421404682,42.9364548494983,14.0936454849498,1.63879598662207,"treatment","Timid",1.84446775324063,"treatment","Timid",2.26866599406782
+
+p value 0.08130855 
+expected:  15.46154 7.538462 65.20736 31.79264 88.06355 42.93645 28.90635 14.09365 3.361204 1.638796 
+observed:  18 5 70 27 83 48 29 14 1 4 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.Very.educated","expected.Somewhat.educated","expected.Of.average.education","expected.Somewhat.uneducated","expected.Very.uneducated","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",8.35814230469076,4,0.0793056879147662,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very educated",22,18.1505016722408,67.8963210702341,98.1471571906355,14.7892976588629,2.01672240802676,"control","Very educated",0.903565871115131,"control","Very educated",1.65475429554685
+"2",8.35814230469076,4,0.0793056879147662,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very educated",5,8.8494983277592,33.1036789297659,47.8528428093645,7.21070234113712,0.983277591973244,"treatment","Very educated",-1.29403138455242,"treatment","Very educated",-1.65475429554685
+"3",8.35814230469076,4,0.0793056879147662,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat educated",60,18.1505016722408,67.8963210702341,98.1471571906355,14.7892976588629,2.01672240802676,"control","Somewhat educated",-0.958300417409143,"control","Somewhat educated",-2.05696656574706
+"4",8.35814230469076,4,0.0793056879147662,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat educated",41,8.8494983277592,33.1036789297659,47.8528428093645,7.21070234113712,0.983277591973244,"treatment","Somewhat educated",1.37241883032467,"treatment","Somewhat educated",2.05696656574706
+"5",8.35814230469076,4,0.0793056879147662,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Of average education",105,18.1505016722408,67.8963210702341,98.1471571906355,14.7892976588629,2.01672240802676,"control","Of average education",0.691722508308728,"control","Of average education",1.68905714354124
+"6",8.35814230469076,4,0.0793056879147662,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Of average education",41,8.8494983277592,33.1036789297659,47.8528428093645,7.21070234113712,0.983277591973244,"treatment","Of average education",-0.990642369048449,"treatment","Of average education",-1.68905714354124
+"7",8.35814230469076,4,0.0793056879147662,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat uneducated",12,18.1505016722408,67.8963210702341,98.1471571906355,14.7892976588629,2.01672240802676,"control","Somewhat uneducated",-0.725305694764248,"control","Somewhat uneducated",-1.31625293714985
+"8",8.35814230469076,4,0.0793056879147662,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat uneducated",10,8.8494983277592,33.1036789297659,47.8528428093645,7.21070234113712,0.983277591973244,"treatment","Somewhat uneducated",1.03873814009953,"treatment","Somewhat uneducated",1.31625293714985
+"9",8.35814230469076,4,0.0793056879147662,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very uneducated",2,18.1505016722408,67.8963210702341,98.1471571906355,14.7892976588629,2.01672240802676,"control","Very uneducated",-0.0117754023168785,"control","Very uneducated",-0.0206722643066567
+"10",8.35814230469076,4,0.0793056879147662,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very uneducated",1,8.8494983277592,33.1036789297659,47.8528428093645,7.21070234113712,0.983277591973244,"treatment","Very uneducated",0.016864005880353,"treatment","Very uneducated",0.0206722643066564
+
+p value 0.07930569 
+expected:  18.1505 8.849498 67.89632 33.10368 98.14716 47.85284 14.7893 7.210702 2.016722 0.9832776 
+observed:  22 5 60 41 105 41 12 10 2 1 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.Very.friendly","expected.Friendly","expected.Somewhat.friendly","expected.Somewhat.unfriendly","expected.Very.unfriendly","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",6.09820023090784,4,0.191933666670564,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very friendly",51,47.7290969899666,114.953177257525,33.6120401337793,2.68896321070234,2.01672240802676,"control","Very friendly",0.473452111280133,"control","Very friendly",0.947036645975875
+"2",6.09820023090784,4,0.191933666670564,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very friendly",20,23.2709030100334,56.0468227424749,16.3879598662207,1.31103678929766,0.983277591973244,"treatment","Very friendly",-0.678048951011159,"treatment","Very friendly",-0.947036645975875
+"3",6.09820023090784,4,0.191933666670564,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Friendly",118,47.7290969899666,114.953177257525,33.6120401337793,2.68896321070234,2.01672240802676,"control","Friendly",0.284175543255909,"control","Friendly",0.758647209227828
+"4",6.09820023090784,4,0.191933666670564,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Friendly",53,23.2709030100334,56.0468227424749,16.3879598662207,1.31103678929766,0.983277591973244,"treatment","Friendly",-0.406978708969548,"treatment","Friendly",-0.758647209227828
+"5",6.09820023090784,4,0.191933666670564,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat friendly",29,47.7290969899666,114.953177257525,33.6120401337793,2.68896321070234,2.01672240802676,"control","Somewhat friendly",-0.795509995964704,"control","Somewhat friendly",-1.52266413370028
+"6",6.09820023090784,4,0.191933666670564,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat friendly",21,23.2709030100334,56.0468227424749,16.3879598662207,1.31103678929766,0.983277591973244,"treatment","Somewhat friendly",1.13928041597349,"treatment","Somewhat friendly",1.52266413370028
+"7",6.09820023090784,4,0.191933666670564,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat unfriendly",1,47.7290969899666,114.953177257525,33.6120401337793,2.68896321070234,2.01672240802676,"control","Somewhat unfriendly",-1.02997755216608,"control","Somewhat unfriendly",-1.81123541808934
+"8",6.09820023090784,4,0.191933666670564,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat unfriendly",3,23.2709030100334,56.0468227424749,16.3879598662207,1.31103678929766,0.983277591973244,"treatment","Somewhat unfriendly",1.47507040769755,"treatment","Somewhat unfriendly",1.81123541808934
+"9",6.09820023090784,4,0.191933666670564,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very unfriendly",2,47.7290969899666,114.953177257525,33.6120401337793,2.68896321070234,2.01672240802676,"control","Very unfriendly",-0.0117754023168785,"control","Very unfriendly",-0.0206722643066567
+"10",6.09820023090784,4,0.191933666670564,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very unfriendly",1,23.2709030100334,56.0468227424749,16.3879598662207,1.31103678929766,0.983277591973244,"treatment","Very unfriendly",0.016864005880353,"treatment","Very unfriendly",0.0206722643066564
+
+p value 0.1919337 
+expected:  47.7291 23.2709 114.9532 56.04682 33.61204 16.38796 2.688963 1.311037 2.016722 0.9832776 
+observed:  51 20 118 53 29 21 1 3 2 1 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.Very.sensitive","expected.Sensitive","expected.Somewhat.sensitive","expected.Insensitive","expected.Very.insensitive","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",5.98957202931151,4,0.199928395275521,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very sensitive",2,4.7056856187291,49.7458193979933,125.709030100334,17.4782608695652,3.36120401337793,"control","Very sensitive",-1.24728551476067,"control","Very sensitive",-2.20461421570376
+"2",5.98957202931151,4,0.199928395275521,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very sensitive",5,2.2943143812709,24.2541806020067,61.2909698996656,8.52173913043478,1.63879598662207,"treatment","Very sensitive",1.78628548642059,"treatment","Very sensitive",2.20461421570376
+"3",5.98957202931151,4,0.199928395275521,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Sensitive",53,4.7056856187291,49.7458193979933,125.709030100334,17.4782608695652,3.36120401337793,"control","Sensitive",0.461384879293811,"control","Sensitive",0.929031092274206
+"4",5.98957202931151,4,0.199928395275521,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Sensitive",21,2.2943143812709,24.2541806020067,61.2909698996656,8.52173913043478,1.63879598662207,"treatment","Sensitive",-0.660767004653774,"treatment","Sensitive",-0.929031092274205
+"5",5.98957202931151,4,0.199928395275521,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat sensitive",124,4.7056856187291,49.7458193979933,125.709030100334,17.4782608695652,3.36120401337793,"control","Somewhat sensitive",-0.152428604625571,"control","Somewhat sensitive",-0.435026399799542
+"6",5.98957202931151,4,0.199928395275521,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat sensitive",63,2.2943143812709,24.2541806020067,61.2909698996656,8.52173913043478,1.63879598662207,"treatment","Somewhat sensitive",0.218298858549836,"treatment","Somewhat sensitive",0.435026399799542
+"7",5.98957202931151,4,0.199928395275521,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Insensitive",19,4.7056856187291,49.7458193979933,125.709030100334,17.4782608695652,3.36120401337793,"control","Insensitive",0.363991380786153,"control","Insensitive",0.665377217809997
+"8",5.98957202931151,4,0.199928395275521,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Insensitive",7,2.2943143812709,24.2541806020067,61.2909698996656,8.52173913043478,1.63879598662207,"treatment","Insensitive",-0.521286035142687,"treatment","Insensitive",-0.665377217809998
+"9",5.98957202931151,4,0.199928395275521,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very insensitive",3,4.7056856187291,49.7458193979933,125.709030100334,17.4782608695652,3.36120401337793,"control","Very insensitive",-0.19701764813446,"control","Very insensitive",-0.347048055749752
+"10",5.98957202931151,4,0.199928395275521,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very insensitive",2,2.2943143812709,24.2541806020067,61.2909698996656,8.52173913043478,1.63879598662207,"treatment","Very insensitive",0.28215654015579,"treatment","Very insensitive",0.347048055749752
+
+p value 0.1999284 
+expected:  4.705686 2.294314 49.74582 24.25418 125.709 61.29097 17.47826 8.521739 3.361204 1.638796 
+observed:  2 5 53 21 124 63 19 7 3 2 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.Asian","expected.Black...African.American","expected.Hispanic...Latino","expected.White","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",0.696037689531468,3,0.874135526577528,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Asian",9,8.05369127516779,4.69798657718121,6.71140939597315,180.536912751678,"control","Asian",0.333453557737483,"control","Asian",0.593547616165641
+"2",0.696037689531468,3,0.874135526577528,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Asian",3,3.94630872483221,2.30201342281879,3.28859060402685,88.4630872483222,"treatment","Asian",-0.476362225339262,"treatment","Asian",-0.593547616165641
+"3",0.696037689531468,3,0.874135526577528,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Black / African American",4,8.05369127516779,4.69798657718121,6.71140939597315,180.536912751678,"control","Black / African American",-0.322026183555769,"control","Black / African American",-0.568261085802346
+"4",0.696037689531468,3,0.874135526577528,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Black / African American",3,3.94630872483221,2.30201342281879,3.28859060402685,88.4630872483222,"treatment","Black / African American",0.46003740507967,"treatment","Black / African American",0.568261085802346
+"5",0.696037689531468,3,0.874135526577528,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Hispanic / Latino",7,8.05369127516779,4.69798657718121,6.71140939597315,180.536912751678,"control","Hispanic / Latino",0.111397468432431,"control","Hispanic / Latino",0.197597890433716
+"6",0.696037689531468,3,0.874135526577528,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Hispanic / Latino",3,3.94630872483221,2.30201342281879,3.28859060402685,88.4630872483222,"treatment","Hispanic / Latino",-0.159139240617758,"treatment","Hispanic / Latino",-0.197597890433716
+"7",0.696037689531468,3,0.874135526577528,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","White",180,8.05369127516779,4.69798657718121,6.71140939597315,180.536912751678,"control","White",-0.0399595614057611,"control","White",-0.223370049302171
+"8",0.696037689531468,3,0.874135526577528,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","White",89,3.94630872483221,2.30201342281879,3.28859060402685,88.4630872483222,"treatment","White",0.0570850877225158,"treatment","White",0.223370049302171
+
+p value 0.8741355 
+expected:  8.053691 3.946309 4.697987 2.302013 6.711409 3.288591 180.5369 88.46309 
+observed:  9 3 4 3 7 3 180 89 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.Very.Attractive","expected.Attractive","expected.Somewhat.attractive","expected.Unattractive","expected.Very.Unattractive","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very Attractive",0,0,0,0,0,0,"control","Very Attractive",NA,"control","Very Attractive",NA
+"2",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very Attractive",0,0,23,58,13,0,"treatment","Very Attractive",NA,"treatment","Very Attractive",NA
+"3",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Attractive",0,0,0,0,0,0,"control","Attractive",NA,"control","Attractive",NA
+"4",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Attractive",23,0,23,58,13,0,"treatment","Attractive",0,"treatment","Attractive",NA
+"5",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat attractive",0,0,0,0,0,0,"control","Somewhat attractive",NA,"control","Somewhat attractive",NA
+"6",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat attractive",58,0,23,58,13,0,"treatment","Somewhat attractive",0,"treatment","Somewhat attractive",NA
+"7",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Unattractive",0,0,0,0,0,0,"control","Unattractive",NA,"control","Unattractive",NA
+"8",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Unattractive",13,0,23,58,13,0,"treatment","Unattractive",0,"treatment","Unattractive",NA
+"9",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very Unattractive",0,0,0,0,0,0,"control","Very Unattractive",NA,"control","Very Unattractive",NA
+"10",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very Unattractive",0,0,23,58,13,0,"treatment","Very Unattractive",NA,"treatment","Very Unattractive",NA
+
+p value NaN 
+expected:  0 0 0 23 0 58 0 13 0 0 
+observed:  0 0 0 23 0 58 0 13 0 0 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.Yes..very.likely","expected.Likely","expected.Somewhat.likely","expected.Unlikely","expected.No..very.unlikely","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",1.20090045597269,4,0.877950341298047,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Yes, very likely",8,6.72240802675585,27.561872909699,38.3177257525084,63.8628762541806,64.5351170568562,"control","Yes, very likely",0.492753525310678,"control","Yes, very likely",0.875465364714509
+"2",1.20090045597269,4,0.877950341298047,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Yes, very likely",2,3.27759197324415,13.438127090301,18.6822742474916,31.1371237458194,31.4648829431438,"treatment","Yes, very likely",-0.705691247295482,"treatment","Yes, very likely",-0.875465364714509
+"3",1.20090045597269,4,0.877950341298047,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Likely",28,6.72240802675585,27.561872909699,38.3177257525084,63.8628762541806,64.5351170568562,"control","Likely",0.0834537284622565,"control","Likely",0.156925688195664
+"4",1.20090045597269,4,0.877950341298047,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Likely",13,3.27759197324415,13.438127090301,18.6822742474916,31.1371237458194,31.4648829431438,"treatment","Likely",-0.119517289486376,"treatment","Likely",-0.156925688195665
+"5",1.20090045597269,4,0.877950341298047,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat likely",36,6.72240802675585,27.561872909699,38.3177257525084,63.8628762541806,64.5351170568562,"control","Somewhat likely",-0.374422711390879,"control","Somewhat likely",-0.726963576012161
+"6",1.20090045597269,4,0.877950341298047,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat likely",21,3.27759197324415,13.438127090301,18.6822742474916,31.1371237458194,31.4648829431438,"treatment","Somewhat likely",0.536225144306359,"treatment","Somewhat likely",0.726963576012162
+"7",1.20090045597269,4,0.877950341298047,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Unlikely",64,6.72240802675585,27.561872909699,38.3177257525084,63.8628762541806,64.5351170568562,"control","Unlikely",0.0171588600150087,"control","Unlikely",0.0362853651582738
+"8",1.20090045597269,4,0.877950341298047,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Unlikely",31,3.27759197324415,13.438127090301,18.6822742474916,31.1371237458194,31.4648829431438,"treatment","Unlikely",-0.0245738623960647,"treatment","Unlikely",-0.0362853651582748
+"9",1.20090045597269,4,0.877950341298047,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","No, very unlikely",65,6.72240802675585,27.561872909699,38.3177257525084,63.8628762541806,64.5351170568562,"control","No, very unlikely",0.0578689444647771,"control","No, very unlikely",0.122674894280271
+"10",1.20090045597269,4,0.877950341298047,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","No, very unlikely",31,3.27759197324415,13.438127090301,18.6822742474916,31.1371237458194,31.4648829431438,"treatment","No, very unlikely",-0.0828763377659739,"treatment","No, very unlikely",-0.122674894280273
+
+p value 0.8779503 
+expected:  6.722408 3.277592 27.56187 13.43813 38.31773 18.68227 63.86288 31.13712 64.53512 31.46488 
+observed:  8 2 28 13 36 21 64 31 65 31 
+
+---
+ending /Users/ps22344/Downloads/Punctuation_0208.csv
+---
+starting /Users/ps22344/Downloads/second_Emoticons_0211.csvInput file has  200 rows[1] 200
+[1] 200
+[1] 200
+[1] 197
+[1] "Running the ordermachine"
+levels of gender m4m m4w w4w w4m[1] "Done with ordering"
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.female","expected.male","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",3.21677552962124,1,0.0728870749846635,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","control","female",81,90.3994974874372,110.600502512563,"control","female",-0.988602326045362,"control","female",-1.8943033597545
+"2",3.21677552962124,1,0.0728870749846635,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","treatment","female",98,88.6005025125628,108.399497487437,"treatment","female",0.99858846157538,"treatment","female",1.8943033597545
+"3",3.21677552962124,1,0.0728870749846635,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","control","male",120,90.3994974874372,110.600502512563,"control","male",0.893770643845377,"control","male",1.8943033597545
+"4",3.21677552962124,1,0.0728870749846635,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","treatment","male",99,88.6005025125628,108.399497487437,"treatment","male",-0.902798859283525,"treatment","male",-1.8943033597545
+
+p value 0.07288707 
+expected:  90.3995 88.6005 110.6005 108.3995 
+observed:  81 98 120 99 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.heterosexual","expected.homosexual","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",0.0578979264897984,1,0.809849741064745,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","control","heterosexual",185,183.829145728643,17.1708542713568,"control","heterosexual",0.0863566248555749,"control","heterosexual",0.419958291849044
+"2",0.0578979264897984,1,0.809849741064745,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","treatment","heterosexual",179,180.170854271357,16.8291457286432,"treatment","heterosexual",-0.0872289361348457,"treatment","heterosexual",-0.419958291849044
+"3",0.0578979264897984,1,0.809849741064745,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","control","homosexual",16,183.829145728643,17.1708542713568,"control","homosexual",-0.282557535158593,"control","homosexual",-0.419958291849048
+"4",0.0578979264897984,1,0.809849741064745,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","treatment","homosexual",18,180.170854271357,16.8291457286432,"treatment","homosexual",0.285411724114842,"treatment","homosexual",0.419958291849048
+
+p value 0.8098497 
+expected:  183.8291 180.1709 17.17085 16.82915 
+observed:  185 179 16 18 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.woman","expected.man","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",5.50516390860673,1,0.0189604030933605,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","control","woman",121,108.853904282116,92.1460957178841,"control","woman",1.16416541731077,"control","woman",2.44704226831895
+"2",5.50516390860673,1,0.0189604030933605,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","treatment","woman",94,106.146095717884,89.8539042821159,"treatment","woman",-1.17892095442932,"treatment","woman",-2.44704226831895
+"3",5.50516390860673,1,0.0189604030933605,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","control","man",80,108.853904282116,92.1460957178841,"control","man",-1.26531375719645,"control","man",-2.44704226831895
+"4",5.50516390860673,1,0.0189604030933605,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","treatment","man",102,106.146095717884,89.8539042821159,"treatment","man",1.28135132697244,"treatment","man",2.44704226831895
+
+p value 0.0189604 
+expected:  108.8539 106.1461 92.1461 89.8539 
+observed:  121 94 80 102 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.m4m","expected.m4w","expected.w4w","expected.w4m","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",11.9214152697934,3,0.00765726431864951,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","m4m",46,43.5415617128463,66.8312342569269,42.0226700251889,48.6045340050378,"control","m4m",0.372569509425218,"control","m4m",0.59908657359321
+"2",11.9214152697934,3,0.00765726431864951,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","m4m",40,42.4584382871537,65.1687657430731,40.9773299748111,47.3954659949622,"treatment","m4m",-0.37729174489435,"treatment","m4m",-0.59908657359321
+"3",11.9214152697934,3,0.00765726431864951,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","m4w",74,43.5415617128463,66.8312342569269,42.0226700251889,48.6045340050378,"control","m4w",0.87690924360973,"control","m4w",1.52754559502597
+"4",11.9214152697934,3,0.00765726431864951,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","m4w",58,42.4584382871537,65.1687657430731,40.9773299748111,47.3954659949622,"treatment","m4w",-0.88802387276919,"treatment","m4w",-1.52754559502597
+"5",11.9214152697934,3,0.00765726431864951,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","w4w",47,43.5415617128463,66.8312342569269,42.0226700251889,48.6045340050378,"control","w4w",0.767811499005815,"control","w4w",1.22871810903695
+"6",11.9214152697934,3,0.00765726431864951,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","w4w",36,42.4584382871537,65.1687657430731,40.9773299748111,47.3954659949622,"treatment","w4w",-0.777543338575312,"treatment","w4w",-1.22871810903695
+"7",11.9214152697934,3,0.00765726431864951,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","w4m",34,43.5415617128463,66.8312342569269,42.0226700251889,48.6045340050378,"control","w4m",-2.0948325449637,"control","w4m",-3.42395884305704
+"8",11.9214152697934,3,0.00765726431864951,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","w4m",62,42.4584382871537,65.1687657430731,40.9773299748111,47.3954659949622,"treatment","w4m",2.12138408043686,"treatment","w4m",3.42395884305704
+
+p value 0.007657264 
+expected:  43.54156 42.45844 66.83123 65.16877 42.02267 40.97733 48.60453 47.39547 
+observed:  46 40 74 58 47 36 34 62 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.Very.assertive","expected.Assertive","expected.Somewhat.assertive","expected.Somewhat.timid","expected.Timid","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",3.81095216188307,4,0.432194819737519,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very assertive",18,15.6557788944724,69.1884422110553,80.8040201005025,34.8467336683417,0.505025125628141,"control","Very assertive",0.592462998289654,"control","Very assertive",0.87695671711121
+"2",3.81095216188307,4,0.432194819737519,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very assertive",13,15.3442211055276,67.8115577889447,79.1959798994975,34.1532663316583,0.494974874371859,"treatment","Very assertive",-0.598447624910055,"treatment","Very assertive",-0.87695671711121
+"3",3.81095216188307,4,0.432194819737519,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Assertive",70,15.6557788944724,69.1884422110553,80.8040201005025,34.8467336683417,0.505025125628141,"control","Assertive",0.0975669376671671,"control","Assertive",0.171250709444108
+"4",3.81095216188307,4,0.432194819737519,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Assertive",67,15.3442211055276,67.8115577889447,79.1959798994975,34.1532663316583,0.494974874371859,"treatment","Assertive",-0.0985524873033799,"treatment","Assertive",-0.171250709444108
+"5",3.81095216188307,4,0.432194819737519,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat assertive",83,15.6557788944724,69.1884422110553,80.8040201005025,34.8467336683417,0.505025125628141,"control","Somewhat assertive",0.244293480229441,"control","Somewhat assertive",0.449027931670977
+"6",3.81095216188307,4,0.432194819737519,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat assertive",77,15.3442211055276,67.8115577889447,79.1959798994975,34.1532663316583,0.494974874371859,"treatment","Somewhat assertive",-0.24676115377056,"treatment","Somewhat assertive",-0.449027931670977
+"7",3.81095216188307,4,0.432194819737519,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat timid",29,15.6557788944724,69.1884422110553,80.8040201005025,34.8467336683417,0.505025125628141,"control","Somewhat timid",-0.990449354232111,"control","Somewhat timid",-1.54840399509905
+"8",3.81095216188307,4,0.432194819737519,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat timid",40,15.3442211055276,67.8115577889447,79.1959798994975,34.1532663316583,0.494974874371859,"treatment","Somewhat timid",1.00045414708602,"treatment","Somewhat timid",1.54840399509905
+"9",3.81095216188307,4,0.432194819737519,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Timid",1,15.6557788944724,69.1884422110553,80.8040201005025,34.8467336683417,0.505025125628141,"control","Timid",0.696508885884238,"control","Timid",0.991245815616619
+"10",3.81095216188307,4,0.432194819737519,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Timid",0,15.3442211055276,67.8115577889447,79.1959798994975,34.1532663316583,0.494974874371859,"treatment","Timid",-0.703544507740526,"treatment","Timid",-0.991245815616619
+
+p value 0.4321948 
+expected:  15.65578 15.34422 69.18844 67.81156 80.80402 79.19598 34.84673 34.15327 0.5050251 0.4949749 
+observed:  18 13 70 67 83 77 29 40 1 0 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.Very.educated","expected.Somewhat.educated","expected.Of.average.education","expected.Somewhat.uneducated","expected.Very.uneducated","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",4.96288747636055,4,0.291126714045197,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very educated",22,17.5369127516779,58.6812080536913,108.593959731544,14.1644295302013,2.02348993288591,"control","Very educated",1.06575850286413,"control","Very educated",1.95526105995951
+"2",4.96288747636055,4,0.291126714045197,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very educated",4,8.46308724832215,28.3187919463087,52.4060402684564,6.83557046979866,0.976510067114094,"treatment","Very educated",-1.53416110416226,"treatment","Very educated",-1.95526105995951
+"3",4.96288747636055,4,0.291126714045197,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat educated",60,17.5369127516779,58.6812080536913,108.593959731544,14.1644295302013,2.02348993288591,"control","Somewhat educated",0.172157823441095,"control","Somewhat educated",0.358604663116443
+"4",4.96288747636055,4,0.291126714045197,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat educated",27,8.46308724832215,28.3187919463087,52.4060402684564,6.83557046979866,0.976510067114094,"treatment","Somewhat educated",-0.247821467800416,"treatment","Somewhat educated",-0.358604663116442
+"5",4.96288747636055,4,0.291126714045197,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Of average education",105,17.5369127516779,58.6812080536913,108.593959731544,14.1644295302013,2.02348993288591,"control","Of average education",-0.3448818758821,"control","Of average education",-0.891539286321404
+"6",4.96288747636055,4,0.291126714045197,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Of average education",56,8.46308724832215,28.3187919463087,52.4060402684564,6.83557046979866,0.976510067114094,"treatment","Of average education",0.496458023170275,"treatment","Of average education",0.891539286321406
+"7",4.96288747636055,4,0.291126714045197,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat uneducated",12,17.5369127516779,58.6812080536913,108.593959731544,14.1644295302013,2.02348993288591,"control","Somewhat uneducated",-0.575100713650228,"control","Somewhat uneducated",-1.04552499289814
+"8",4.96288747636055,4,0.291126714045197,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat uneducated",9,8.46308724832215,28.3187919463087,52.4060402684564,6.83557046979866,0.976510067114094,"treatment","Somewhat uneducated",0.827858415848475,"treatment","Somewhat uneducated",1.04552499289814
+"9",4.96288747636055,4,0.291126714045197,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very uneducated",2,17.5369127516779,58.6812080536913,108.593959731544,14.1644295302013,2.02348993288591,"control","Very uneducated",-0.0165132004185114,"control","Very uneducated",-0.0290904634945997
+"10",4.96288747636055,4,0.291126714045197,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very uneducated",1,8.46308724832215,28.3187919463087,52.4060402684564,6.83557046979866,0.976510067114094,"treatment","Very uneducated",0.0237707789515484,"treatment","Very uneducated",0.0290904634945999
+
+p value 0.2911267 
+expected:  17.53691 8.463087 58.68121 28.31879 108.594 52.40604 14.16443 6.83557 2.02349 0.9765101 
+observed:  22 4 60 27 105 56 12 9 2 1 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.Very.friendly","expected.Friendly","expected.Somewhat.friendly","expected.Somewhat.unfriendly","expected.Very.unfriendly","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",2.96999997749604,4,0.562858320365695,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very friendly",51,51.0075376884422,119.185929648241,29.2914572864322,0.505025125628141,1.01005025125628,"control","Very friendly",-0.001055409509797,"control","Very friendly",-0.00173657177253927
+"2",2.96999997749604,4,0.562858320365695,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very friendly",50,49.9924623115578,116.814070351759,28.7085427135678,0.494974874371859,0.989949748743719,"treatment","Very friendly",0.00106607048249232,"treatment","Very friendly",0.00173657177253927
+"3",2.96999997749604,4,0.562858320365695,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Friendly",118,51.0075376884422,119.185929648241,29.2914572864322,0.505025125628141,1.01005025125628,"control","Friendly",-0.108629162785023,"control","Friendly",-0.242013105266055
+"4",2.96999997749604,4,0.562858320365695,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Friendly",118,49.9924623115578,116.814070351759,28.7085427135678,0.494974874371859,0.989949748743719,"treatment","Friendly",0.109726454904922,"treatment","Friendly",0.242013105266055
+"5",2.96999997749604,4,0.562858320365695,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat friendly",29,51.0075376884422,119.185929648241,29.2914572864322,0.505025125628141,1.01005025125628,"control","Somewhat friendly",-0.0538523212295674,"control","Somewhat friendly",-0.0828161292605964
+"6",2.96999997749604,4,0.562858320365695,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat friendly",29,49.9924623115578,116.814070351759,28.7085427135678,0.494974874371859,0.989949748743719,"treatment","Somewhat friendly",0.0543962978764318,"treatment","Somewhat friendly",0.0828161292605964
+"7",2.96999997749604,4,0.562858320365695,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat unfriendly",1,51.0075376884422,119.185929648241,29.2914572864322,0.505025125628141,1.01005025125628,"control","Somewhat unfriendly",0.696508885884238,"control","Somewhat unfriendly",0.991245815616619
+"8",2.96999997749604,4,0.562858320365695,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat unfriendly",0,49.9924623115578,116.814070351759,28.7085427135678,0.494974874371859,0.989949748743719,"treatment","Somewhat unfriendly",-0.703544507740526,"treatment","Somewhat unfriendly",-0.991245815616619
+"9",2.96999997749604,4,0.562858320365695,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very unfriendly",2,51.0075376884422,119.185929648241,29.2914572864322,0.505025125628141,1.01005025125628,"control","Very unfriendly",0.985012312730864,"control","Very unfriendly",1.40360215159059
+"10",2.96999997749604,4,0.562858320365695,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very unfriendly",0,49.9924623115578,116.814070351759,28.7085427135678,0.494974874371859,0.989949748743719,"treatment","Very unfriendly",-0.994962184579755,"treatment","Very unfriendly",-1.40360215159059
+
+p value 0.5628583 
+expected:  51.00754 49.99246 119.1859 116.8141 29.29146 28.70854 0.5050251 0.4949749 1.01005 0.9899497 
+observed:  51 50 118 118 29 29 1 0 2 0 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.Very.sensitive","expected.Sensitive","expected.Somewhat.sensitive","expected.Insensitive","expected.Very.insensitive","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",2.76594876319929,4,0.597724738793981,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very sensitive",2,2.02010050251256,56.0577889447236,125.246231155779,15.6557788944724,2.02010050251256,"control","Very sensitive",-0.0141423124037409,"control","Very sensitive",-0.0202032982280855
+"2",2.76594876319929,4,0.597724738793981,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very sensitive",2,1.97989949748744,54.9422110552764,122.753768844221,15.3442211055276,1.97989949748744,"treatment","Very sensitive",0.0142851676698585,"treatment","Very sensitive",0.0202032982280855
+"3",2.76594876319929,4,0.597724738793981,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Sensitive",53,2.02010050251256,56.0577889447236,125.246231155779,15.6557788944724,2.02010050251256,"control","Sensitive",-0.408403564674199,"control","Sensitive",-0.683594460426052
+"4",2.76594876319929,4,0.597724738793981,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Sensitive",58,1.97989949748744,54.9422110552764,122.753768844221,15.3442211055276,1.97989949748744,"treatment","Sensitive",0.412528957909003,"treatment","Sensitive",0.683594460426052
+"5",2.76594876319929,4,0.597724738793981,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat sensitive",124,2.02010050251256,56.0577889447236,125.246231155779,15.6557788944724,2.02010050251256,"control","Somewhat sensitive",-0.111356679223791,"control","Somewhat sensitive",-0.257822372678149
+"6",2.76594876319929,4,0.597724738793981,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat sensitive",124,1.97989949748744,54.9422110552764,122.753768844221,15.3442211055276,1.97989949748744,"treatment","Somewhat sensitive",0.112481522714045,"treatment","Somewhat sensitive",0.257822372678149
+"7",2.76594876319929,4,0.597724738793981,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Insensitive",19,2.02010050251256,56.0577889447236,125.246231155779,15.6557788944724,2.02010050251256,"control","Insensitive",0.845196410207427,"control","Insensitive",1.25104972183818
+"8",2.76594876319929,4,0.597724738793981,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Insensitive",12,1.97989949748744,54.9422110552764,122.753768844221,15.3442211055276,1.97989949748744,"treatment","Insensitive",-0.853733964367935,"treatment","Insensitive",-1.25104972183818
+"9",2.76594876319929,4,0.597724738793981,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very insensitive",3,2.02010050251256,56.0577889447236,125.246231155779,15.6557788944724,2.02010050251256,"control","Very insensitive",0.689437729682368,"control","Very insensitive",0.984910788619165
+"10",2.76594876319929,4,0.597724738793981,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very insensitive",1,1.97989949748744,54.9422110552764,122.753768844221,15.3442211055276,1.97989949748744,"treatment","Very insensitive",-0.696401923905597,"treatment","Very insensitive",-0.984910788619165
+
+p value 0.5977247 
+expected:  2.020101 1.979899 56.05779 54.94221 125.2462 122.7538 15.65578 15.34422 2.020101 1.979899 
+observed:  2 2 53 58 124 124 19 12 3 1 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.Asian","expected.Black...African.American","expected.Hispanic...Latino","expected.White","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",0.646819092327343,3,0.885635433303439,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Asian",9,9.06801007556675,3.02267002518892,7.05289672544081,180.856423173804,"control","Asian",-0.0225848525952822,"control","Asian",-0.0328136883539623
+"2",0.646819092327343,3,0.885635433303439,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Asian",9,8.93198992443325,2.97732997481108,6.94710327455919,178.143576826196,"treatment","Asian",0.0227561687235627,"treatment","Asian",0.0328136883539623
+"3",0.646819092327343,3,0.885635433303439,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Black / African American",4,9.06801007556675,3.02267002518892,7.05289672544081,180.856423173804,"control","Black / African American",0.562141760165752,"control","Black / African American",0.804108891099594
+"4",0.646819092327343,3,0.885635433303439,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Black / African American",2,8.93198992443325,2.97732997481108,6.94710327455919,178.143576826196,"treatment","Black / African American",-0.566405854850015,"treatment","Black / African American",-0.804108891099594
+"5",0.646819092327343,3,0.885635433303439,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Hispanic / Latino",7,9.06801007556675,3.02267002518892,7.05289672544081,180.856423173804,"control","Hispanic / Latino",-0.0199179677880561,"control","Hispanic / Latino",-0.0287874391105114
+"6",0.646819092327343,3,0.885635433303439,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Hispanic / Latino",7,8.93198992443325,2.97732997481108,6.94710327455919,178.143576826196,"treatment","Hispanic / Latino",0.0200690544117243,"treatment","Hispanic / Latino",0.0287874391105114
+"7",0.646819092327343,3,0.885635433303439,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","White",180,9.06801007556675,3.02267002518892,7.05289672544081,180.856423173804,"control","White",-0.0636826960896161,"control","White",-0.292204592213008
+"8",0.646819092327343,3,0.885635433303439,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","White",179,8.93198992443325,2.97732997481108,6.94710327455919,178.143576826196,"treatment","White",0.0641657575967262,"treatment","White",0.292204592213008
+
+p value 0.8856354 
+expected:  9.06801 8.93199 3.02267 2.97733 7.052897 6.947103 180.8564 178.1436 
+observed:  9 9 4 2 7 7 180 179 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.Very.Attractive","expected.Attractive","expected.Somewhat.attractive","expected.Unattractive","expected.Very.Unattractive","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very Attractive",0,0,0,0,0,0,"control","Very Attractive",NA,"control","Very Attractive",NA
+"2",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very Attractive",0,0,18,61,15,0,"treatment","Very Attractive",NA,"treatment","Very Attractive",NA
+"3",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Attractive",0,0,0,0,0,0,"control","Attractive",NA,"control","Attractive",NA
+"4",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Attractive",18,0,18,61,15,0,"treatment","Attractive",0,"treatment","Attractive",NA
+"5",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat attractive",0,0,0,0,0,0,"control","Somewhat attractive",NA,"control","Somewhat attractive",NA
+"6",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat attractive",61,0,18,61,15,0,"treatment","Somewhat attractive",0,"treatment","Somewhat attractive",NA
+"7",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Unattractive",0,0,0,0,0,0,"control","Unattractive",NA,"control","Unattractive",NA
+"8",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Unattractive",15,0,18,61,15,0,"treatment","Unattractive",0,"treatment","Unattractive",NA
+"9",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very Unattractive",0,0,0,0,0,0,"control","Very Unattractive",NA,"control","Very Unattractive",NA
+"10",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very Unattractive",0,0,18,61,15,0,"treatment","Very Unattractive",NA,"treatment","Very Unattractive",NA
+
+p value NaN 
+expected:  0 0 0 18 0 61 0 15 0 0 
+observed:  0 0 0 18 0 61 0 15 0 0 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.Yes..very.likely","expected.Likely","expected.Somewhat.likely","expected.Unlikely","expected.No..very.unlikely","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",2.25718340808629,4,0.688574944556803,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Yes, very likely",8,9.44295302013423,25.6308724832215,35.0738255033557,62.0536912751678,68.7986577181208,"control","Yes, very likely",-0.469567766384506,"control","Yes, very likely",-0.843081391997165
+"2",2.25718340808629,4,0.688574944556803,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Yes, very likely",6,4.55704697986577,12.3691275167785,16.9261744966443,29.9463087248322,33.2013422818792,"treatment","Yes, very likely",0.675943566032523,"treatment","Yes, very likely",0.843081391997165
+"3",2.25718340808629,4,0.688574944556803,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Likely",28,9.44295302013423,25.6308724832215,35.0738255033557,62.0536912751678,68.7986577181208,"control","Likely",0.467957855414683,"control","Likely",0.878113117779184
+"4",2.25718340808629,4,0.688574944556803,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Likely",10,4.55704697986577,12.3691275167785,16.9261744966443,29.9463087248322,33.2013422818792,"treatment","Likely",-0.673626096564132,"treatment","Likely",-0.878113117779184
+"5",2.25718340808629,4,0.688574944556803,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat likely",36,9.44295302013423,25.6308724832215,35.0738255033557,62.0536912751678,68.7986577181208,"control","Somewhat likely",0.156387216388838,"control","Somewhat likely",0.301692207566412
+"6",2.25718340808629,4,0.688574944556803,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat likely",16,4.55704697986577,12.3691275167785,16.9261744966443,29.9463087248322,33.2013422818792,"treatment","Somewhat likely",-0.225119653211485,"treatment","Somewhat likely",-0.301692207566413
+"7",2.25718340808629,4,0.688574944556803,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Unlikely",64,9.44295302013423,25.6308724832215,35.0738255033557,62.0536912751678,68.7986577181208,"control","Unlikely",0.247074496573735,"control","Unlikely",0.520864436674683
+"8",2.25718340808629,4,0.688574944556803,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Unlikely",28,4.55704697986577,12.3691275167785,16.9261744966443,29.9463087248322,33.2013422818792,"treatment","Unlikely",-0.355664141036857,"treatment","Unlikely",-0.520864436674683
+"9",2.25718340808629,4,0.688574944556803,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","No, very unlikely",65,9.44295302013423,25.6308724832215,35.0738255033557,62.0536912751678,68.7986577181208,"control","No, very unlikely",-0.457973322142675,"control","No, very unlikely",-0.98978881427556
+"10",2.25718340808629,4,0.688574944556803,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","No, very unlikely",37,4.55704697986577,12.3691275167785,16.9261744966443,29.9463087248322,33.2013422818792,"treatment","No, very unlikely",0.659253344624585,"treatment","No, very unlikely",0.98978881427556
+
+p value 0.6885749 
+expected:  9.442953 4.557047 25.63087 12.36913 35.07383 16.92617 62.05369 29.94631 68.79866 33.20134 
+observed:  8 6 28 10 36 16 64 28 65 37 
+
+---
+ending /Users/ps22344/Downloads/second_Emoticons_0211.csv
+---
+starting /Users/ps22344/Downloads/Single letter_0218.csvInput file has  100 rows[1] 100
+[1] 100
+[1] 100
+[1] 97
+[1] "Running the ordermachine"
+levels of gender m4m m4w w4w w4m[1] "Done with ordering"
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.female","expected.male","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",0.89690454564583,1,0.343613074417419,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","control","female",81,85.2727272727273,115.727272727273,"control","female",-0.462700635693298,"control","female",-1.07256315474043
+"2",0.89690454564583,1,0.343613074417419,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","treatment","female",45,40.7272727272727,55.2727272727273,"treatment","female",0.669518386700373,"treatment","female",1.07256315474043
+"3",0.89690454564583,1,0.343613074417419,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","control","male",120,85.2727272727273,115.727272727273,"control","male",0.397179947007568,"control","male",1.07256315474043
+"4",0.89690454564583,1,0.343613074417419,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","treatment","male",51,40.7272727272727,55.2727272727273,"treatment","male",-0.574711285952309,"treatment","male",-1.07256315474043
+
+p value 0.3436131 
+expected:  85.27273 40.72727 115.7273 55.27273 
+observed:  81 45 120 51 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.heterosexual","expected.homosexual","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",0.945934608040574,1,0.330756271170618,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","control","heterosexual",185,187.464646464646,13.5353535353535,"control","heterosexual",-0.180009300035407,"control","heterosexual",-1.22011503310259
+"2",0.945934608040574,1,0.330756271170618,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","treatment","heterosexual",92,89.5353535353535,6.46464646464646,"treatment","heterosexual",0.260469787274412,"treatment","heterosexual",1.22011503310258
+"3",0.945934608040574,1,0.330756271170618,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","control","homosexual",16,187.464646464646,13.5353535353535,"control","homosexual",0.669915197002151,"control","homosexual",1.22011503310258
+"4",0.945934608040574,1,0.330756271170618,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","treatment","homosexual",4,89.5353535353535,6.46464646464646,"treatment","homosexual",-0.969353632399686,"treatment","homosexual",-1.22011503310258
+
+p value 0.3307563 
+expected:  187.4646 89.53535 13.53535 6.464646 
+observed:  185 92 16 4 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.woman","expected.man","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",0.271344119202,1,0.602431547747334,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","control","woman",121,118.434343434343,82.5656565656566,"control","woman",0.235754338491196,"control","woman",0.646994533181969
+"2",0.271344119202,1,0.602431547747334,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","treatment","woman",54,56.5656565656566,39.4343434343434,"treatment","woman",-0.341131721437411,"treatment","woman",-0.646994533181969
+"3",0.271344119202,1,0.602431547747334,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","control","man",80,118.434343434343,82.5656565656566,"control","man",-0.282357158440389,"control","man",-0.646994533181969
+"4",0.271344119202,1,0.602431547747334,"Pearson's Chi-squared test with Yates' continuity correction","table(dataset[[""stimulus""]], dataset[[column]])","treatment","man",42,56.5656565656566,39.4343434343434,"treatment","man",0.408565051805155,"treatment","man",0.646994533181969
+
+p value 0.6024315 
+expected:  118.4343 56.56566 82.56566 39.43434 
+observed:  121 54 80 42 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.m4m","expected.m4w","expected.w4w","expected.w4m","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",1.74938699360341,3,0.626010323332414,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","m4m",46,44.6666666666667,71.0606060606061,47.3737373737374,37.8989898989899,"control","m4m",0.199501867221527,"control","m4m",0.397888885283296
+"2",1.74938699360341,3,0.626010323332414,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","m4m",20,21.3333333333333,33.9393939393939,22.6262626262626,18.1010101010101,"treatment","m4m",-0.288675134594813,"treatment","m4m",-0.397888885283294
+"3",1.74938699360341,3,0.626010323332414,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","m4w",74,44.6666666666667,71.0606060606061,47.3737373737374,37.8989898989899,"control","m4w",0.348693089751721,"control","m4w",0.762805049478651
+"4",1.74938699360341,3,0.626010323332414,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","m4w",31,21.3333333333333,33.9393939393939,22.6262626262626,18.1010101010101,"treatment","m4w",-0.50455179201199,"treatment","m4w",-0.762805049478651
+"5",1.74938699360341,3,0.626010323332414,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","w4w",47,44.6666666666667,71.0606060606061,47.3737373737374,37.8989898989899,"control","w4w",-0.0542997344138665,"control","w4w",-0.109246016401528
+"6",1.74938699360341,3,0.626010323332414,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","w4w",23,21.3333333333333,33.9393939393939,22.6262626262626,18.1010101010101,"treatment","w4w",0.0785706086799673,"treatment","w4w",0.109246016401527
+"7",1.74938699360341,3,0.626010323332414,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","w4m",34,44.6666666666667,71.0606060606061,47.3737373737374,37.8989898989899,"control","w4m",-0.633342004885153,"control","w4m",-1.23666082677774
+"8",1.74938699360341,3,0.626010323332414,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","w4m",22,21.3333333333333,33.9393939393939,22.6262626262626,18.1010101010101,"treatment","w4m",0.916432969029589,"treatment","w4m",1.23666082677774
+
+p value 0.6260103 
+expected:  44.66667 21.33333 71.06061 33.93939 47.37374 22.62626 37.89899 18.10101 
+observed:  46 20 74 31 47 23 34 22 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.Very.assertive","expected.Assertive","expected.Somewhat.assertive","expected.Somewhat.timid","expected.Timid","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",7.55836082547773,4,0.109163191932566,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very assertive",18,14.8389261744966,62.7281879194631,89.7080536912752,32.3758389261745,1.3489932885906,"control","Very assertive",0.820603569280509,"control","Very assertive",1.49454590018974
+"2",7.55836082547773,4,0.109163191932566,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very assertive",4,7.16107382550336,30.2718120805369,43.2919463087248,15.6241610738255,0.651006711409396,"treatment","Very assertive",-1.18126017718235,"treatment","Very assertive",-1.49454590018974
+"3",7.55836082547773,4,0.109163191932566,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Assertive",70,14.8389261744966,62.7281879194631,89.7080536912752,32.3758389261745,1.3489932885906,"control","Assertive",0.918145005915182,"control","Assertive",1.94028149945753
+"4",7.55836082547773,4,0.109163191932566,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Assertive",23,7.16107382550336,30.2718120805369,43.2919463087248,15.6241610738255,0.651006711409396,"treatment","Assertive",-1.32167123440298,"treatment","Assertive",-1.94028149945753
+"5",7.55836082547773,4,0.109163191932566,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat assertive",83,14.8389261744966,62.7281879194631,89.7080536912752,32.3758389261745,1.3489932885906,"control","Somewhat assertive",-0.708240589813046,"control","Somewhat assertive",-1.66828113085164
+"6",7.55836082547773,4,0.109163191932566,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat assertive",50,7.16107382550336,30.2718120805369,43.2919463087248,15.6241610738255,0.651006711409396,"treatment","Somewhat assertive",1.01951348486557,"treatment","Somewhat assertive",1.66828113085164
+"7",7.55836082547773,4,0.109163191932566,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat timid",29,14.8389261744966,62.7281879194631,89.7080536912752,32.3758389261745,1.3489932885906,"control","Somewhat timid",-0.593295700750805,"control","Somewhat timid",-1.13535478301816
+"8",7.55836082547773,4,0.109163191932566,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat timid",19,7.16107382550336,30.2718120805369,43.2919463087248,15.6241610738255,0.651006711409396,"treatment","Somewhat timid",0.854050129473488,"treatment","Somewhat timid",1.13535478301816
+"9",7.55836082547773,4,0.109163191932566,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Timid",1,14.8389261744966,62.7281879194631,89.7080536912752,32.3758389261745,1.3489932885906,"control","Timid",-0.300477654624953,"control","Timid",-0.528441263312805
+"10",7.55836082547773,4,0.109163191932566,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Timid",1,7.16107382550336,30.2718120805369,43.2919463087248,15.6241610738255,0.651006711409396,"treatment","Timid",0.43253807420411,"treatment","Timid",0.528441263312805
+
+p value 0.1091632 
+expected:  14.83893 7.161074 62.72819 30.27181 89.70805 43.29195 32.37584 15.62416 1.348993 0.6510067 
+observed:  18 4 70 23 83 50 29 19 1 1 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.Very.educated","expected.Somewhat.educated","expected.Of.average.education","expected.Somewhat.uneducated","expected.Very.uneducated","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",16.8925845240262,4,0.00202807147310816,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very educated",22,16.2424242424242,54.1414141414141,110.989898989899,18.2727272727273,1.35353535353535,"control","Very educated",1.42861181050375,"control","Very educated",2.62091988256697
+"2",16.8925845240262,4,0.00202807147310816,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very educated",2,7.75757575757576,25.8585858585859,53.010101010101,8.72727272727273,0.646464646464647,"treatment","Very educated",-2.06717216447391,"treatment","Very educated",-2.62091988256697
+"3",16.8925845240262,4,0.00202807147310816,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat educated",60,16.2424242424242,54.1414141414141,110.989898989899,18.2727272727273,1.35353535353535,"control","Somewhat educated",0.796210684961573,"control","Somewhat educated",1.63839633306215
+"4",16.8925845240262,4,0.00202807147310816,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat educated",20,7.75757575757576,25.8585858585859,53.010101010101,8.72727272727273,0.646464646464647,"treatment","Somewhat educated",-1.15210062867176,"treatment","Somewhat educated",-1.63839633306215
+"5",16.8925845240262,4,0.00202807147310816,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Of average education",105,16.2424242424242,54.1414141414141,110.989898989899,18.2727272727273,1.35353535353535,"control","Of average education",-0.568561922183134,"control","Of average education",-1.49442038493309
+"6",16.8925845240262,4,0.00202807147310816,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Of average education",59,7.75757575757576,25.8585858585859,53.010101010101,8.72727272727273,0.646464646464647,"treatment","Of average education",0.822697510041108,"treatment","Of average education",1.49442038493309
+"7",16.8925845240262,4,0.00202807147310816,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat uneducated",12,16.2424242424242,54.1414141414141,110.989898989899,18.2727272727273,1.35353535353535,"control","Somewhat uneducated",-1.46742096470394,"control","Somewhat uneducated",-2.70703374866622
+"8",16.8925845240262,4,0.00202807147310816,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat uneducated",15,7.75757575757576,25.8585858585859,53.010101010101,8.72727272727273,0.646464646464647,"treatment","Somewhat uneducated",2.12332821939349,"treatment","Somewhat uneducated",2.70703374866622
+"9",16.8925845240262,4,0.00202807147310816,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very uneducated",2,16.2424242424242,54.1414141414141,110.989898989899,18.2727272727273,1.35353535353535,"control","Very uneducated",0.555661078475331,"control","Very uneducated",0.98066302811045
+"10",16.8925845240262,4,0.00202807147310816,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very uneducated",0,7.75757575757576,25.8585858585859,53.010101010101,8.72727272727273,0.646464646464647,"treatment","Very uneducated",-0.80403025220737,"treatment","Very uneducated",-0.98066302811045
+
+p value 0.002028071 
+expected:  16.24242 7.757576 54.14141 25.85859 110.9899 53.0101 18.27273 8.727273 1.353535 0.6464646 
+observed:  22 2 60 20 105 59 12 15 2 0 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.Very.friendly","expected.Friendly","expected.Somewhat.friendly","expected.Somewhat.unfriendly","expected.Very.unfriendly","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",3.3712579712674,4,0.4977217833583,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very friendly",51,46.5402684563758,120.060402684564,31.7013422818792,1.3489932885906,1.3489932885906,"control","Very friendly",0.65372376732708,"control","Very friendly",1.30709432955056
+"2",3.3712579712674,4,0.4977217833583,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very friendly",18,22.4597315436242,57.9395973154362,15.2986577181208,0.651006711409396,0.651006711409396,"treatment","Very friendly",-0.941036429927025,"treatment","Very friendly",-1.30709432955056
+"3",3.3712579712674,4,0.4977217833583,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Friendly",118,46.5402684563758,120.060402684564,31.7013422818792,1.3489932885906,1.3489932885906,"control","Friendly",-0.188040851549542,"control","Friendly",-0.519388085794067
+"4",3.3712579712674,4,0.4977217833583,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Friendly",60,22.4597315436242,57.9395973154362,15.2986577181208,0.651006711409396,0.651006711409396,"treatment","Friendly",0.270685112683203,"treatment","Friendly",0.519388085794067
+"5",3.3712579712674,4,0.4977217833583,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat friendly",29,46.5402684563758,120.060402684564,31.7013422818792,1.3489932885906,1.3489932885906,"control","Somewhat friendly",-0.479778509211503,"control","Somewhat friendly",-0.91629291151237
+"6",3.3712579712674,4,0.4977217833583,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat friendly",18,22.4597315436242,57.9395973154362,15.2986577181208,0.651006711409396,0.651006711409396,"treatment","Somewhat friendly",0.690641946995644,"treatment","Somewhat friendly",0.91629291151237
+"7",3.3712579712674,4,0.4977217833583,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat unfriendly",1,46.5402684563758,120.060402684564,31.7013422818792,1.3489932885906,1.3489932885906,"control","Somewhat unfriendly",-0.300477654624953,"control","Somewhat unfriendly",-0.528441263312805
+"8",3.3712579712674,4,0.4977217833583,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat unfriendly",1,22.4597315436242,57.9395973154362,15.2986577181208,0.651006711409396,0.651006711409396,"treatment","Somewhat unfriendly",0.43253807420411,"treatment","Somewhat unfriendly",0.528441263312805
+"9",3.3712579712674,4,0.4977217833583,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very unfriendly",2,46.5402684563758,120.060402684564,31.7013422818792,1.3489932885906,1.3489932885906,"control","Very unfriendly",0.560506394204239,"control","Very unfriendly",0.985746202718118
+"10",3.3712579712674,4,0.4977217833583,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very unfriendly",0,22.4597315436242,57.9395973154362,15.2986577181208,0.651006711409396,0.651006711409396,"treatment","Very unfriendly",-0.806849869188436,"treatment","Very unfriendly",-0.985746202718118
+
+p value 0.4977218 
+expected:  46.54027 22.45973 120.0604 57.9396 31.70134 15.29866 1.348993 0.6510067 1.348993 0.6510067 
+observed:  51 18 118 60 29 18 1 1 2 0 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.Very.sensitive","expected.Sensitive","expected.Somewhat.sensitive","expected.Insensitive","expected.Very.insensitive","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",1.5096711125651,4,0.824926981465706,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very sensitive",2,2.03030303030303,54.1414141414141,123.848484848485,18.9494949494949,2.03030303030303,"control","Very sensitive",-0.0212669705029557,"control","Very sensitive",-0.0375969657105823
+"2",1.5096711125651,4,0.824926981465706,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very sensitive",1,0.96969696969697,25.8585858585859,59.1515151515151,9.05050505050505,0.96969696969697,"treatment","Very sensitive",0.0307728727448332,"treatment","Very sensitive",0.0375969657105823
+"3",1.5096711125651,4,0.824926981465706,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Sensitive",53,2.03030303030303,54.1414141414141,123.848484848485,18.9494949494949,2.03030303030303,"control","Sensitive",-0.155123805863203,"control","Sensitive",-0.319204802820727
+"4",1.5096711125651,4,0.824926981465706,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Sensitive",27,0.96969696969697,25.8585858585859,59.1515151515151,9.05050505050505,0.96969696969697,"treatment","Sensitive",0.224460984551567,"treatment","Sensitive",0.319204802820728
+"5",1.5096711125651,4,0.824926981465706,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat sensitive",124,2.03030303030303,54.1414141414141,123.848484848485,18.9494949494949,2.03030303030303,"control","Somewhat sensitive",0.0136147827441173,"control","Somewhat sensitive",0.0386526365122828
+"6",1.5096711125651,4,0.824926981465706,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat sensitive",59,0.96969696969697,25.8585858585859,59.1515151515151,9.05050505050505,0.96969696969697,"treatment","Somewhat sensitive",-0.0197003130641021,"treatment","Somewhat sensitive",-0.038652636512281
+"7",1.5096711125651,4,0.824926981465706,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Insensitive",19,2.03030303030303,54.1414141414141,123.848484848485,18.9494949494949,2.03030303030303,"control","Insensitive",0.0116020835871655,"control","Insensitive",0.0214427599050736
+"8",1.5096711125651,4,0.824926981465706,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Insensitive",9,0.96969696969697,25.8585858585859,59.1515151515151,9.05050505050505,0.96969696969697,"treatment","Insensitive",-0.0167879784171953,"treatment","Insensitive",-0.0214427599050728
+"9",1.5096711125651,4,0.824926981465706,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very insensitive",3,2.03030303030303,54.1414141414141,123.848484848485,18.9494949494949,2.03030303030303,"control","Very insensitive",0.680543056094582,"control","Very insensitive",1.20310290273864
+"10",1.5096711125651,4,0.824926981465706,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very insensitive",0,0.96969696969697,25.8585858585859,59.1515151515151,9.05050505050505,0.96969696969697,"treatment","Very insensitive",-0.984731927834662,"treatment","Very insensitive",-1.20310290273864
+
+p value 0.824927 
+expected:  2.030303 0.969697 54.14141 25.85859 123.8485 59.15152 18.94949 9.050505 2.030303 0.969697 
+observed:  2 1 53 27 124 59 19 9 3 0 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.Asian","expected.Black...African.American","expected.Hispanic...Latino","expected.White","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",0.510216791594311,3,0.916641161754759,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Asian",9,9.42760942760943,4.04040404040404,6.06060606060606,180.47138047138,"control","Asian",-0.139266442099818,"control","Asian",-0.249645559200513
+"2",0.510216791594311,3,0.916641161754759,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Asian",5,4.57239057239057,1.95959595959596,2.93939393939394,87.5286195286195,"treatment","Asian",0.199974956654458,"treatment","Asian",0.249645559200513
+"3",0.510216791594311,3,0.916641161754759,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Black / African American",4,9.42760942760943,4.04040404040404,6.06060606060606,180.47138047138,"control","Black / African American",-0.0201007563051844,"control","Black / African American",-0.0355333771950808
+"4",0.510216791594311,3,0.916641161754759,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Black / African American",2,4.57239057239057,1.95959595959596,2.93939393939394,87.5286195286195,"treatment","Black / African American",0.028863003967388,"treatment","Black / African American",0.0355333771950806
+"5",0.510216791594311,3,0.916641161754759,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Hispanic / Latino",7,9.42760942760943,4.04040404040404,6.06060606060606,180.47138047138,"control","Hispanic / Latino",0.381583622035931,"control","Hispanic / Latino",0.678053659723121
+"6",0.510216791594311,3,0.916641161754759,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Hispanic / Latino",2,4.57239057239057,1.95959595959596,2.93939393939394,87.5286195286195,"treatment","Hispanic / Latino",-0.547922149271209,"treatment","Hispanic / Latino",-0.678053659723121
+"7",0.510216791594311,3,0.916641161754759,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","White",180,9.42760942760943,4.04040404040404,6.06060606060606,180.47138047138,"control","White",-0.0350887111351809,"control","White",-0.196489342504167
+"8",0.510216791594311,3,0.916641161754759,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","White",88,4.57239057239057,1.95959595959596,2.93939393939394,87.5286195286195,"treatment","White",0.0503844528697669,"treatment","White",0.196489342504162
+
+p value 0.9166412 
+expected:  9.427609 4.572391 4.040404 1.959596 6.060606 2.939394 180.4714 87.52862 
+observed:  9 5 4 2 7 2 180 88 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.Very.Attractive","expected.Attractive","expected.Somewhat.attractive","expected.Unattractive","expected.Very.Unattractive","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very Attractive",0,0,0,0,0,0,"control","Very Attractive",NA,"control","Very Attractive",NA
+"2",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very Attractive",0,0,10,71,14,0,"treatment","Very Attractive",NA,"treatment","Very Attractive",NA
+"3",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Attractive",0,0,0,0,0,0,"control","Attractive",NA,"control","Attractive",NA
+"4",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Attractive",10,0,10,71,14,0,"treatment","Attractive",0,"treatment","Attractive",NA
+"5",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat attractive",0,0,0,0,0,0,"control","Somewhat attractive",NA,"control","Somewhat attractive",NA
+"6",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat attractive",71,0,10,71,14,0,"treatment","Somewhat attractive",0,"treatment","Somewhat attractive",NA
+"7",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Unattractive",0,0,0,0,0,0,"control","Unattractive",NA,"control","Unattractive",NA
+"8",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Unattractive",14,0,10,71,14,0,"treatment","Unattractive",0,"treatment","Unattractive",NA
+"9",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Very Unattractive",0,0,0,0,0,0,"control","Very Unattractive",NA,"control","Very Unattractive",NA
+"10",NA,4,NA,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Very Unattractive",0,0,10,71,14,0,"treatment","Very Unattractive",NA,"treatment","Very Unattractive",NA
+
+p value NaN 
+expected:  0 0 0 10 0 71 0 14 0 0 
+observed:  0 0 0 10 0 71 0 14 0 0 
+
+++++
+"","statistic","parameter","p.value","method","data.name","observed.Var1","observed.Var2","observed.Freq","expected.Yes..very.likely","expected.Likely","expected.Somewhat.likely","expected.Unlikely","expected.No..very.unlikely","residuals.Var1","residuals.Var2","residuals.Freq","stdres.Var1","stdres.Var2","stdres.Freq"
+"1",13.5254341629979,4,0.00897435091007955,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Yes, very likely",8,5.41414141414141,20.979797979798,39.2525252525253,64.2929292929293,71.0606060606061,"control","Yes, very likely",1.11132215695066,"control","Yes, very likely",1.98158125156952
+"2",13.5254341629979,4,0.00897435091007955,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Yes, very likely",0,2.58585858585859,10.020202020202,18.7474747474747,30.7070707070707,33.9393939393939,"treatment","Yes, very likely",-1.60806050441474,"treatment","Yes, very likely",-1.98158125156952
+"3",13.5254341629979,4,0.00897435091007955,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Likely",28,5.41414141414141,20.979797979798,39.2525252525253,64.2929292929293,71.0606060606061,"control","Likely",1.53267106678512,"control","Likely",2.84858362549388
+"4",13.5254341629979,4,0.00897435091007955,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Likely",3,2.58585858585859,10.020202020202,18.7474747474747,30.7070707070707,33.9393939393939,"treatment","Likely",-2.21774378684125,"treatment","Likely",-2.84858362549388
+"5",13.5254341629979,4,0.00897435091007955,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Somewhat likely",36,5.41414141414141,20.979797979798,39.2525252525253,64.2929292929293,71.0606060606061,"control","Somewhat likely",-0.519142849142738,"control","Somewhat likely",-1.01790854137245
+"6",13.5254341629979,4,0.00897435091007955,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Somewhat likely",22,2.58585858585859,10.020202020202,18.7474747474747,30.7070707070707,33.9393939393939,"treatment","Somewhat likely",0.751189118865771,"treatment","Somewhat likely",1.01790854137245
+"7",13.5254341629979,4,0.00897435091007955,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","Unlikely",64,5.41414141414141,20.979797979798,39.2525252525253,64.2929292929293,71.0606060606061,"control","Unlikely",-0.0365326517212077,"control","Unlikely",-0.0779159454166955
+"8",13.5254341629979,4,0.00897435091007955,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","Unlikely",31,2.58585858585859,10.020202020202,18.7474747474747,30.7070707070707,33.9393939393939,"treatment","Unlikely",0.0528620022438936,"treatment","Unlikely",0.0779159454166974
+"9",13.5254341629979,4,0.00897435091007955,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","control","No, very unlikely",65,5.41414141414141,20.979797979798,39.2525252525253,64.2929292929293,71.0606060606061,"control","No, very unlikely",-0.718954824230354,"control","No, very unlikely",-1.57279391645083
+"10",13.5254341629979,4,0.00897435091007955,"Pearson's Chi-squared test","table(dataset[[""stimulus""]], dataset[[column]])","treatment","No, very unlikely",40,2.58585858585859,10.020202020202,18.7474747474747,30.7070707070707,33.9393939393939,"treatment","No, very unlikely",1.0403129732206,"treatment","No, very unlikely",1.57279391645083
+
+p value 0.008974351 
+expected:  5.414141 2.585859 20.9798 10.0202 39.25253 18.74747 64.29293 30.70707 71.06061 33.93939 
+observed:  8 0 28 3 36 22 64 31 65 40 
+
+---
+ending /Users/ps22344/Downloads/Single letter_0218.csv
