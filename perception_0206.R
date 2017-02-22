@@ -152,7 +152,7 @@ surveytools:::basicstatsmaker(spread, perceptionfeatures)
 
 controlspread['stimulus']= as.factor('control')
 print (summary(controlspread))
-relativeplotter(controlspread, fullspread, perceptionfeatures[!perceptionfeatures %in% c("author_attractive", "author_orient", "cat", "author_ethnicity")], "testplot")
+surveytools:::relativeplotter(controlspread, fullspread, perceptionfeatures[!perceptionfeatures %in% c("author_attractive", "author_orient", "cat", "author_ethnicity")], "testplot")
 
 
 
