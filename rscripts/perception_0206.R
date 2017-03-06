@@ -10,14 +10,6 @@ for (package in c("devtools", "roxygen2", "pwr", "effsize", "likert")) {
     }
 }
 
-
-
-# library(devtools)
-# library(roxygen2)
-# library(pwr)
-# library(effsize)
-# library(grDevices)
-
 setwd('~/Downloads/chapter3/surveytools')
 document()
 
