@@ -4,7 +4,8 @@
 \alias{relativeplotter}
 \title{Plot relative to control stimulus}
 \usage{
-relativeplotter(control_stimulus, data_set, vector_of_columns, filename)
+relativeplotter(control_stimulus, data_set, vector_of_columns, filename,
+  alpha_setting = 100)
 }
 \arguments{
 \item{control_stimulus}{The control stimulus to create y=0
