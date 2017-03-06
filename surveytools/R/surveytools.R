@@ -3,6 +3,17 @@
 ###
 
 #misc and helper functions
+
+plotnames=c(
+"Author Gender",
+"Addressee Gender",
+"Assertive",
+"Educated",
+"Friendly",
+"Sensitive",
+"Likely to Reply?"
+)
+
 cols=c("start_date"                                            
  , "end_date"                                              
  , "response_type"                                         
@@ -39,6 +50,46 @@ cols=c("start_date"
 , "participant_orientation_other"
 , "participant_grew_up"                
 , "participant_residence")                  
+
+
+#' Chi square comparison, version 2 
+#'
+#' Run chi square test of independence on survey results
+#' Updated based on stats consulting
+#' @param
+#' control_stimulus dataframe with control group
+#' stimulus dataframe with treatment group to compare to control_stimulus
+#' column the column to be read from both spread sheets
+#' output "txt" for verbose text output, "csv" for csv output. Defaults to "csv"
+#' @return
+#' prints out text with p values, expected vs observed, or csv representation of entire results
+chisquaretester2= function(control_stimulus, stimulus, column, output="csv")
+{
+	
+	control_stimulus['stimulus']="control"
+	stimulus['stimulus']="treatment"
+	dataset=rbind(control_stimulus, stimulus)
+
+	chisquare= chisq.test(table(dataset[['stimulus']], dataset[[column]]))
+	if (output=="text")
+	{
+		print ("checking for NAs")
+		cat (length(control_stimulus[[column]])- length(na.omit(control_stimulus[[column]])), " NAs found in 'control_stimulus\n")
+		cat (length(stimulus[[column]])-length(na.omit(stimulus[[column]])), " NAs found in 'stimulus'")
+		cat ("\nInvestigating feature", column, "\n")
+		print (table(control_stimulus[[column]]))
+		print (table(stimulus[[column]]))
+	}
+	if (output=="csv")
+	{
+		write.csv(sapply(chisquare, unlist))
+	}
+	
+	cat ("\np value", chisquare$p.value, "\n")
+	cat ("expected: ", chisquare$expected, "\nobserved: ", chisquare$observed, "\n")
+	return(chisquare)
+	
+}
 
 
 
@@ -206,53 +257,6 @@ chisquaretester= function(control_stimulus, stimulus, column, output="csv")
 
 
 
-
-
-#' Chi square comparison, version 2 
-#'
-#' Run chi square test of independence on survey results
-#' Updated based on stats consulting
-#' @param
-#' control_stimulus dataframe with control group
-#' stimulus dataframe with treatment group to compare to control_stimulus
-#' column the column to be read from both spread sheets
-#' output "txt" for verbose text output, "csv" for csv output. Defaults to "csv"
-#' @return
-#' prints out text with p values, expected vs observed, or csv representation of entire results
-chisquaretester2= function(control_stimulus, stimulus, column, output="csv")
-{
-	
-	control_stimulus['stimulus']="control"
-	stimulus['stimulus']="treatment"
-	dataset=rbind(control_stimulus, stimulus)
-
-	chisquare= chisq.test(table(dataset[['stimulus']], dataset[[column]]))
-	if (output=="text")
-	{
-		print ("checking for NAs")
-		cat (length(control_stimulus[[column]])- length(na.omit(control_stimulus[[column]])), " NAs found in 'control_stimulus\n")
-		cat (length(stimulus[[column]])-length(na.omit(stimulus[[column]])), " NAs found in 'stimulus'")
-		cat ("\nInvestigating feature", column, "\n")
-		print (table(control_stimulus[[column]]))
-		print (table(stimulus[[column]]))
-	}
-	if (output=="csv")
-	{
-		write.csv(sapply(chisquare, unlist))
-	}
-	
-	cat ("\np value", chisquare$p.value, "\n")
-	cat ("expected: ", chisquare$expected, "\nobserved: ", chisquare$observed, "\n")
-	return(chisquare)
-	
-}
-
-
-
-
-
-
-
 #' Print basic stats
 #' 
 #' Takes a spread_sheet, prints relevant stats for qualtrics survey
@@ -287,7 +291,6 @@ basicstatsmaker= function(spread_sheet, column_indexes)
 
 
 
-
 ##
 #PLOTTING RELATIVE TO CONTROL
 ##
@@ -304,10 +307,11 @@ basicstatsmaker= function(spread_sheet, column_indexes)
 #' vector_of_columns A vector of column names to be plotted
 #' filename A string determining the name of the output .png file
 #'@keywords why not
-relativeplotter= function(control_stimulus, data_set, vector_of_columns, filename)
+relativeplotter= function(control_stimulus, data_set, vector_of_columns, filename, alpha_setting=100)
 #plot the means for all stimuli to compare
 {
 	cat("running relativeplotter")
+	par(xpd=FALSE)
 	#these are our 0s
 	controlmeans= sapply(vector_of_columns, function(x) mean(as.numeric(control_stimulus[[x]]), na.rm=TRUE))
 	#out units
@@ -350,24 +354,24 @@ relativeplotter= function(control_stimulus, data_set, vector_of_columns, filenam
 	text(1.5,-0.5, 
 	"f", 	
 	cex=4, 	
-	col=rgb(col2rgb("blue")['red',], col2rgb("blue")['green',], col2rgb("blue")['blue',], alpha=100, maxColorValue=255))
+	col=rgb(col2rgb("blue")['red',], col2rgb("blue")['green',], col2rgb("blue")['blue',], alpha=alpha_setting, maxColorValue=255))
 	
 	
 	text(1.5,0.5, 
 	"m", 	
 	cex=4, 	
-	col=rgb(col2rgb("blue")['red',], col2rgb("blue")['green',], col2rgb("blue")['blue',], alpha=100, maxColorValue=255))
+	col=rgb(col2rgb("blue")['red',], col2rgb("blue")['green',], col2rgb("blue")['blue',], alpha=alpha_setting, maxColorValue=255))
 	
 	
 	text(5/2+2.5,0.5, 
 	"less", 	
 	cex=4, 	
-	col=rgb(col2rgb("blue")['red',], col2rgb("blue")['green',], col2rgb("blue")['blue',], alpha=100, maxColorValue=255))
+	col=rgb(col2rgb("blue")['red',], col2rgb("blue")['green',], col2rgb("blue")['blue',], alpha=alpha_setting, maxColorValue=255))
 	
 	text(5/2+2.5,-0.5, 
 	"more", 
 	cex=4, 	
-	col=rgb(col2rgb("blue")['red',], col2rgb("blue")['green',], col2rgb("blue")['blue',], alpha=100, maxColorValue=255))
+	col=rgb(col2rgb("blue")['red',], col2rgb("blue")['green',], col2rgb("blue")['blue',], alpha=alpha_setting, maxColorValue=255))
 	
 	#dev.off()	
 }
