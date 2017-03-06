@@ -1,25 +1,27 @@
 ###
 #Computations with perception surveys on MechTurk
-###
-install.packages(c("devtools", "roxygen2", "pwr", "effsize", "likert"), repos='http://cran.us.r-project.org')
-library(devtools)
-library(roxygen2)
-library(pwr)
-library(effsize)
-library(grDevices)
+
+
+
+for (package in c("devtools", "roxygen2", "pwr", "effsize", "likert")) {
+    if (!require(package, character.only=T, quietly=T)) {
+        install.packages(package, repos='http://cran.us.r-project.org')
+        library(package, character.only=T)
+    }
+}
+
+
+
+# library(devtools)
+# library(roxygen2)
+# library(pwr)
+# library(effsize)
+# library(grDevices)
 
 setwd('~/Downloads/chapter3/surveytools')
 document()
 
-plotnames=c(
-"Gender",
-"Addressee",
-"Assertive",
-"Educated",
-"Friendly",
-"Sensitive",
-"Likely to Reply?"
-)
+
 
 
 
@@ -29,7 +31,7 @@ files=c(
 '/Users/ps22344/Downloads/Clippings_0208.csv', 
 '/Users/ps22344/Downloads/Prosody_0211.csv', 
 '/Users/ps22344/Downloads/Punctuation_0208.csv', 
-'/Users/ps22344/Downloads/second_Emoticons_0211.csv', 
+'/Users/ps22344/Downloads/second_Emoticons_0228.csv', 
 '/Users/ps22344/Downloads/Single\ letter_0218.csv'
 )
 
@@ -161,7 +163,7 @@ surveytools:::basicstatsmaker(spread, perceptionfeatures)
 
 controlspread['stimulus']= as.factor('control')
 print (summary(controlspread))
-surveytools:::relativeplotter(controlspread, fullspread, perceptionfeatures[!perceptionfeatures %in% c("author_attractive", "author_orient", "cat", "author_ethnicity")], "testplot")
+surveytools:::relativeplotter(controlspread, fullspread, perceptionfeatures[!perceptionfeatures %in% c("author_attractive", "author_orient", "cat", "author_ethnicity")], "testplot", 50)
 
 
 
@@ -212,7 +214,7 @@ relativeplotter_attractive= function(control_stimulus, data_set, vector_of_colum
 	text(1.5,-0.5, 
 	"f", 	
 	cex=4, 	
-	col=rgb(col2rgb("blue")['red',], col2rgb("blue")['green',], col2rgb("blue")['blue',], alpha=100, maxColorValue=255))
+	col=rgb(col2rgb("blue")['red',], col2rgb("blue")['green',], col2rgb("blue")['blue',], alpha=75, maxColorValue=255))
 	
 	
 	text(1.5,0.5, 
@@ -226,10 +228,10 @@ relativeplotter_attractive= function(control_stimulus, data_set, vector_of_colum
 	cex=4, 	
 	col=rgb(col2rgb("blue")['red',], col2rgb("blue")['green',], col2rgb("blue")['blue',], alpha=100, maxColorValue=255))
 	
-	text(5/2+2.5,-0.5, 
-	"more", 
-	cex=4, 	
-	col=rgb(col2rgb("blue")['red',], col2rgb("blue")['green',], col2rgb("blue")['blue',], alpha=100, maxColorValue=255))
+#	text(5/2+2.5,-0.5, 
+#	"more", 
+#	cex=4, 	
+#	col=rgb(col2rgb("blue")['red',], col2rgb("blue")['green',], col2rgb("blue")['blue',], alpha=255, maxColorValue=255))
 	
 	#dev.off()	
 }
