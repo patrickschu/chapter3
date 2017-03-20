@@ -145,7 +145,7 @@ relativeplotter= function(control_stimulus, data_set, vector_of_columns, filenam
 	#out units
 	controlsd= sapply(vector_of_columns, function(x) sd(as.numeric(control_stimulus[[x]]), na.rm=TRUE))
 	#set up plot
-	#png(paste(filename,".png"), width=331.8, height=215.9, unit="mm", res=750)
+	png(paste(filename,".png"), width=331.8, height=215.9, unit="mm", res=750)
 	plot(100, 
 	xlim=c(1,length(vector_of_columns)), 
 	ylim=c(.75,-.75),
@@ -206,7 +206,7 @@ relativeplotter= function(control_stimulus, data_set, vector_of_columns, filenam
 	cex=4, 	
 	col=rgb(col2rgb("blue")['red',], col2rgb("blue")['green',], col2rgb("blue")['blue',], alpha=alpha_setting, maxColorValue=255))
 	
-	#dev.off()	
+	dev.off()	
 }
 
 
@@ -328,37 +328,3 @@ ordermachine= function(spread_sheet){
 
 }
 
-#' Chi square comparison, version 1 (old)
-#' Run chi square test of independence on survey results
-#' OUTDATED
-#' @param
-#' control_stimulus dataframe with control group
-#' stimulus dataframe with treatment group to compare to control_stimulus
-#' column the column to be read from both spread sheets
-#' output "txt" for verbose text output, "csv" for csv output. Defaults to "csv"
-#' @return
-#' prints out text with p values, expected vs observed, or csv representation of entire results
-chisquaretester= function(control_stimulus, stimulus, column, output="csv")
-{
-	cat ("\n\n***YOU SHOULD NOT RUN THIS VERSION ANYMORE***\n\n")
-	control= na.omit(control_stimulus[[column]])
-	treatment= na.omit(stimulus[[column]])
-	chisquare= chisq.test(table(control,treatment))
-	if (output=="text")
-	{
-		print ("checking for NAs")
-		cat (length(control_stimulus[[column]])- length(control), " NAs found in 'control_stimulus\n")
-		cat (length(stimulus[[column]])-length(treatment), " NAs found in 'stimulus'")
-		cat ("\nInvestigating feature", column, "\n")
-		print (table(control))
-		print (table(treatment))
-	}
-	if (output=="csv")
-	{
-		write.csv(sapply(chisquare, unlist))
-	}
-	
-	cat ("\np value", chisquare$p.value, "\n")
-	cat ("expected: ", chisquare$expected, "\nobserved: ", chisquare$observed, "\n")
-	
-}
