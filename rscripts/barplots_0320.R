@@ -14,7 +14,7 @@ library('surveytools')
 
 
 #BARPLOTTING
-barspread=surveytools:::spreadsheetbuilder(c('/Users/ps22344/Downloads/Clippings_0208.csv', '/Users/ps22344/Downloads/Prosody_0211.csv', '/Users/ps22344/Downloads/adapted_control_0206.csv'))
+
 ###
 #
 ###
@@ -23,7 +23,9 @@ barspread=surveytools:::spreadsheetbuilder(c('/Users/ps22344/Downloads/Clippings
 #ok so the consulting guy says my functions are overkill
 # i disagree, look at the mess below
 #this is terrible!
-png("barplottest.png", width=331.8, height=215.9, unit="mm", res=500)
+barspread=surveytools:::spreadsheetbuilder(c('/Users/ps22344/Downloads/Clippings_0208.csv', '/Users/ps22344/Downloads/Prosody_0211.csv', '/Users/ps22344/Downloads/adapted_control_0206.csv'))
+
+png("plot_author_gender.png", width=331.8, height=215.9, unit="mm", res=500)
 par(cex=1.25)
 percentages=aggregate(barspread[['author_gender']], list(barspread[['stimulus']]), function(x) table(x)/length(x))
 
@@ -34,13 +36,15 @@ g= g[,c('Control', 'Clippings', 'Prosody')]
 
 par(mar=c(5.1,  4.1,  4.1, 12.0))
 barplot(g, 
-main= "Author gender by stimulus",
+main= "Perceived author gender",
 #cex.main=1.5,
-col=c("black", "white"),
+col=c("grey", "white"),
 ylab= "Proportion",
 legend.text= TRUE,
 args.legend= list(x=4.5,y=.9)
 )
+mtext(text=expression(paste("By stimulus, ", italic("p"), " < 0.05 only")), side=3, line= 0.2, cex= 1.2)
+
 dev.off()
 
 
@@ -67,5 +71,31 @@ xlab= "Feature",
 legend.text= TRUE,
 args.legend= list(x=6.25,y=.9)
 )
-mtext(text="By stimulus, p < 0.05 only", side=3, line= 0.25)
+mtext(text=expression(paste("By stimulus, ", italic("p"), " < 0.05 only")), side=3, line= 0.2, cex= 1.2)
+dev.off()
+
+
+
+#addressee gender by stimulus
+barspread=surveytools:::spreadsheetbuilder(c('/Users/ps22344/Downloads/second_Emoticons_0228.csv', '/Users/ps22344/Downloads/adapted_control_0206.csv'))
+png("plot_addressee_gender.png", width=331.8, height=215.9, unit="mm", res=500)
+par(cex=1.25)
+percentages=aggregate(barspread[['author_audience']], list(barspread[['stimulus']]), function(x) table(x)/length(x))
+
+g=t(percentages[['x']])
+
+colnames(g)= c('Emoticons', 'Control')
+g= g[,c('Control', 'Emoticons')]
+
+par(mar=c(5.1,  4.1,  4.1, 12.0))
+barplot(g, 
+main= "Perceived addressee gender",
+#cex.main=1.5,
+col=c("grey", "white"),
+ylab= "Proportion",
+legend.text= TRUE,
+args.legend= list(x=3,y=.9)
+)
+mtext(text=expression(paste("By stimulus, ", italic("p"), " < 0.05 only")), side=3, line= 0.2, cex= 1.2)
+
 dev.off()
