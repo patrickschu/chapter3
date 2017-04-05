@@ -113,6 +113,23 @@ tt=rbind(menonly, womenonly)
 tt=rbind(gaymenonly, gaywomenonly)
 tt=rbind(menonly, womenonly,gaymenonly, gaywomenonly)
 
+surveytools:::basicstatsmaker(lapply(tt, function(x) as.numeric(x)), perceptionfeatures)
+
+#get percentage per stimulus
+for (cat in levels(tt[['stimulus']])){
+	tempi= tt[tt[['stimulus']] == cat,]	
+	cat ("\n", cat, "STIMULUS\n")
+	print(nrow(tempi))
+	averages= lapply(tempi[,perceptionfeatures], function(x) mean(as.numeric(x), na.rm=TRUE))
+	tables= lapply(tempi[,perceptionfeatures], function(x) print(as.data.frame(table(x))))
+	}
+
+
+
+#get gender perception per stimulus
+
+
+
 #surveytools:::relativeplotter(controlspread, tt, perceptionfeatures[!perceptionfeatures %in% c("author_attractive", "author_orient", "cat", "author_ethnicity")], "testplotgenre", 50)
 
 #sink("chis_genre_0405.txt")
