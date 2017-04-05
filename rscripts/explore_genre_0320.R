@@ -83,6 +83,7 @@ gaymen= controlspread[controlspread[['author_gender']] == 'male'&controlspread[[
 gaywomen= controlspread[controlspread[['author_gender']] == 'female'&controlspread[['author_orient']] == 'homosexual'&controlspread[['author_audience']] == 'woman',]
 controlspread=rbind(men,women)
 controlspread=rbind(gaymen,gaywomen)
+controlspread=rbind(men, women, gaymen, gaywomen)
 summary(controlspread$author_orient)
 controlspread['stimulus']= as.factor('control')
 
@@ -110,10 +111,11 @@ gaywomenonly= fullspread[fullspread[['author_gender']] == 'female'&fullspread[['
 
 tt=rbind(menonly, womenonly)
 tt=rbind(gaymenonly, gaywomenonly)
+tt=rbind(menonly, womenonly,gaymenonly, gaywomenonly)
 
 #surveytools:::relativeplotter(controlspread, tt, perceptionfeatures[!perceptionfeatures %in% c("author_attractive", "author_orient", "cat", "author_ethnicity")], "testplotgenre", 50)
 
-#sink("chis_genre.txt")
+#sink("chis_genre_0405.txt")
 for (fili in files){
 	cat("\n---\nstarting", fili)
 	spread=read.csv(fili ,   header=T, na.strings=c(""))
@@ -123,15 +125,20 @@ for (fili in files){
 	womenonly= spread[spread[['author_gender']] == 'female'&spread[['author_orient']] == 'heterosexual'&spread[['author_audience']] == 'man',]
 	gaymenonly= spread[spread[['author_gender']] == 'male'&spread[['author_orient']] == 'homosexual'&spread[['author_audience']] == 'man',]
 	gaywomenonly= spread[spread[['author_gender']] == 'female'&spread[['author_orient']] == 'homosexual'&spread[['author_audience']] == 'woman',]
-	spread=rbind(menonly, womenonly)
+	spread=rbind(menonly, womenonly, gaymenonly, gaywomenonly)
 	cat("SUMMARY")
 	print(summary(spread$author_orient))
 	print(summary(controlspread$author_orient))
 	for (c in perceptionfeatures) {
 	cat("\n++++\n"); surveytools:::chisquaretester2(controlspread, spread, c, output="text")
-	
 	}
 	cat("\n---\nending", fili)
+	sink(paste(fili,"_chisq.text"))
+	for (c in perceptionfeatures) {
+	cat("\n++++\n"); surveytools:::chisquaretester2(controlspread, spread, c, output="text")
+	sink()
+	}
+	
 }
 #sink()
 
