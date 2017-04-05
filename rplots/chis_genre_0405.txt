@@ -1,0 +1,1141 @@
+
+---
+starting /Users/ps22344/Downloads/Capitals_0212.csvInput file has  103 rows[1] 103
+[1] 103
+[1] 103
+[1] 100
+[1] "Running the ordermachine"
+levels of gender m4m m4w w4w w4m[1] "Done with ordering"
+SUMMARYheterosexual   homosexual 
+          48            5 
+heterosexual   homosexual 
+         103           11 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+0  NAs found in 'stimulus'
+Investigating feature author_gender 
+
+female   male 
+    32     82 
+
+female   male 
+    19     34 
+
+p value 0.403483 
+expected:  34.81437 16.18563 79.18563 36.81437 
+observed:  32 19 82 34 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+0  NAs found in 'stimulus'
+Investigating feature author_orient 
+
+heterosexual   homosexual 
+         103           11 
+
+heterosexual   homosexual 
+          48            5 
+
+p value 1 
+expected:  103.0778 47.92216 10.92216 5.077844 
+observed:  103 48 11 5 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+0  NAs found in 'stimulus'
+Investigating feature author_audience 
+
+woman   man 
+   73    41 
+
+woman   man 
+   31    22 
+
+p value 0.6054649 
+expected:  70.99401 33.00599 43.00599 19.99401 
+observed:  73 31 41 22 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+0  NAs found in 'stimulus'
+Investigating feature cat 
+
+m4m m4w w4w w4m 
+ 10  72   1  31 
+
+m4m m4w w4w w4m 
+  4  30   1  18 
+
+p value 0.7548884 
+expected:  9.556886 4.443114 69.62874 32.37126 1.365269 0.6347305 33.4491 15.5509 
+observed:  10 4 72 30 1 1 31 18 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+0  NAs found in 'stimulus'
+Investigating feature author_assertive 
+
+    Very assertive          Assertive Somewhat assertive     Somewhat timid              Timid 
+                 7                 46                 42                 18                  1 
+
+    Very assertive          Assertive Somewhat assertive     Somewhat timid              Timid 
+                 4                 16                 23                  9                  1 
+
+p value 0.7625716 
+expected:  7.508982 3.491018 42.32335 19.67665 44.37126 20.62874 18.43114 8.568862 1.365269 0.6347305 
+observed:  7 4 46 16 42 23 18 9 1 1 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+0  NAs found in 'stimulus'
+Investigating feature author_education 
+
+       Very educated    Somewhat educated Of average education  Somewhat uneducated      Very uneducated 
+                  14                   33                   56                   10                    1 
+
+       Very educated    Somewhat educated Of average education  Somewhat uneducated      Very uneducated 
+                   1                   13                   34                    5                    0 
+
+p value 0.1581831 
+expected:  10.23952 4.760479 31.4012 14.5988 61.43713 28.56287 10.23952 4.760479 0.6826347 0.3173653 
+observed:  14 1 33 13 56 34 10 5 1 0 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+0  NAs found in 'stimulus'
+Investigating feature author_friendly 
+
+      Very friendly            Friendly   Somewhat friendly Somewhat unfriendly     Very unfriendly 
+                 29                  67                  17                   0                   1 
+
+      Very friendly            Friendly   Somewhat friendly Somewhat unfriendly     Very unfriendly 
+                 10                  34                   9                   0                   0 
+
+p value NaN 
+expected:  26.62275 12.37725 68.94611 32.05389 17.7485 8.251497 0 0 0.6826347 0.3173653 
+observed:  29 10 67 34 17 9 0 0 1 0 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+0  NAs found in 'stimulus'
+Investigating feature author_sensitive 
+
+    Very sensitive          Sensitive Somewhat sensitive        Insensitive   Very insensitive 
+                 2                 31                 68                 12                  1 
+
+    Very sensitive          Sensitive Somewhat sensitive        Insensitive   Very insensitive 
+                 2                 10                 36                  5                  0 
+
+p value 0.6370642 
+expected:  2.730539 1.269461 27.98802 13.01198 70.99401 33.00599 11.60479 5.39521 0.6826347 0.3173653 
+observed:  2 2 31 10 68 36 12 5 1 0 
+
+++++
+[1] "checking for NAs"
+1  NAs found in 'control_stimulus
+0  NAs found in 'stimulus'
+Investigating feature author_ethnicity 
+
+                   Asian Black / African American        Hispanic / Latino                    White 
+                       5                        2                        2                      104 
+
+                   Asian Black / African American        Hispanic / Latino                    White 
+                       2                        1                        3                       47 
+
+p value 0.5941341 
+expected:  4.76506 2.23494 2.042169 0.9578313 3.403614 1.596386 102.7892 48.21084 
+observed:  5 2 2 1 2 3 104 47 
+
+++++
+[1] "checking for NAs"
+114  NAs found in 'control_stimulus
+1  NAs found in 'stimulus'
+Investigating feature author_attractive 
+
+    Very Attractive          Attractive Somewhat attractive        Unattractive   Very Unattractive 
+                  0                   0                   0                   0                   0 
+
+    Very Attractive          Attractive Somewhat attractive        Unattractive   Very Unattractive 
+                  0                   8                  35                   9                   0 
+
+p value NaN 
+expected:  0 0 0 8 0 35 0 9 0 0 
+observed:  0 0 0 8 0 35 0 9 0 0 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+0  NAs found in 'stimulus'
+Investigating feature would_you_reply 
+
+ Yes, very likely            Likely   Somewhat likely          Unlikely No, very unlikely 
+                4                14                23                31                42 
+
+ Yes, very likely            Likely   Somewhat likely          Unlikely No, very unlikely 
+                1                 0                11                20                21 
+
+p value 0.08372191 
+expected:  3.413174 1.586826 9.556886 4.443114 23.20958 10.79042 34.81437 16.18563 43.00599 19.99401 
+observed:  4 1 14 0 23 11 31 20 42 21 
+
+---
+ending /Users/ps22344/Downloads/Capitals_0212.csv
+---
+starting /Users/ps22344/Downloads/Clippings_0208.csvInput file has  101 rows[1] 101
+[1] 101
+[1] 101
+[1] 98
+[1] "Running the ordermachine"
+levels of gender m4m m4w w4w w4m[1] "Done with ordering"
+SUMMARYheterosexual   homosexual         NA's 
+          51            2            2 
+heterosexual   homosexual 
+         103           11 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+2  NAs found in 'stimulus'
+Investigating feature author_gender 
+
+female   male 
+    32     82 
+
+female   male 
+    21     32 
+
+p value 0.1887403 
+expected:  36.17964 16.82036 77.82036 36.17964 
+observed:  32 21 82 32 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+2  NAs found in 'stimulus'
+Investigating feature author_orient 
+
+heterosexual   homosexual 
+         103           11 
+
+heterosexual   homosexual 
+          51            2 
+
+p value 0.3130699 
+expected:  105.1257 48.87425 8.874251 4.125749 
+observed:  103 51 11 2 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+2  NAs found in 'stimulus'
+Investigating feature author_audience 
+
+woman   man 
+   73    41 
+
+woman   man 
+   32    21 
+
+p value 0.7769301 
+expected:  71.67665 33.32335 42.32335 19.67665 
+observed:  73 32 41 21 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+2  NAs found in 'stimulus'
+Investigating feature cat 
+
+m4m m4w w4w w4m 
+ 10  72   1  31 
+
+m4m m4w w4w w4m 
+  1  31   1  20 
+
+p value 0.225465 
+expected:  7.508982 3.491018 70.31138 32.68862 1.365269 0.6347305 34.81437 16.18563 
+observed:  10 1 72 31 1 1 31 20 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+3  NAs found in 'stimulus'
+Investigating feature author_assertive 
+
+    Very assertive          Assertive Somewhat assertive     Somewhat timid              Timid 
+                 7                 46                 42                 18                  1 
+
+    Very assertive          Assertive Somewhat assertive     Somewhat timid              Timid 
+                 0                 17                 24                 11                  0 
+
+p value 0.2338116 
+expected:  4.807229 2.192771 43.26506 19.73494 45.3253 20.6747 19.91566 9.084337 0.686747 0.313253 
+observed:  7 0 46 17 42 24 18 11 1 0 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+2  NAs found in 'stimulus'
+Investigating feature author_education 
+
+       Very educated    Somewhat educated Of average education  Somewhat uneducated      Very uneducated 
+                  14                   33                   56                   10                    1 
+
+       Very educated    Somewhat educated Of average education  Somewhat uneducated      Very uneducated 
+                   1                   14                   23                   15                    0 
+
+p value 0.006208936 
+expected:  10.23952 4.760479 32.08383 14.91617 53.92814 25.07186 17.06587 7.934132 0.6826347 0.3173653 
+observed:  14 1 33 14 56 23 10 15 1 0 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+2  NAs found in 'stimulus'
+Investigating feature author_friendly 
+
+      Very friendly            Friendly   Somewhat friendly Somewhat unfriendly     Very unfriendly 
+                 29                  67                  17                   0                   1 
+
+      Very friendly            Friendly   Somewhat friendly Somewhat unfriendly     Very unfriendly 
+                  8                  37                   8                   0                   0 
+
+p value NaN 
+expected:  25.25749 11.74251 70.99401 33.00599 17.06587 7.934132 0 0 0.6826347 0.3173653 
+observed:  29 8 67 37 17 8 0 0 1 0 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+2  NAs found in 'stimulus'
+Investigating feature author_sensitive 
+
+    Very sensitive          Sensitive Somewhat sensitive        Insensitive   Very insensitive 
+                 2                 31                 68                 12                  1 
+
+    Very sensitive          Sensitive Somewhat sensitive        Insensitive   Very insensitive 
+                 0                 11                 38                  4                  0 
+
+p value 0.5324395 
+expected:  1.365269 0.6347305 28.67066 13.32934 72.35928 33.64072 10.92216 5.077844 0.6826347 0.3173653 
+observed:  2 0 31 11 68 38 12 4 1 0 
+
+++++
+[1] "checking for NAs"
+1  NAs found in 'control_stimulus
+2  NAs found in 'stimulus'
+Investigating feature author_ethnicity 
+
+                   Asian Black / African American        Hispanic / Latino                    White 
+                       5                        2                        2                      104 
+
+                   Asian Black / African American        Hispanic / Latino                    White 
+                       2                        1                        1                       49 
+
+p value 0.9977059 
+expected:  4.76506 2.23494 2.042169 0.9578313 2.042169 0.9578313 104.1506 48.8494 
+observed:  5 2 2 1 2 1 104 49 
+
+++++
+[1] "checking for NAs"
+114  NAs found in 'control_stimulus
+4  NAs found in 'stimulus'
+Investigating feature author_attractive 
+
+    Very Attractive          Attractive Somewhat attractive        Unattractive   Very Unattractive 
+                  0                   0                   0                   0                   0 
+
+    Very Attractive          Attractive Somewhat attractive        Unattractive   Very Unattractive 
+                  0                   8                  36                   7                   0 
+
+p value NaN 
+expected:  0 0 0 8 0 36 0 7 0 0 
+observed:  0 0 0 8 0 36 0 7 0 0 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+2  NAs found in 'stimulus'
+Investigating feature would_you_reply 
+
+ Yes, very likely            Likely   Somewhat likely          Unlikely No, very unlikely 
+                4                14                23                31                42 
+
+ Yes, very likely            Likely   Somewhat likely          Unlikely No, very unlikely 
+                1                 5                 7                20                20 
+
+p value 0.5784366 
+expected:  3.413174 1.586826 12.97006 6.02994 20.47904 9.520958 34.81437 16.18563 42.32335 19.67665 
+observed:  4 1 14 5 23 7 31 20 42 20 
+
+---
+ending /Users/ps22344/Downloads/Clippings_0208.csv
+---
+starting /Users/ps22344/Downloads/Prosody_0211.csvInput file has  103 rows[1] 103
+[1] 103
+[1] 103
+[1] 100
+[1] "Running the ordermachine"
+levels of gender m4m m4w w4w w4m[1] "Done with ordering"
+SUMMARYheterosexual   homosexual 
+          58            2 
+heterosexual   homosexual 
+         103           11 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+0  NAs found in 'stimulus'
+Investigating feature author_gender 
+
+female   male 
+    32     82 
+
+female   male 
+    35     25 
+
+p value 0.0001873986 
+expected:  43.89655 23.10345 70.10345 36.89655 
+observed:  32 35 82 25 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+0  NAs found in 'stimulus'
+Investigating feature author_orient 
+
+heterosexual   homosexual 
+         103           11 
+
+heterosexual   homosexual 
+          58            2 
+
+p value 0.229067 
+expected:  105.4828 55.51724 8.517241 4.482759 
+observed:  103 58 11 2 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+0  NAs found in 'stimulus'
+Investigating feature author_audience 
+
+woman   man 
+   73    41 
+
+woman   man 
+   23    37 
+
+p value 0.002070529 
+expected:  62.89655 33.10345 51.10345 26.89655 
+observed:  73 23 41 37 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+0  NAs found in 'stimulus'
+Investigating feature cat 
+
+m4m m4w w4w w4m 
+ 10  72   1  31 
+
+m4m m4w w4w w4m 
+  2  23   0  35 
+
+p value 0.000814891 
+expected:  7.862069 4.137931 62.24138 32.75862 0.6551724 0.3448276 43.24138 22.75862 
+observed:  10 2 72 23 1 0 31 35 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+0  NAs found in 'stimulus'
+Investigating feature author_assertive 
+
+    Very assertive          Assertive Somewhat assertive     Somewhat timid              Timid 
+                 7                 46                 42                 18                  1 
+
+    Very assertive          Assertive Somewhat assertive     Somewhat timid              Timid 
+                 4                 15                 27                 13                  1 
+
+p value 0.3676003 
+expected:  7.206897 3.793103 39.96552 21.03448 45.2069 23.7931 20.31034 10.68966 1.310345 0.6896552 
+observed:  7 4 46 15 42 27 18 13 1 1 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+0  NAs found in 'stimulus'
+Investigating feature author_education 
+
+       Very educated    Somewhat educated Of average education  Somewhat uneducated      Very uneducated 
+                  14                   33                   56                   10                    1 
+
+       Very educated    Somewhat educated Of average education  Somewhat uneducated      Very uneducated 
+                   0                   15                   34                   10                    1 
+
+p value 0.03466884 
+expected:  9.172414 4.827586 31.44828 16.55172 58.96552 31.03448 13.10345 6.896552 1.310345 0.6896552 
+observed:  14 0 33 15 56 34 10 10 1 1 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+0  NAs found in 'stimulus'
+Investigating feature author_friendly 
+
+      Very friendly            Friendly   Somewhat friendly Somewhat unfriendly     Very unfriendly 
+                 29                  67                  17                   0                   1 
+
+      Very friendly            Friendly   Somewhat friendly Somewhat unfriendly     Very unfriendly 
+                 16                  37                   7                   0                   0 
+
+p value NaN 
+expected:  29.48276 15.51724 68.13793 35.86207 15.72414 8.275862 0 0 0.6551724 0.3448276 
+observed:  29 16 67 37 17 7 0 0 1 0 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+0  NAs found in 'stimulus'
+Investigating feature author_sensitive 
+
+    Very sensitive          Sensitive Somewhat sensitive        Insensitive   Very insensitive 
+                 2                 31                 68                 12                  1 
+
+    Very sensitive          Sensitive Somewhat sensitive        Insensitive   Very insensitive 
+                 0                 14                 36                 10                  0 
+
+p value 0.5614401 
+expected:  1.310345 0.6896552 29.48276 15.51724 68.13793 35.86207 14.41379 7.586207 0.6551724 0.3448276 
+observed:  2 0 31 14 68 36 12 10 1 0 
+
+++++
+[1] "checking for NAs"
+1  NAs found in 'control_stimulus
+0  NAs found in 'stimulus'
+Investigating feature author_ethnicity 
+
+                   Asian Black / African American        Hispanic / Latino                    White 
+                       5                        2                        2                      104 
+
+                   Asian Black / African American        Hispanic / Latino                    White 
+                       2                        1                        2                       55 
+
+p value 0.911656 
+expected:  4.572254 2.427746 1.959538 1.040462 2.612717 1.387283 103.8555 55.14451 
+observed:  5 2 2 1 2 2 104 55 
+
+++++
+[1] "checking for NAs"
+114  NAs found in 'control_stimulus
+0  NAs found in 'stimulus'
+Investigating feature author_attractive 
+
+    Very Attractive          Attractive Somewhat attractive        Unattractive   Very Unattractive 
+                  0                   0                   0                   0                   0 
+
+    Very Attractive          Attractive Somewhat attractive        Unattractive   Very Unattractive 
+                  0                  19                  34                   7                   0 
+
+p value NaN 
+expected:  0 0 0 19 0 34 0 7 0 0 
+observed:  0 0 0 19 0 34 0 7 0 0 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+1  NAs found in 'stimulus'
+Investigating feature would_you_reply 
+
+ Yes, very likely            Likely   Somewhat likely          Unlikely No, very unlikely 
+                4                14                23                31                42 
+
+ Yes, very likely            Likely   Somewhat likely          Unlikely No, very unlikely 
+                0                10                 8                21                20 
+
+p value 0.3265617 
+expected:  2.635838 1.364162 15.81503 8.184971 20.42775 10.57225 34.2659 17.7341 40.85549 21.14451 
+observed:  4 0 14 10 23 8 31 21 42 20 
+
+---
+ending /Users/ps22344/Downloads/Prosody_0211.csv
+---
+starting /Users/ps22344/Downloads/Punctuation_0208.csvInput file has  101 rows[1] 101
+[1] 101
+[1] 101
+[1] 98
+[1] "Running the ordermachine"
+levels of gender m4m m4w w4w w4m[1] "Done with ordering"
+SUMMARYheterosexual   homosexual         NA's 
+          51            7            1 
+heterosexual   homosexual 
+         103           11 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+1  NAs found in 'stimulus'
+Investigating feature author_gender 
+
+female   male 
+    32     82 
+
+female   male 
+    20     38 
+
+p value 0.4901211 
+expected:  34.46512 17.53488 79.53488 40.46512 
+observed:  32 20 82 38 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+1  NAs found in 'stimulus'
+Investigating feature author_orient 
+
+heterosexual   homosexual 
+         103           11 
+
+heterosexual   homosexual 
+          51            7 
+
+p value 0.8206646 
+expected:  102.0698 51.93023 11.93023 6.069767 
+observed:  103 51 11 7 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+1  NAs found in 'stimulus'
+Investigating feature author_audience 
+
+woman   man 
+   73    41 
+
+woman   man 
+   31    27 
+
+p value 0.2389591 
+expected:  68.93023 35.06977 45.06977 22.93023 
+observed:  73 31 41 27 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+1  NAs found in 'stimulus'
+Investigating feature cat 
+
+m4m m4w w4w w4m 
+ 10  72   1  31 
+
+m4m m4w w4w w4m 
+  7  31   0  20 
+
+p value 0.5268991 
+expected:  11.26744 5.732558 68.26744 34.73256 0.6627907 0.3372093 33.80233 17.19767 
+observed:  10 7 72 31 1 0 31 20 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+1  NAs found in 'stimulus'
+Investigating feature author_assertive 
+
+    Very assertive          Assertive Somewhat assertive     Somewhat timid              Timid 
+                 7                 46                 42                 18                  1 
+
+    Very assertive          Assertive Somewhat assertive     Somewhat timid              Timid 
+                 1                 17                 30                  8                  2 
+
+p value 0.1658396 
+expected:  5.302326 2.697674 41.75581 21.24419 47.72093 24.27907 17.23256 8.767442 1.988372 1.011628 
+observed:  7 1 46 17 42 30 18 8 1 2 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+1  NAs found in 'stimulus'
+Investigating feature author_education 
+
+       Very educated    Somewhat educated Of average education  Somewhat uneducated      Very uneducated 
+                  14                   33                   56                   10                    1 
+
+       Very educated    Somewhat educated Of average education  Somewhat uneducated      Very uneducated 
+                   3                   28                   19                    8                    0 
+
+p value 0.04374519 
+expected:  11.26744 5.732558 40.43023 20.56977 49.7093 25.2907 11.93023 6.069767 0.6627907 0.3372093 
+observed:  14 3 33 28 56 19 10 8 1 0 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+1  NAs found in 'stimulus'
+Investigating feature author_friendly 
+
+      Very friendly            Friendly   Somewhat friendly Somewhat unfriendly     Very unfriendly 
+                 29                  67                  17                   0                   1 
+
+      Very friendly            Friendly   Somewhat friendly Somewhat unfriendly     Very unfriendly 
+                  9                  32                  15                   1                   1 
+
+p value 0.1660978 
+expected:  25.18605 12.81395 65.61628 33.38372 21.2093 10.7907 0.6627907 0.3372093 1.325581 0.6744186 
+observed:  29 9 67 32 17 15 0 1 1 1 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+1  NAs found in 'stimulus'
+Investigating feature author_sensitive 
+
+    Very sensitive          Sensitive Somewhat sensitive        Insensitive   Very insensitive 
+                 2                 31                 68                 12                  1 
+
+    Very sensitive          Sensitive Somewhat sensitive        Insensitive   Very insensitive 
+                 3                 13                 38                  3                  1 
+
+p value 0.4622953 
+expected:  3.313953 1.686047 29.16279 14.83721 70.25581 35.74419 9.94186 5.05814 1.325581 0.6744186 
+observed:  2 3 31 13 68 38 12 3 1 1 
+
+++++
+[1] "checking for NAs"
+1  NAs found in 'control_stimulus
+1  NAs found in 'stimulus'
+Investigating feature author_ethnicity 
+
+                   Asian Black / African American        Hispanic / Latino                    White 
+                       5                        2                        2                      104 
+
+                   Asian Black / African American        Hispanic / Latino                    White 
+                       1                        3                        1                       53 
+
+p value 0.509375 
+expected:  3.964912 2.035088 3.304094 1.695906 1.982456 1.017544 103.7485 53.25146 
+observed:  5 1 2 3 2 1 104 53 
+
+++++
+[1] "checking for NAs"
+114  NAs found in 'control_stimulus
+1  NAs found in 'stimulus'
+Investigating feature author_attractive 
+
+    Very Attractive          Attractive Somewhat attractive        Unattractive   Very Unattractive 
+                  0                   0                   0                   0                   0 
+
+    Very Attractive          Attractive Somewhat attractive        Unattractive   Very Unattractive 
+                  0                  11                  39                   8                   0 
+
+p value NaN 
+expected:  0 0 0 11 0 39 0 8 0 0 
+observed:  0 0 0 11 0 39 0 8 0 0 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+1  NAs found in 'stimulus'
+Investigating feature would_you_reply 
+
+ Yes, very likely            Likely   Somewhat likely          Unlikely No, very unlikely 
+                4                14                23                31                42 
+
+ Yes, very likely            Likely   Somewhat likely          Unlikely No, very unlikely 
+                2                 6                14                17                19 
+
+p value 0.9576551 
+expected:  3.976744 2.023256 13.25581 6.744186 24.52326 12.47674 31.81395 16.18605 40.43023 20.56977 
+observed:  4 2 14 6 23 14 31 17 42 19 
+
+---
+ending /Users/ps22344/Downloads/Punctuation_0208.csv
+---
+starting /Users/ps22344/Downloads/second_Emoticons_0228.csvInput file has  200 rows[1] 200
+[1] 200
+[1] 200
+[1] 197
+[1] "Running the ordermachine"
+levels of gender m4m m4w w4w w4m[1] "Done with ordering"
+SUMMARYheterosexual   homosexual         NA's 
+         118           16            1 
+heterosexual   homosexual 
+         103           11 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+1  NAs found in 'stimulus'
+Investigating feature author_gender 
+
+female   male 
+    32     82 
+
+female   male 
+    62     72 
+
+p value 0.004912609 
+expected:  43.20968 50.79032 70.79032 83.20968 
+observed:  32 62 82 72 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+1  NAs found in 'stimulus'
+Investigating feature author_orient 
+
+heterosexual   homosexual 
+         103           11 
+
+heterosexual   homosexual 
+         118           16 
+
+p value 0.7093129 
+expected:  101.5887 119.4113 12.41129 14.58871 
+observed:  103 118 11 16 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+1  NAs found in 'stimulus'
+Investigating feature author_audience 
+
+woman   man 
+   73    41 
+
+woman   man 
+   56    78 
+
+p value 0.0007601582 
+expected:  59.29839 69.70161 54.70161 64.29839 
+observed:  73 56 41 78 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+1  NAs found in 'stimulus'
+Investigating feature cat 
+
+m4m m4w w4w w4m 
+ 10  72   1  31 
+
+m4m m4w w4w w4m 
+ 16  56   0  62 
+
+p value 0.004241575 
+expected:  11.95161 14.04839 58.83871 69.16129 0.4596774 0.5403226 42.75 50.25 
+observed:  10 16 72 56 1 0 31 62 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+1  NAs found in 'stimulus'
+Investigating feature author_assertive 
+
+    Very assertive          Assertive Somewhat assertive     Somewhat timid              Timid 
+                 7                 46                 42                 18                  1 
+
+    Very assertive          Assertive Somewhat assertive     Somewhat timid              Timid 
+                11                 44                 52                 27                  0 
+
+p value 0.5241068 
+expected:  8.274194 9.725806 41.37097 48.62903 43.20968 50.79032 20.68548 24.31452 0.4596774 0.5403226 
+observed:  7 11 46 44 42 52 18 27 1 0 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+70  NAs found in 'stimulus'
+Investigating feature author_education 
+
+       Very educated    Somewhat educated Of average education  Somewhat uneducated      Very uneducated 
+                  14                   33                   56                   10                    1 
+
+       Very educated    Somewhat educated Of average education  Somewhat uneducated      Very uneducated 
+                   3                   24                   32                    5                    1 
+
+p value 0.4616832 
+expected:  10.82682 6.173184 36.30168 20.69832 56.04469 31.95531 9.553073 5.446927 1.273743 0.726257 
+observed:  14 3 33 24 56 32 10 5 1 1 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+1  NAs found in 'stimulus'
+Investigating feature author_friendly 
+
+      Very friendly            Friendly   Somewhat friendly Somewhat unfriendly     Very unfriendly 
+                 29                  67                  17                   0                   1 
+
+      Very friendly            Friendly   Somewhat friendly Somewhat unfriendly     Very unfriendly 
+                 37                  81                  16                   0                   0 
+
+p value NaN 
+expected:  30.33871 35.66129 68.03226 79.96774 15.16935 17.83065 0 0 0.4596774 0.5403226 
+observed:  29 37 67 81 17 16 0 0 1 0 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+1  NAs found in 'stimulus'
+Investigating feature author_sensitive 
+
+    Very sensitive          Sensitive Somewhat sensitive        Insensitive   Very insensitive 
+                 2                 31                 68                 12                  1 
+
+    Very sensitive          Sensitive Somewhat sensitive        Insensitive   Very insensitive 
+                 1                 40                 85                  7                  1 
+
+p value 0.5435341 
+expected:  1.379032 1.620968 32.6371 38.3629 70.33065 82.66935 8.733871 10.26613 0.9193548 1.080645 
+observed:  2 1 31 40 68 85 12 7 1 1 
+
+++++
+[1] "checking for NAs"
+1  NAs found in 'control_stimulus
+1  NAs found in 'stimulus'
+Investigating feature author_ethnicity 
+
+                   Asian Black / African American        Hispanic / Latino                    White 
+                       5                        2                        2                      104 
+
+                   Asian Black / African American        Hispanic / Latino                    White 
+                       8                        1                        4                      121 
+
+p value 0.753004 
+expected:  5.947368 7.052632 1.37247 1.62753 2.744939 3.255061 102.9352 122.0648 
+observed:  5 8 2 1 2 4 104 121 
+
+++++
+[1] "checking for NAs"
+114  NAs found in 'control_stimulus
+72  NAs found in 'stimulus'
+Investigating feature author_attractive 
+
+    Very Attractive          Attractive Somewhat attractive        Unattractive   Very Unattractive 
+                  0                   0                   0                   0                   0 
+
+    Very Attractive          Attractive Somewhat attractive        Unattractive   Very Unattractive 
+                  0                  10                  42                  11                   0 
+
+p value NaN 
+expected:  0 0 0 10 0 42 0 11 0 0 
+observed:  0 0 0 10 0 42 0 11 0 0 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+70  NAs found in 'stimulus'
+Investigating feature would_you_reply 
+
+ Yes, very likely            Likely   Somewhat likely          Unlikely No, very unlikely 
+                4                14                23                31                42 
+
+ Yes, very likely            Likely   Somewhat likely          Unlikely No, very unlikely 
+                2                 8                 9                23                23 
+
+p value 0.7549332 
+expected:  3.821229 2.178771 14.01117 7.988827 20.37989 11.62011 34.39106 19.60894 41.39665 23.60335 
+observed:  4 2 14 8 23 9 31 23 42 23 
+
+---
+ending /Users/ps22344/Downloads/second_Emoticons_0228.csv
+---
+starting /Users/ps22344/Downloads/Single letter_0218.csvInput file has  100 rows[1] 100
+[1] 100
+[1] 100
+[1] 97
+[1] "Running the ordermachine"
+levels of gender m4m m4w w4w w4m[1] "Done with ordering"
+SUMMARYheterosexual   homosexual         NA's 
+          50            2            3 
+heterosexual   homosexual 
+         103           11 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+3  NAs found in 'stimulus'
+Investigating feature author_gender 
+
+female   male 
+    32     82 
+
+female   male 
+    22     30 
+
+p value 0.1015281 
+expected:  37.08434 16.91566 76.91566 35.08434 
+observed:  32 22 82 30 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+3  NAs found in 'stimulus'
+Investigating feature author_orient 
+
+heterosexual   homosexual 
+         103           11 
+
+heterosexual   homosexual 
+          50            2 
+
+p value 0.3274236 
+expected:  105.0723 47.92771 8.927711 4.072289 
+observed:  103 50 11 2 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+3  NAs found in 'stimulus'
+Investigating feature author_audience 
+
+woman   man 
+   73    41 
+
+woman   man 
+   30    22 
+
+p value 0.5427462 
+expected:  70.73494 32.26506 43.26506 19.73494 
+observed:  73 30 41 22 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+3  NAs found in 'stimulus'
+Investigating feature cat 
+
+m4m m4w w4w w4m 
+ 10  72   1  31 
+
+m4m m4w w4w w4m 
+  1  29   1  21 
+
+p value 0.1607026 
+expected:  7.554217 3.445783 69.36145 31.63855 1.373494 0.626506 35.71084 16.28916 
+observed:  10 1 72 29 1 1 31 21 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+3  NAs found in 'stimulus'
+Investigating feature author_assertive 
+
+    Very assertive          Assertive Somewhat assertive     Somewhat timid              Timid 
+                 7                 46                 42                 18                  1 
+
+    Very assertive          Assertive Somewhat assertive     Somewhat timid              Timid 
+                 1                 17                 24                 10                  0 
+
+p value 0.5001926 
+expected:  5.493976 2.506024 43.26506 19.73494 45.3253 20.6747 19.22892 8.771084 0.686747 0.313253 
+observed:  7 1 46 17 42 24 18 10 1 0 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+3  NAs found in 'stimulus'
+Investigating feature author_education 
+
+       Very educated    Somewhat educated Of average education  Somewhat uneducated      Very uneducated 
+                  14                   33                   56                   10                    1 
+
+       Very educated    Somewhat educated Of average education  Somewhat uneducated      Very uneducated 
+                   1                    9                   38                    4                    0 
+
+p value 0.03602575 
+expected:  10.3012 4.698795 28.84337 13.15663 64.55422 29.44578 9.614458 4.385542 0.686747 0.313253 
+observed:  14 1 33 9 56 38 10 4 1 0 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+3  NAs found in 'stimulus'
+Investigating feature author_friendly 
+
+      Very friendly            Friendly   Somewhat friendly Somewhat unfriendly     Very unfriendly 
+                 29                  67                  17                   0                   1 
+
+      Very friendly            Friendly   Somewhat friendly Somewhat unfriendly     Very unfriendly 
+                 10                  35                   7                   0                   0 
+
+p value NaN 
+expected:  26.78313 12.21687 70.04819 31.95181 16.48193 7.518072 0 0 0.686747 0.313253 
+observed:  29 10 67 35 17 7 0 0 1 0 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+3  NAs found in 'stimulus'
+Investigating feature author_sensitive 
+
+    Very sensitive          Sensitive Somewhat sensitive        Insensitive   Very insensitive 
+                 2                 31                 68                 12                  1 
+
+    Very sensitive          Sensitive Somewhat sensitive        Insensitive   Very insensitive 
+                 0                 18                 29                  5                  0 
+
+p value 0.7071188 
+expected:  1.373494 0.626506 33.6506 15.3494 66.61446 30.38554 11.6747 5.325301 0.686747 0.313253 
+observed:  2 0 31 18 68 29 12 5 1 0 
+
+++++
+[1] "checking for NAs"
+1  NAs found in 'control_stimulus
+3  NAs found in 'stimulus'
+Investigating feature author_ethnicity 
+
+                   Asian Black / African American        Hispanic / Latino                    White 
+                       5                        2                        2                      104 
+
+                   Asian Black / African American        Hispanic / Latino                    White 
+                       5                        1                        1                       45 
+
+p value 0.6343831 
+expected:  6.848485 3.151515 2.054545 0.9454545 2.054545 0.9454545 102.0424 46.95758 
+observed:  5 5 2 1 2 1 104 45 
+
+++++
+[1] "checking for NAs"
+114  NAs found in 'control_stimulus
+3  NAs found in 'stimulus'
+Investigating feature author_attractive 
+
+    Very Attractive          Attractive Somewhat attractive        Unattractive   Very Unattractive 
+                  0                   0                   0                   0                   0 
+
+    Very Attractive          Attractive Somewhat attractive        Unattractive   Very Unattractive 
+                  0                   5                  40                   7                   0 
+
+p value NaN 
+expected:  0 0 0 5 0 40 0 7 0 0 
+observed:  0 0 0 5 0 40 0 7 0 0 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+3  NAs found in 'stimulus'
+Investigating feature would_you_reply 
+
+ Yes, very likely            Likely   Somewhat likely          Unlikely No, very unlikely 
+                4                14                23                31                42 
+
+ Yes, very likely            Likely   Somewhat likely          Unlikely No, very unlikely 
+                0                 0                12                17                23 
+
+p value 0.05572676 
+expected:  2.746988 1.253012 9.614458 4.385542 24.03614 10.96386 32.96386 15.03614 44.63855 20.36145 
+observed:  4 0 14 0 23 12 31 17 42 23 
+
+---
+ending /Users/ps22344/Downloads/Single letter_0218.csv

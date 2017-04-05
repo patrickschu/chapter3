@@ -1,0 +1,220 @@
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+1  NAs found in 'stimulus'
+Investigating feature author_gender 
+
+female   male 
+    32     82 
+
+female   male 
+    62     72 
+
+p value 0.004912609 
+
+statistic 7.911332 
+
+df 1 
+expected:  43.20968 50.79032 70.79032 83.20968 
+observed:  32 62 82 72 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+1  NAs found in 'stimulus'
+Investigating feature author_orient 
+
+heterosexual   homosexual 
+         103           11 
+
+heterosexual   homosexual 
+         118           16 
+
+p value 0.7093129 
+
+statistic 0.1389642 
+
+df 1 
+expected:  101.5887 119.4113 12.41129 14.58871 
+observed:  103 118 11 16 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+1  NAs found in 'stimulus'
+Investigating feature author_audience 
+
+woman   man 
+   73    41 
+
+woman   man 
+   56    78 
+
+p value 0.0007601582 
+
+statistic 11.33607 
+
+df 1 
+expected:  59.29839 69.70161 54.70161 64.29839 
+observed:  73 56 41 78 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+1  NAs found in 'stimulus'
+Investigating feature cat 
+
+m4m m4w w4w w4m 
+ 10  72   1  31 
+
+m4m m4w w4w w4m 
+ 16  56   0  62 
+
+p value 0.004241575 
+
+statistic 13.19083 
+
+df 3 
+expected:  11.95161 14.04839 58.83871 69.16129 0.4596774 0.5403226 42.75 50.25 
+observed:  10 16 72 56 1 0 31 62 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+1  NAs found in 'stimulus'
+Investigating feature author_assertive 
+
+    Very assertive          Assertive Somewhat assertive     Somewhat timid              Timid 
+                 7                 46                 42                 18                  1 
+
+    Very assertive          Assertive Somewhat assertive     Somewhat timid              Timid 
+                11                 44                 52                 27                  0 
+
+p value 0.5241068 
+
+statistic 3.205105 
+
+df 4 
+expected:  8.274194 9.725806 41.37097 48.62903 43.20968 50.79032 20.68548 24.31452 0.4596774 0.5403226 
+observed:  7 11 46 44 42 52 18 27 1 0 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+70  NAs found in 'stimulus'
+Investigating feature author_education 
+
+       Very educated    Somewhat educated Of average education  Somewhat uneducated      Very uneducated 
+                  14                   33                   56                   10                    1 
+
+       Very educated    Somewhat educated Of average education  Somewhat uneducated      Very uneducated 
+                   3                   24                   32                    5                    1 
+
+p value 0.4616832 
+
+statistic 3.607762 
+
+df 4 
+expected:  10.82682 6.173184 36.30168 20.69832 56.04469 31.95531 9.553073 5.446927 1.273743 0.726257 
+observed:  14 3 33 24 56 32 10 5 1 1 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+1  NAs found in 'stimulus'
+Investigating feature author_friendly 
+
+      Very friendly            Friendly   Somewhat friendly Somewhat unfriendly     Very unfriendly 
+                 29                  67                  17                   0                   1 
+
+      Very friendly            Friendly   Somewhat friendly Somewhat unfriendly     Very unfriendly 
+                 37                  81                  16                   0                   0 
+
+p value NaN 
+
+statistic NaN 
+
+df 4 
+expected:  30.33871 35.66129 68.03226 79.96774 15.16935 17.83065 0 0 0.4596774 0.5403226 
+observed:  29 37 67 81 17 16 0 0 1 0 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+1  NAs found in 'stimulus'
+Investigating feature author_sensitive 
+
+    Very sensitive          Sensitive Somewhat sensitive        Insensitive   Very insensitive 
+                 2                 31                 68                 12                  1 
+
+    Very sensitive          Sensitive Somewhat sensitive        Insensitive   Very insensitive 
+                 1                 40                 85                  7                  1 
+
+p value 0.5435341 
+
+statistic 3.086024 
+
+df 4 
+expected:  1.379032 1.620968 32.6371 38.3629 70.33065 82.66935 8.733871 10.26613 0.9193548 1.080645 
+observed:  2 1 31 40 68 85 12 7 1 1 
+
+++++
+[1] "checking for NAs"
+1  NAs found in 'control_stimulus
+1  NAs found in 'stimulus'
+Investigating feature author_ethnicity 
+
+                   Asian Black / African American        Hispanic / Latino                    White 
+                       5                        2                        2                      104 
+
+                   Asian Black / African American        Hispanic / Latino                    White 
+                       8                        1                        4                      121 
+
+p value 0.753004 
+
+statistic 1.200001 
+
+df 3 
+expected:  5.947368 7.052632 1.37247 1.62753 2.744939 3.255061 102.9352 122.0648 
+observed:  5 8 2 1 2 4 104 121 
+
+++++
+[1] "checking for NAs"
+114  NAs found in 'control_stimulus
+72  NAs found in 'stimulus'
+Investigating feature author_attractive 
+
+    Very Attractive          Attractive Somewhat attractive        Unattractive   Very Unattractive 
+                  0                   0                   0                   0                   0 
+
+    Very Attractive          Attractive Somewhat attractive        Unattractive   Very Unattractive 
+                  0                  10                  42                  11                   0 
+
+p value NaN 
+
+statistic NaN 
+
+df 4 
+expected:  0 0 0 10 0 42 0 11 0 0 
+observed:  0 0 0 10 0 42 0 11 0 0 
+
+++++
+[1] "checking for NAs"
+0  NAs found in 'control_stimulus
+70  NAs found in 'stimulus'
+Investigating feature would_you_reply 
+
+ Yes, very likely            Likely   Somewhat likely          Unlikely No, very unlikely 
+                4                14                23                31                42 
+
+ Yes, very likely            Likely   Somewhat likely          Unlikely No, very unlikely 
+                2                 8                 9                23                23 
+
+p value 0.7549332 
+
+statistic 1.895709 
+
+df 4 
+expected:  3.821229 2.178771 14.01117 7.988827 20.37989 11.62011 34.39106 19.60894 41.39665 23.60335 
+observed:  4 2 14 8 23 9 31 23 42 23 
