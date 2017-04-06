@@ -84,7 +84,7 @@ gaywomen= controlspread[controlspread[['author_gender']] == 'female'&controlspre
 controlspread=rbind(men,women)
 controlspread=rbind(gaymen,gaywomen)
 controlspread=rbind(men, women, gaymen, gaywomen)
-summary(controlspread$author_orient)
+summary(controlspread$author_gender)
 controlspread['stimulus']= as.factor('control')
 
 #moving parts
@@ -115,14 +115,24 @@ tt=rbind(menonly, womenonly,gaymenonly, gaywomenonly)
 
 surveytools:::basicstatsmaker(lapply(tt, function(x) as.numeric(x)), perceptionfeatures)
 
+propmaker= function(x){
+	t= as.data.frame(table(x))
+	print ("propmaker")
+	t['Prop']=t['Freq']/sum(t['Freq'])*100
+	print (write.csv(t))
+	
+}
 #get percentage per stimulus
 for (cat in levels(tt[['stimulus']])){
 	tempi= tt[tt[['stimulus']] == cat,]	
 	cat ("\n", cat, "STIMULUS\n")
 	print(nrow(tempi))
 	averages= lapply(tempi[,perceptionfeatures], function(x) mean(as.numeric(x), na.rm=TRUE))
-	tables= lapply(tempi[,perceptionfeatures], function(x) print(as.data.frame(table(x))))
+	tables= lapply(tempi[,perceptionfeatures], function(x) as.data.frame(table(x)))
+	tables= lapply(tempi[,perceptionfeatures], propmaker)
+	
 	}
+
 
 
 
