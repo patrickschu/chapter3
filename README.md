@@ -1,6 +1,6 @@
 # Gender perception: A Mechanical Turk experiment
 
-A linguistic perception study: which features are perceived as male or female? Includes emoticons, punctuation, acronyms! 
+A linguistic perception study: which linguistic items are perceived as male or female? Includes emoticons, punctuation, acronyms! 
 This repository contains a R library and several R scripts. 
 
 ### [Surveytools](https://github.com/patrickschu/chapter3/blob/master/surveytools/R/surveytools.R)
